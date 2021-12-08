@@ -40,25 +40,18 @@
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module08.md",
           "Order": 9
         },
-         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module08.md",
-          "Order": 10
-        },
-         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module08.md",
-          "Order": 11
-        },
+      
          {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module09.md",
-          "Order": 12
+          "Order": 10
         },
         {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module10.md",
-          "Order": 13
+          "Order": 11
         },
         {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/purviewlab/main/modules/module11.md",
-          "Order": 14
+          "Order": 12
         }
        
       ]
