@@ -2,12 +2,6 @@
 
 [< Previous Module](../modules/module01.md) - **[Home](../README.md)** - [Next Module >](../modules/module02b.md)
 
-## Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Data Lake Storage Gen2 account (see [module 00](../modules/module00.md)).
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
 ## Tools
 
 * [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) (Download and Install)
@@ -37,7 +31,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 
 ## 1. Grant the Azure Purview Managed Identity Access
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > To scan a source, Azure Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Azure Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 >
