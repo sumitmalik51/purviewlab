@@ -44,7 +44,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Purview Account Basics](../images/module01/_01.03-create-basic.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Azure Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
@@ -97,7 +97,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Add or Remove Data Curators](../images/module01/_01.12-datacurator-add.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Azure Purview has a set of predefined data plane roles that can be used to control who can access what.
     >
