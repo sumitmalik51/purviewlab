@@ -87,9 +87,9 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Add Role Assignment](../images/module01/_01.11-roleassignments-datacurator.png)
 
-6. Search for another user within your Azure Active Directory, select their account, click **OK**.
+6. Search for **user_01** user within your Azure Active Directory, select the account, click **OK**.
 
-    ![Add or Remove Data Curators](../images/module01/_01.12-datacurator-add.png)
+    ![Add or Remove Data Curators](../images/module01/user01.png)
 
     > **Did you know?**
     >
