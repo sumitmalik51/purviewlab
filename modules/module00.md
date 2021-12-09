@@ -2,7 +2,7 @@
 
 **[Home](../README.md)** - [Next Module >](../modules/module01.md)
 
-## :thinking: Prerequisites
+## Prerequisites
 
 * An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
 * Owner permissions within a Resource Group to create resources and manage role assignments.
@@ -16,11 +16,11 @@
     * Microsoft.Sql
     * Microsoft.Synapse
 
-## :loudspeaker: Introduction
+## Introduction
 
 In order to follow along with the Azure Purview lab exercises, we need to provision a set of resources.
 
-## :test_tube: Lab Environment Setup
+## Lab Environment Setup
 
 1. Right-click or `Ctrl + click` the button below to open the Azure Portal in a new window.
 
@@ -44,7 +44,7 @@ In order to follow along with the Azure Purview lab exercises, we need to provis
 
 Note: The Azure Purview account resource has been purposely **excluded** from the template so that participants have an opportunity to understand how to deploy an Azure Purview account via the Azure Portal.
 
-## :tada: Summary
+## Summary
 
 By successfully deploying the Azure Purview lab template, you have the Azure resources needed to follow along with the learning exercises.
 

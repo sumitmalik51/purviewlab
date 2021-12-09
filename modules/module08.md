@@ -1,18 +1,10 @@
 # Module 08 - Monitor
 
-[< Previous Module](../modules/module07.md) - **[Home](../README.md)** - [Next Module >](../modules/module09.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-* Your subscription must have the **Microsoft.Insights** resource provider registered.
-
-## :loudspeaker: Introduction
+## Introduction
 
 Azure Purview administrators can use Azure Monitor to track the operational state of an Azure Purview account instance. Metrics are collected to provide data points for you to track potential problems, troubleshoot, and improve the reliability of the Purview platform.
 
-## :dart: Objectives
+## Objectives
 
 * View Azure Purview metrics.
 * Send Azure Purview diagnostic logs to Azure Storage.
@@ -22,8 +14,6 @@ Azure Purview administrators can use Azure Monitor to track the operational stat
 1. [Provide a User Access to Azure Purview Metrics](#1-provide-a-user-access-to-azure-purview-metrics)
 2. [Visualize Azure Purview Metrics](#2-visualize-azure-purview-metrics)
 3. [Send Diagnostic Logs to Azure Storage](#3-send-diagnostic-logs-to-azure-storage)
-
-<div align="right"><a href="#module-08---monitor">↥ back to top</a></div>
 
 ## 1. Provide a User Access to Azure Purview Metrics
 
@@ -41,7 +31,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 3. Click **Select members**, search for a user within your Azure Active Directory, select that user from the list, and then click **Select**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Monitoring Reader** role can view all monitoring data but cannot modify any resource or edit any settings related to monitoring resources. This role is appropriate for users in an organization such as Azure Purview administrators.
 
@@ -50,8 +40,6 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 4. Click **Review + assign** to progress to the final screen, then click **Review + assign** once more to add the role assignment.
 
     ![Verify Access](../images/module08/08.04-access-verify.png)
-
-<div align="right"><a href="#module-08---monitor">↥ back to top</a></div>
 
 ## 2. Visualize Azure Purview Metrics
 
@@ -83,13 +71,11 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Metrics Graph](../images/module08/08.09-metrics-graph.png)
 
-<div align="right"><a href="#module-08---monitor">↥ back to top</a></div>
-
 ## 3. Send Diagnostic Logs to Azure Storage
 
 1. Navigate to your **Azure Purview** account instance, click **Diagnostic settings** and select **Add diagnostic setting**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Diagnostic settings** can be used to send platform logs and metrics to one or more destinations (Log Analytics Workspace, Storage Account, an Event Hub).
 
@@ -97,7 +83,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 2. Provide the diagnostic setting a name (e.g. `Audit`), select **ScanStatusLogEvent**, select **Archive to a storage account**, select an existing storage account (e.g. `pvlab{randomId}adls`) and click **Save**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **ScanStatusLogEvent** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
 
@@ -127,9 +113,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Event JSON](../images/module08/08.21-event-json.png)
 
-<div align="right"><a href="#module-08---monitor">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q08](http://aka.ms/purviewlab/q08)
 
@@ -151,10 +135,6 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     B ) scanTotalRunTimeInSeconds  
     C ) scanTotalDuration
 
-<div align="right"><a href="#module-08---monitor">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to visualize Azure Purview metrics within the Azure Portal and how to capture raw telemetry to an Azure Storage account.
-
-[Continue >](../modules/module09.md)

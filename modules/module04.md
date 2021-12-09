@@ -1,17 +1,10 @@
 # Module 04 - Glossary
 
-[< Previous Module](../modules/module03.md) - **[Home](../README.md)** - [Next Module >](../modules/module05.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 A glossary is an important tool for maintaining and organizing your catalog. You build your glossary by defining new terms or importing a term list and then applying those terms to your assets.
 
-## :dart: Objectives
+## Objectives
 
 * Create a Term in the Glossary using the System Default Term Template.
 * Create a Term in the Glossary using a Custom Term Template.
@@ -29,8 +22,6 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 5. [Assign a Term to an Asset](#5-assign-a-term-to-an-asset)
 6. [Update an Existing Term](#6-update-an-existing-term)
 
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
 ## 1. Create a Term (System Default Term Template)
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
@@ -43,7 +34,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 3. Select the **System default** term template and click **Continue**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > A **Term Template** determines the attributes for a term. The **System default** term template has basic fields only (e.g. Name, Definition, Status, etc). **Custom** term templates on the other hand, can be used to capture additional custom attributes. For more information, check out [How to manage term templates for business glossary](https://docs.microsoft.com/en-us/azure/purview/how-to-manage-term-templates).
 
@@ -77,9 +68,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ```
     https://aka.ms/Azure-Purview
     ```
-
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
+    
 ## 2. Create a Term (Custom Term Template)
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
@@ -140,10 +129,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 9. From the **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
     ![](../images/module04/04.11-glossary-table.png)
-
-
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
+    
 ## 3. Bulk Import Terms
 
 1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, click **Save as** .
@@ -170,13 +156,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Filter Terms](../images/module04/04.16-glossary-filter.png)
 
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
 ## 4. Bulk Export Terms
 
 1. From the **Glossary** screen, we want to select ALL terms (top check box) and then de-select terms that do not belong to Workplace Analytics (i.e. Contoso Parent, Contoso Child). **All Workplace Analytics terms** should be selected. Click **Export terms**. Note: You can not export terms from different term templates.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > When using Purview Studio to **Export terms**, all terms selected for the export must use the same **Term template**. Selecting terms from different term templates will result in the **Export terms** button being greyed out.
 
@@ -185,8 +169,6 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 2. If the export was successful, you should find a **CSV** file has been copied to your local machine (e.g. Downloads).
 
     ![Downloads](../images/module04/04.18-export-downloads.png)
-
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
 
 ## 5. Assign a Term to an Asset
 
@@ -209,10 +191,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 5. Click **Refresh** to view the **Catalog assets** the term is assigned to.
 
     ![Catalog assets](../images/module04/04.23-term-assets.png)
-
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
-
+    
 ## 6. Update an Existing Term
 
 1. From the **Glossary** screen, open an existing term (e.g. `Aggregation`).
@@ -225,7 +204,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
@@ -237,15 +216,13 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward**. Click **Save**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Glossary terms can be related to two different types of contacts. **Experts** are typically business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
 
     ![Term Contacts](../images/module04/04.28-term-contacts.png)
 
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q04](http://aka.ms/purviewlab/q04)
 
@@ -264,11 +241,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     A ) True  
     B ) False  
-
-<div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
-
-## :tada: Summary
+    
+## Summary
 
 This module provided an overview of how to create, export, and import terms into the Azure Purview glossary.
-
-[Continue >](../modules/module05.md)

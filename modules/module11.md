@@ -1,18 +1,10 @@
 # Module 11 - Self-Hosted Integration Runtime
 
-[< Previous Module](../modules/module10.md) - **[Home](../README.md)** - [Next Module >](../modules/module12.md)
-
-## :thinking: Prerequisites
-
-- An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-- A SQL Virtual Machine (see [module 00](../modules/module00.md)).
-- An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 To populate Azure Purview with assets from your on-premise data sources, we must make use a self-hosted integrastion runtime agent to create that gateway for data discovery and exploration. In this module, we will walk through how to install a self-hosted integration runtime, register the on-premise SQL server and scan the data source.
 
-## :dart: Objectives
+## Objectives
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
@@ -22,13 +14,11 @@ To populate Azure Purview with assets from your on-premise data sources, we must
 2. [Install Self-Hosted Integration Runtime](#2-install-self-hosted-integration-runtime)
 3. [Authenticate to Azure Purview](#3-authenticate-to-azure-purview)
 
-<div align="right"><a href="#module-11---self-hosted-integration-runtime">↥ back to top</a></div>
-
 ## 1. Connect to SQL Virtual Machine
 
 To invoke the install the self-hosted integration runtime, we must first log into our SQL virtual machine. For this example, we'll be using the RDP connection to complete this step. If you would like to use **Bastion** to connect, follow the [instructions here](https://docs.microsoft.com/en-gb/azure/bastion/quickstart-host-portal#createvmset) to get this set-up.
 
-> :book: **Note** once the environment set-up is complete, your VM should already be in 'running' state. If this is not the case, you will need to 'start' your VM.
+> **Note** once the environment set-up is complete, your VM should already be in 'running' state. If this is not the case, you will need to 'start' your VM.
 
 1. Navigate to your Virtual Machine resource in the [Azure portal](https://portal.azure.com/). In the **Overview** section (left blade), click on '**Connect**' and '**RDP**' from the drop-down menu.
 
@@ -53,7 +43,7 @@ To invoke the install the self-hosted integration runtime, we must first log int
 
 6. Here you need to log into the virtual machine using the credentials supplied in the '**Outputs**' blade in the deployment area of the resource group you created in [module 00](../modules/module00.md). You'll need to select the '**More Choices**' option and/or '**Use a different account**' options in the log in window.
 
-   > :book: **Note** You'll need to log in using the format **username** = _vm name\sqladmin username_ and **password** = _sql password_
+   > **Note** You'll need to log in using the format **username** = _vm name\sqladmin username_ and **password** = _sql password_
 
    ![](../images/module11/shir-install-17.png)
    ![](../images/module11/shir-install-18.png)
@@ -62,11 +52,9 @@ To invoke the install the self-hosted integration runtime, we must first log int
 
    ![](../images/module11/shir-install-21.png)
 
-<div align="right"><a href="#module-11---self-hosted-integration-runtime">↥ back to top</a></div>
-
 ## 2. Install Self-Hosted Integration Runtime
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > Integration Runtime (IR) is a secure compute infrastructure that is used to provide the data integration capabilities across the different network environments and make sure that these activities will be executed in the closest possible region to the data store.
 >
@@ -90,11 +78,9 @@ To invoke the install the self-hosted integration runtime, we must first log int
 
    ![](../images/module11/shir-install-7.png)
 
-<div align="right"><a href="#module-11---self-hosted-integration-runtime">↥ back to top</a></div>
-
 ## 3. Authenticate to Azure Purview
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > The Purview Integration Runtime cannot be shared with an Azure Synapse Analytics or Azure Data Factory Integration Runtime on the same machine. It needs to be installed on a separated machine.
 
@@ -121,13 +107,11 @@ To invoke the install the self-hosted integration runtime, we must first log int
    ![](../images/module11/shir-install-24.png)
    ![](../images/module11/shir-install-25.png)
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > The Purview Integration Runtime can also be used to scan and ingest metadata assets from Azure cloud services that are hidden behind private endpoints, such as Azure Data Lake, Azure SQL Database, Azure Cosmos DB [and more](https://docs.microsoft.com/en-us/azure/purview/catalog-private-link#support-matrix-for-scanning-data-sources-through-ingestion-private-endpoint).
 
-<div align="right"><a href="#module-11---self-hosted-integration-runtime">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q11](http://aka.ms/purviewlab/q11)
 
@@ -150,9 +134,7 @@ To invoke the install the self-hosted integration runtime, we must first log int
    D) All of these  
    E) None of these
 
-<div align="right"><a href="#module-11---self-hosted-integration-runtime">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 In this module, you learned how to install the self-hosted integration runtime to your virtual machine network and get it connected up to Azure Purview. If you'd like continue with this module to complete further tasks, please feel free to complete the tutorial links below:
 
@@ -162,5 +144,3 @@ In this module, you learned how to install the self-hosted integration runtime t
   - [World Wide Importers dataset](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers)
   - [Contoso BI dataset](https://www.microsoft.com/en-us/download/details.aspx?id=18279)
 - [Trigger a scan of the on-premise data source](https://docs.microsoft.com/en-us/azure/purview/register-scan-on-premises-sql-server#creating-and-running-a-scan)
-
-[Back to Home >](../README.md)

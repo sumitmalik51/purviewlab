@@ -1,30 +1,20 @@
 # Module 01 - Create an Azure Purview Account
 
-[< Previous Module](../modules/module00.md) - **[Home](../README.md)** - [Next Module >](../modules/module02a.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* Your must have permissions to create resources in your Azure subscription.
-* Your subscription must have the following resource providers registered: **Microsoft.Purview**, **Microsoft.Storage**, and **Microsoft.EventHub**. Instructions on how to register a resource provider via the Azure Portal can be found [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal).
-
-## :loudspeaker: Introduction
+## Introduction
 
 To create and use the Azure Purview platform, you will need to provision an Azure Purview account.
 
-## :dart: Objectives
+## Objectives
 
 * Create an Azure Purview account using the Azure portal.
 * Provide additional users access to Azure Purview's data plane.
 
-##  :bookmark_tabs: Table of Contents
+## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
 | 1 | [Create an Azure Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
 | 2 | [Grant Access to Azure Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
-
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
 
 ## 1. Create an Azure Purview Account
 
@@ -50,7 +40,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Purview Account Basics](../images/module01/_01.03-create-basic.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Azure Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
@@ -73,8 +63,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 6. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
 
     ![Go to resource](../images/module01/_01.06-goto-resource.png)
-
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
 
 ## 2. Grant Access to Azure Purview's Data Plane
 
@@ -103,7 +91,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Add or Remove Data Curators](../images/module01/_01.12-datacurator-add.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Azure Purview has a set of predefined data plane roles that can be used to control who can access what.
     >
@@ -116,9 +104,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     | Data Curator || `Read/Write` |  | Access to catalog (read & write). |
     | Data Source Admin |  || `Read/Write` | Manage data sources and data scans. |
 
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
 
@@ -146,10 +132,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     B ) Purview Data Curator  
     C ) Purview Data Source Administrator
 
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to provision an Azure Purview account using the Azure Portal and how to grant the appropriate level of access to Azure Purview's data plane.
-
-[Continue >](../modules/module02a.md)

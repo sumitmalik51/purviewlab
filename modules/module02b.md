@@ -1,22 +1,14 @@
 # Module 02B - Register & Scan (Azure SQL DB)
 
-[< Previous Module](../modules/module02a.md) - **[Home](../README.md)** - [Next Module >](../modules/module03.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure SQL Database (see [module 00](../modules/module00.md)).
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 To populate Azure Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Azure Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
 
-## :dart: Objectives
+## Objectives
 
 * Register and scan an Azure SQL Database using SQL authentication credentials stored in Azure Key Vault.
 
-##  :bookmark_tabs: Table of Contents
+## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -28,11 +20,9 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 | 6 | [Scan a Source with Azure Key Vault Credentials](#6-scan-a-source-with-azure-key-vault-credentials) | Data Source Administrator |
 | 7 | [View Assets](#7-view-assets) | Data Reader |
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
 ## 1. Key Vault Access Policy #1 (Grant Yourself Access)
     
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > **Azure Key Vault** is a cloud service that provides a secure store for secrets. Azure Key Vault can be used to securely store keys, passwords, certificates, and other secrets. For more information, check out [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview).
 
@@ -50,9 +40,9 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
     ![Select Principal](../images/module02/02.48-policy-select.png)
 
-4. Search for your **account name**, select your account name from the **search results**, then click **Select**.
+4. Search for **odl-user**, select the account name from the **search results**, then click **Select**.
 
-    ![Search Principal](../images/module02/02.77-principal-select.png)
+    ![Search Principal](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/principal.png)
 
 5. Under **Secret permissions**, click **Select all**.
 
@@ -65,8 +55,6 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 7. Click **Save**.
 
     ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
-
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
 
 ## 2. Key Vault Access Policy #2 (Grant Azure Purview Access)
 
@@ -100,8 +88,6 @@ In this next step, we are creating a second access policy which will provide Azu
 
     ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
 ## 3. Generate a Secret
 
 In order to securely store our Azure SQL Database password, we need to generate a secret.
@@ -122,8 +108,6 @@ In order to securely store our Azure SQL Database password, we need to generate 
     ```
 
     ![Create Secret](../images/module02/02.56-vault-sqlsecret.png)
-
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
 
 ## 4. Add Credentials to Azure Purview
 
@@ -177,8 +161,6 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![](../images/module02/02.63-credentials-create.png)
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
 ## 5. Register a Source (Azure SQL DB)
 
 1. Open Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
@@ -192,8 +174,6 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 3. Select the **Azure subscritpion**, **Server name**, and **Collection**. Click **Register**.
 
     ![](../images/module02/02.44-register-azuresql.png)
-
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
 
 ## 6. Scan a Source with Azure Key Vault Credentials
 
@@ -229,17 +209,13 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![](../images/module02/02.71-sqlscan-refresh.png)
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
 ## 7. View Assets
 
 1. To view the assets that have materialised as an outcome of running the scans, perform a wildcard search by typing the asterisk character (`*`) into the search bar and hitting the Enter key to submit the query and return the search results.
 
     ![](../images/module02/02.72-search-wildcard.png)
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -259,12 +235,8 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     A ) Technical Metadata (e.g. Fully Qualified Name, Path, Schema, etc)  
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
-    C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)  
+    C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)
 
-<div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
-
-[Continue >](../modules/module03.md)

@@ -1,18 +1,10 @@
 # Module 03 - Search & Browse
 
-[< Previous Module](../modules/module02b.md) - **[Home](../README.md)** - [Next Module >](../modules/module04.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-* An Azure Purview catalog with some assets (see [module 02](../modules/module02.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 Once sources have been registered and scanned, the underlying data catalog will begin to populate with assets that represent real-world objects (e.g. a table in an Azure SQL Database, a Power BI report, etc.) The surfacing of these assets via Azure Purview's search experience helps empower data consumers to find data assets that matters to them.
 
-## :dart: Objectives
+## Objectives
 
 * Search the catalog by keyword.
 * Browse the catalog by source.
@@ -26,8 +18,6 @@ Once sources have been registered and scanned, the underlying data catalog will 
 3. [Browse Assets](#3-browse-assets)
 4. [Bulk Edit](#4-bulk-edit)
 
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
-
 ## 1. Search Catalog
 
 1. Open Purview Studio and from the **Data catalog** screen, type the asterisk character (**\***) into the search bar and hit **Enter**.
@@ -39,11 +29,9 @@ Once sources have been registered and scanned, the underlying data catalog will 
     ![Filter by Classification](../images/module03/03.02-search-filter.png)
 
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > While **Purview Studio** is provided as the default user experience, customers and partners can interface with the underlying platform using the [Azure Purview REST API](https://docs.microsoft.com/en-us/rest/api/purview/). The openness of the platform enables the possibility of integrating Azure Purview with custom user interfaces as well as the ability to perform read/write operations programmatically. 
-
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
 ## 2. Update an Asset
 
@@ -65,7 +53,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
@@ -98,7 +86,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 5. Navigate to the **Contacts** tab and set someone within your organization to be an **Expert** and an **Owner**. Click **Save**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Assets can be related to two different types of contacts. **Experts** are often business process or subject matter experts. Where as **Owners** are often senior executives or business area owners that define governance or business processes over certain data areas.
     >
@@ -109,8 +97,6 @@ Once sources have been registered and scanned, the underlying data catalog will 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
     ![Related Assets](../images/module03/03.08-asset-related.png)
-
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
 ## 3. Browse Assets
 
@@ -131,8 +117,6 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 4. Select a **container** (e.g. `raw`).
 
     ![ADLS Gen2 Container](../images/module03/03.12-browse-container.png)
-
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
 ## 4. Bulk Edit
 
@@ -159,9 +143,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
 
     ![Deselect](../images/module03/03.16-bulk-deselect.png)
 
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q03](http://aka.ms/purviewlab/q03)
 
@@ -191,12 +173,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
     A ) Expert  
     B ) Owner  
     C ) Reader  
-
-<div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
-
-
-## :tada: Summary
+    
+## Summary
 
 This module provided an overview of how to search, browse, and update assets.
-
-[Continue >](../modules/module04.md)
