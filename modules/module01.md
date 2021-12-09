@@ -1,7 +1,5 @@
 # Module 01 - Create an Azure Purview Account
 
-[< Previous Module](../modules/module00.md) - **[Home](../README.md)** - [Next Module >](../modules/module02a.md)
-
 ## Introduction
 
 To create and use the Azure Purview platform, you will need to provision an Azure Purview account.
@@ -17,8 +15,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 | --- | --- | --- |
 | 1 | [Create an Azure Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
 | 2 | [Grant Access to Azure Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
-
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
 
 ## 1. Create an Azure Purview Account
 
@@ -68,8 +64,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Go to resource](../images/module01/_01.06-goto-resource.png)
 
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
-
 ## 2. Grant Access to Azure Purview's Data Plane
 
 1. Navigate to your Azure Purview account and click **Open** within the **Open Purview Studio** tile.
@@ -110,8 +104,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     | Data Curator || `Read/Write` |  | Access to catalog (read & write). |
     | Data Source Admin |  || `Read/Write` | Manage data sources and data scans. |
 
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
-
 ## Knowledge Check
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
@@ -140,10 +132,6 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     B ) Purview Data Curator  
     C ) Purview Data Source Administrator
 
-<div align="right"><a href="#module-01---create-an-azure-purview-account">↥ back to top</a></div>
-
 ## Summary
 
 This module provided an overview of how to provision an Azure Purview account using the Azure Portal and how to grant the appropriate level of access to Azure Purview's data plane.
-
-[Continue >](../modules/module02a.md)
