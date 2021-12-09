@@ -2,17 +2,17 @@
 
 [< Previous Module](../modules/module02b.md) - **[Home](../README.md)** - [Next Module >](../modules/module04.md)
 
-## :thinking: Prerequisites
+## Prerequisites
 
 * An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
 * An Azure Azure Purview account (see [module 01](../modules/module01.md)).
 * An Azure Purview catalog with some assets (see [module 02](../modules/module02.md)).
 
-## :loudspeaker: Introduction
+## Introduction
 
 Once sources have been registered and scanned, the underlying data catalog will begin to populate with assets that represent real-world objects (e.g. a table in an Azure SQL Database, a Power BI report, etc.) The surfacing of these assets via Azure Purview's search experience helps empower data consumers to find data assets that matters to them.
 
-## :dart: Objectives
+## Objectives
 
 * Search the catalog by keyword.
 * Browse the catalog by source.
@@ -161,7 +161,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
 
 <div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q03](http://aka.ms/purviewlab/q03)
 
@@ -195,7 +195,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
 <div align="right"><a href="#module-03---search--browse">↥ back to top</a></div>
 
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to search, browse, and update assets.
 
