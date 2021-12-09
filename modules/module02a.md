@@ -77,11 +77,11 @@ Before proceeding with the following steps, you will need to:
     
 4. Go to the **desktop** and Open the **Azure Storage Explorer** application.
 
-   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/stg1.png)
+   ![](../images/module02/stg1.png)
    
 5. Select **Subcription** and sign in using **odl_user** credentials from the **Environment Details** page.
 
-   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/stg2.png) 
+   ![](../images/module02/stg2.png) 
 
 6. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
