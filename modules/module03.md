@@ -2,12 +2,6 @@
 
 [< Previous Module](../modules/module02b.md) - **[Home](../README.md)** - [Next Module >](../modules/module04.md)
 
-## Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-* An Azure Purview catalog with some assets (see [module 02](../modules/module02.md)).
-
 ## Introduction
 
 Once sources have been registered and scanned, the underlying data catalog will begin to populate with assets that represent real-world objects (e.g. a table in an Azure SQL Database, a Power BI report, etc.) The surfacing of these assets via Azure Purview's search experience helps empower data consumers to find data assets that matters to them.
@@ -39,7 +33,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     ![Filter by Classification](../images/module03/03.02-search-filter.png)
 
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > While **Purview Studio** is provided as the default user experience, customers and partners can interface with the underlying platform using the [Azure Purview REST API](https://docs.microsoft.com/en-us/rest/api/purview/). The openness of the platform enables the possibility of integrating Azure Purview with custom user interfaces as well as the ability to perform read/write operations programmatically. 
 
