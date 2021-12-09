@@ -1,7 +1,5 @@
 # Module 07 - Insights
 
-[< Previous Module](../modules/module06.md) - **[Home](../README.md)** - [Next Module >](../modules/module08.md)
-
 ```diff
 !                               << PLEASE READ BEFORE PROCEEDING >>                                
 !                                                                                                  
@@ -13,13 +11,7 @@
 ! of insights that can be gleaned from a fully populated environment.                              
 ```
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-* Set up and complete a scan (see [module 02](../modules/module02.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 Insights provides customers, a single pane of glass view into their catalog and further aims to provide specific insights to the data source administrators, business users, data stewards, data officer, and security administrators. Azure Purview currently has the following reports available:
 
@@ -29,7 +21,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 * Classification
 * Sensitivity Labels
 
-## :dart: Objectives
+## Objectives
 
 * Understand the different types of insights that can be gleaned from the out of the box reporting.
 
@@ -40,8 +32,6 @@ Insights provides customers, a single pane of glass view into their catalog and 
 3. [Glossary Insights](#3-glossary-insights)
 4. [Classification Insights](#4-classification-insights)
 5. [Sensitivity Labels Insights](#5-sensitivity-labels-insights)
-
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
 ## 1. Asset Insights
 
@@ -71,11 +61,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Assets Graph 03](../images/module07/07.05-assets-graph03.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Using the quick filters on the **Asset count by source type** graph and drilling into the details by clicking **View details**, is a quick and easy way of identifying which sources contain certain types of data.
-
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
 ## 2. Scan Insights
 
@@ -97,11 +85,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Scan Graph 01](../images/module07/07.08-scans-graph01.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Clicking **View details** on the **Scan Status** graph will show scans that have occurred over the last 30 days with aggregated counts by status (Success, Failed, Canceled). Drilling further by clicking on a scan name will reveal the scan run history with quick action buttons to edit, delete, or run.
-
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
 ## 3. Glossary Insights
 
@@ -130,11 +116,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Glossary Graph 03](../images/module07/07.13-glossary-graph03.png)
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > Terms are considered **incomplete** if they are missing a definition, expert, or steward. If a term is missing more than one of these things, it is shown as **Missing multiple items**.
-
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
 
 ## 4. Classification Insights
 
@@ -169,13 +153,11 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Classification Graph 04](../images/module07/07.19-classification-graph04.png)
 
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
-
 ## 5. Sensitivity Labels Insights
 
 1. Open Purview Studio, navigate to **Insights** > **Sensitivity Labels**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Sensitivity labels** state how sensitive data is in your organization. For example, data contained within a particular asset might be `highly confidential`. **Classifications** on the other hand indicate the type of data values (e.g. Driver's License Number, Email Address, SWIFT Code, etc) 
     >
@@ -210,9 +192,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Sensitivity Labels Graph 04](../images/module07/07.25-labels-graph04.png)
 
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q07](http://aka.ms/purviewlab/q07)
 
@@ -233,10 +213,6 @@ Insights provides customers, a single pane of glass view into their catalog and 
     B ) Category  
     C ) Sensitivity Label
 
-<div align="right"><a href="#module-07---insights">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to glean insights on Assets, Scans, Glossary Terms, Classifications and Sensitivity Labels across your data estate.
-
-[Continue >](../modules/module08.md)
