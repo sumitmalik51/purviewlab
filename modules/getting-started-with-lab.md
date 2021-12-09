@@ -11,15 +11,15 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. Once the environment is provisioned, a virtual machine and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
-    ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/AzureNetSolStartpage.png?raw=true)
+   ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/AzureNetSolStartpage.png?raw=true)
 
 1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration.
 
-    ![](../images/getting-started-with-lab/envdetails.png)
+   ![](../images/getting-started-with-lab/envdetails.png)
     
 1. You can also open the Lab Guide in a separate full window by selecting the **Split Window** icon at the bottom right corner.
 
-    ![](../images/getting-started-with-lab/split.png) 
+   ![](../images/getting-started-with-lab/split.png) 
 
 ## Task 1: Log in to Azure Portal and verify the pre-deployed resources
 
