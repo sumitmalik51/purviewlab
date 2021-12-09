@@ -2,21 +2,21 @@
 
 [< Previous Module](../modules/module02a.md) - **[Home](../README.md)** - [Next Module >](../modules/module03.md)
 
-## :thinking: Prerequisites
+## Prerequisites
 
 * An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
 * An Azure SQL Database (see [module 00](../modules/module00.md)).
 * An Azure Azure Purview account (see [module 01](../modules/module01.md)).
 
-## :loudspeaker: Introduction
+## Introduction
 
 To populate Azure Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Azure Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
 
-## :dart: Objectives
+## Objectives
 
 * Register and scan an Azure SQL Database using SQL authentication credentials stored in Azure Key Vault.
 
-##  :bookmark_tabs: Table of Contents
+## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -239,7 +239,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 <div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -263,7 +263,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 <div align="right"><a href="#module-02b---register--scan-azure-sql-db">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
 
