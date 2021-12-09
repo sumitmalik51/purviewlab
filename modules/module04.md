@@ -2,16 +2,11 @@
 
 [< Previous Module](../modules/module03.md) - **[Home](../README.md)** - [Next Module >](../modules/module05.md)
 
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :loudspeaker: Introduction
+## Introduction
 
 A glossary is an important tool for maintaining and organizing your catalog. You build your glossary by defining new terms or importing a term list and then applying those terms to your assets.
 
-## :dart: Objectives
+## Objectives
 
 * Create a Term in the Glossary using the System Default Term Template.
 * Create a Term in the Glossary using a Custom Term Template.
@@ -245,7 +240,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 <div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q04](http://aka.ms/purviewlab/q04)
 
@@ -267,7 +262,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 <div align="right"><a href="#module-04---glossary">↥ back to top</a></div>
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create, export, and import terms into the Azure Purview glossary.
 
