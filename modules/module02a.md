@@ -74,28 +74,36 @@ Before proceeding with the following steps, you will need to:
 3. Click **Extract**.
 
     ![Extract](../images/module02/02.11-explorer-extract.png)
+    
+4. Go to the **desktop** and Open the **Azure Storage Explorer** application.
 
-4. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/stg1.png)
+   
+5. Select **Subcription** and sign in using **odl_user** credentials from the **Environment Details** page.
+
+   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/stg2.png) 
+
+6. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
     ![Create Blob Container](../images/module02/02.12-explorer-container.png)
 
-5. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
+7. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
 
     ![Upload Folder](../images/module02/02.13-explorer-upload.png)
 
-6. Click on the **ellipsis** to select a folder.
+8. Click on the **ellipsis** to select a folder.
 
     ![Browse](../images/module02/02.14-explorer-browse.png)
 
-7. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
+9. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
 
     ![Folder](../images/module02/02.15-explorer-folder.png)
 
-8. Click **Upload**.
+10. Click **Upload**.
 
     ![Upload](../images/module02/02.16-explorer-data.png)
 
-9. Monitor the **Activities** until the transfer is complete.
+11. Monitor the **Activities** until the transfer is complete.
 
     ![Transfer Complete](../images/module02/02.17-explorer-transfer.png)
 
