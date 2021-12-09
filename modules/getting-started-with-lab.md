@@ -1,3 +1,10 @@
+# Getting Started with Azure 
+Duration: 5 mins
+
+## Overview
+
+In this exercise, you will log in to the Azure Portal and review the pre-deployed resources as part of the lab environment.
+
 ## Task 1: Log in to Azure Portal and verify the pre-deployed resources
 
 1. Let us start by logging into the Azure Portal to check the resources deployed for the lab environment. In the virtual machine (VM) on the left, click on the Azure portal desktop icon as shown below.
