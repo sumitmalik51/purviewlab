@@ -42,7 +42,7 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 4. Search for **odl-user**, select the account name from the **search results**, then click **Select**.
 
-    ![Search Principal](https://github.com/Shivashant25/purviewlab/blob/main/images/module02/principal.png)
+    ![Search Principal](../images/module02/principal.png)
 
 5. Under **Secret permissions**, click **Select all**.
 

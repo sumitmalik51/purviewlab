@@ -43,13 +43,13 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. On the **Sign in to Microsoft Azure** window, you will see the login screen, enter the following username and click on **Next**.
 
-   * Email/Username: <inject key="Username"></inject>
+   * Email/Username: <inject key="AzureUserName"></inject>
 
    ![](../images/getting-started-with-lab/M2-Ex1-portalsignin-1.png)
 
 1. Now enter the following password and click on **Sign in**. 
 
-   * Password: <inject key="Password"></inject>
+   * Password: <inject key="AzurePassword"></inject>
    
    ![](../images/getting-started-with-lab/M2-Ex1-portalsignin-2.png)
 
