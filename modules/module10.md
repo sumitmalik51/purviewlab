@@ -1,17 +1,6 @@
 # Module 10 - REST API
 
-[< Previous Module](../modules/module09.md) - **[Home](../README.md)** - [Next Module >](../modules/module11.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :hammer: Tools
-
-* [Postman](https://www.postman.com/product/rest-client/) (Download and Install)
-
-## :loudspeaker: Introduction
+## Introduction
 
 While Purview Studio is the default method of interfacing with Azure Purview, the underlying platform can be accessed via a set of API's. This opens up the possibility of a variety of scenarios including:  
   * Working with Azure Purview assets programmatically (e.g. bulk create/read/update/delete).
@@ -22,7 +11,7 @@ While Purview Studio is the default method of interfacing with Azure Purview, th
 
 The primary focus of this module is the **catalog** which is based on the open-source [Apache Atlas](https://atlas.apache.org/) project. Read below for more details on Apache Atlas and how it relates to Azure Purview.
 
-## :dart: Objectives
+## Objectives
 
 * Understand the high-level Apache Atlas concepts.
 * Generate an access token.
@@ -37,12 +26,9 @@ The primary focus of this module is the **catalog** which is based on the open-s
 5. [Get an Access Token](#5-get-an-access-token)
 6. [Read data from Azure Purview](#6-read-data-from-azure-purview)
 
-
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
 ## 1. Apache Atlas
 
-> :world_map: **What is Apache Atlas?**
+> **What is Apache Atlas?**
 >
 > *"Apache Atlas provides open metadata management and governance capabilities for organizations to build a catalog of their data assets, classify and govern these assets and provide collaboration capabilities around these data assets for data scientists, analysts and the data governance team."* 
 >
@@ -625,13 +611,11 @@ Returns lineage information about an entity (e.g. `Azure Data Factory Copy Activ
 
 Note: While Azure Purview is using Apache Atlas, there are certain areas such as Discovery which is responsible for search, where Azure Purview has deviated and implemented a custom search API.
 
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
 ## 2. Register an Application
 
 To invoke the REST API, we must first register an application (i.e. service principal) that will act as the identity that the Azure Purview platform reognizes and is configured to trust.    
 
-> :bulb: **Did you know?**
+> **Did you know?**
 >
 > An Azure **service principal** is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
 
@@ -656,8 +640,6 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/10.03-spn-copy.png)
 
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
 ## 3. Generate a Client Secret
 
 1. Navigate to **Certifications & secrets** and click **New client secret**.
@@ -676,13 +658,11 @@ To invoke the REST API, we must first register an application (i.e. service prin
 3. **Copy** the client secret value for later use.
 
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > A **client secret** is a secret string that the application uses to prove its identity when requesting a token, this can also can be referred to as an application password.
 
     ![](../images/module10/10.06-secret-copy.png)
-
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
 ## 4. Provide Service Principal Access to Azure Purview
 
@@ -694,13 +674,11 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/10.15-spn-add.png)
 
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
 ## 5. Get an Access Token
 
 1. Open [Postman](https://www.postman.com/product/rest-client/), create a new **HTTP request** as per the details below.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > The OAuth2 service endpoint is used to gain access to protected resources such as Azure Purview. The HTTP request enables us to acquire an `access_token`, this will subsequently be used to query the Azure Purview API.
     
@@ -720,8 +698,6 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | resource | `https://purview.azure.net` |
 
     ![](../images/module10/10.09-postman-login.png)
-
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
 ## 6. Read data from Azure Purview
 
@@ -753,16 +729,13 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 4. If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > While Azure Purview provides a number of system built type definitions for a variety of object types, Customers can use the API to create their own custom type definitions.
 
     ![](../images/module10/10.12-typedef-search.png)
 
-
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q10](http://aka.ms/purviewlab/q10)
 
@@ -782,10 +755,6 @@ To invoke the REST API, we must first register an application (i.e. service prin
     A ) True  
     B ) False  
 
-<div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 In this module, you learned how to get started with the Azure Purview REST API. To learn more about the Azure Purview REST API, check out the Azure Purview [Swagger documentation](https://github.com/Azure/Purview-Samples/raw/master/rest-api/PurviewCatalogAPISwagger.zip).
-
-[Continue >](../modules/module11.md)
