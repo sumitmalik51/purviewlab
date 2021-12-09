@@ -5,11 +5,27 @@ Duration: 5 mins
 
 In this exercise, you will log in to the Azure Portal and review the pre-deployed resources as part of the lab environment.
 
+## Instructions
+
+### Getting Started with Lab
+
+1. Once the environment is provisioned, a virtual machine and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
+
+    ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/AzureNetSolStartpage.png?raw=true)
+
+1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided at registration.
+
+    ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/envdetails.png)
+    
+1. You can also open the Lab Guide in a separate full window by selecting the **Split Window** icon at the bottom right corner.
+
+    ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/split.png) 
+
 ## Task 1: Log in to Azure Portal and verify the pre-deployed resources
 
 1. Let us start by logging into the Azure Portal to check the resources deployed for the lab environment. In the virtual machine (VM) on the left, click on the Azure portal desktop icon as shown below.
 
-   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/gs4.png?raw=true)
+   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/windows1.png)
    
 1. When you click on Azure portal, the edge browser welcome screen will come up, select **Get started**.
 
@@ -27,13 +43,13 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. On the **Sign in to Microsoft Azure** window, you will see the login screen, enter the following username and click on **Next**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: <inject key="Username"></inject>
 
    ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/M2-Ex1-portalsignin-1.png)
 
 1. Now enter the following password and click on **Sign in**. 
 
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Password: <inject key="Password"></inject>
    
    ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/M2-Ex1-portalsignin-2.png)
 
@@ -47,7 +63,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. Now you can see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/resourcegroups.png)
+   ![](https://github.com/Shivashant25/purviewlab/blob/main/images/getting-started-with-lab/rgs.png)
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
 
