@@ -1,22 +1,10 @@
 # Module 05 - Classifications
 
-[< Previous Module](../modules/module04.md) - **[Home](../README.md)** - [Next Module >](../modules/module06.md)
-
-## :thinking: Prerequisites
-
-* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
-* An Azure Data Lake Storage Gen2 Account (see [module 00](../modules/module00.md)).
-* An Azure Azure Purview account (see [module 01](../modules/module01.md)).
-
-## :hammer: Tools
-
-* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
-
-## :loudspeaker: Introduction
+## Introduction
 
 Azure Purview provides a large set of default classifications that represent typical data types that might exist in your data estate (e.g. email address, credit card number, passport number, etc). You also have the ability to create custom classifications if any of the default classifications don't meet your needs.
 
-## :dart: Objectives
+## Objectives
 
 * Create a custom classification.
 * Trigger a scan that will apply the custom classification to an asset.
@@ -29,8 +17,6 @@ Azure Purview provides a large set of default classifications that represent typ
 4. [Upload Data to an Azure Data Lake Storage Gen2 Account](#4-upload-data-to-an-azure-data-lake-storage-gen2-account)
 5. [Scan an Azure Data Lake Storage Gen2 Account](#5-scan-an-azure-data-lake-storage-gen2-account)
 6. [Search by Classification](#6-search-by-classification)
-
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
 
 ## 1. Create a Classification
 
@@ -55,8 +41,6 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Create Classification](../images/module05/05.03-classifications-custom.png)
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
 ## 2. Create a Custom Classification Rule (Regular Expression)
 
 1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
@@ -73,7 +57,7 @@ Azure Purview provides a large set of default classifications that represent typ
     | State | `Enabled` |
     | Type | `Regular Expression` |
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > There are two types of classification rules. **Regular Expression** performs pattern matching against the actual data and/or column name. Where as **Dictionary** based classification rules allows us to supply a list of all possible values via a CSV or TSV file.
 
@@ -85,7 +69,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 5. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Thresholds** help minimise the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
 
@@ -100,13 +84,11 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Create Classification Rule](../images/module05/05.07-regex-create.png)
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
 ## 3. Create a Scan Rule Set
 
 1. Navigate to **Data map** > **Scan rule sets** (under Source management) and click **New**.
 
-    > :bulb: **Did you know?**
+    > **Did you know?**
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
@@ -133,8 +115,6 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Scan Rule Set Classification](../images/module05/05.11-scanruleset-rules.png)
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
 
 Before proceeding with the following steps, you will need to:
@@ -146,27 +126,25 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**. 
 
-1. Navigate to your Azure Data Lake Storage Gen2 Account, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
+2. Navigate to your Azure Data Lake Storage Gen2 Account, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
 
     ![Open Container](../images/module05/05.12-explorer-container.png)
 
-2. Click on the **New Folder** button, provide the folder a name (e.g. `Twitter`) and click **OK**.
+3. Click on the **New Folder** button, provide the folder a name (e.g. `Twitter`) and click **OK**.
 
     ![New Folder](../images/module05/05.13-explorer-folder.png)
 
-3. Right-click on the newly created folder and click **Open**.
+4. Right-click on the newly created folder and click **Open**.
 
    ![Open Folder](../images/module05/05.14-explorer-openfolder.png)
 
-4. Click on the **Upload** button and select **Upload Files...**.
+5. Click on the **Upload** button and select **Upload Files...**.
 
     ![Upload File](../images/module05/05.15-explorer-upload.png)
 
-5. Select the local copy of **twitter_handles.parquet** and click **Upload**.
+6. Select the local copy of **twitter_handles.parquet** and click **Upload**.
 
     ![Upload Parquet](../images/module05/05.16-explorer-parquet.png)
-
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
 
 ## 5. Scan an Azure Data Lake Storage Gen2 Account
 
@@ -210,8 +188,6 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
     ![Scan Progress](../images/module05/05.26-source-progress.png)
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
 ## 6. Search by Classification
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
@@ -230,9 +206,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
     ![Asset Schema](../images/module05/05.30-asset-schema.png)
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 [http://aka.ms/purviewlab/q05](http://aka.ms/purviewlab/q05)
 
@@ -252,10 +226,6 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
     A ) True  
     B ) False  
 
-<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
-
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to create a custom classification, and how to have the classification automatically applied as part of a scan using a custom scan rule set.
-
-[Continue >](../modules/module06.md)
