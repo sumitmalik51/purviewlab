@@ -92,7 +92,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     >
     > For assets in which you are tagged as a **Contact**, these will appear on the home screen (Data catalog), under **My items**.
 
-    ![Update Contacts](../images/module03/03.07-asset-contacts.png)
+    ![Update Contacts](../images/module03/03.07-asset-contacts.1.png)
 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
@@ -137,7 +137,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
 
 4. Set the **Attribute** to `Owner`, set **Operation** to `Add`, select one or more users in your organization, and click **Apply**.
  
-    ![Apply Changes](../images/module03/03.15-bulk-apply.png)
+    ![Apply Changes](../images/module03/03.15-bulk-apply.1.png)
 
 5. Click **Deselect all and close**.
 
