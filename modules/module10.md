@@ -675,7 +675,16 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 ## 5. Get an Access Token
 
-1. Open [Postman](https://www.postman.com/product/rest-client/), create a new **HTTP request** as per the details below.
+ 
+1. Right-click on the Windows Start Menu and select **Windows PowerShell (Admin)** to launch a terminal window. Then, run the below coammnd to install Postman.
+ 
+   ```
+   choco install postman -y -force
+   ```
+ 
+1. Go to Start button in the VM, search for **Postman** and select **Postman** to open it.
+ 
+1. Now, click on **Skip and go to the app** to skip the account creation and create a new **HTTP request** as per the details below.
 
     > **Did you know?**
     >
