@@ -665,7 +665,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 ## 4. Provide Service Principal Access to Azure Purview
 
-1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION**, and then click **Add data curators**.
+1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION** > **Role Assignments**, and then click **Add data curators**.
 
     ![](../images/module10/10.14-spn-role.png)
 
