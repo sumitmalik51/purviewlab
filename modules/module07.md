@@ -1,7 +1,8 @@
 # Module 07 - Insights
 
 
-### PLEASE READ BEFORE PROCEEDING                                
+
+#### PLEASE READ BEFORE PROCEEDING                                
                                                                                                   
 * Insights within Azure Purview can take several hours to surface post the completion of a scan. 
 * At this point of the workshop, only a limited number of data visualisations may be populated.  
