@@ -28,7 +28,7 @@ To invoke the install the self-hosted integration runtime, we must first log int
    ![](../images/module11/shir-install-14.png)
    ![](../images/module11/shir-install-15.png)
 
-3. You will need to access the SQL username and password generated when deploying the lab environment from [module 00](../modules/module00.md). To find these details, navigate to the resource group in the [Azure portal](https://portal.azure.com/). Under '**Settings > Deployments**', click on '**SQLVMDeployment**'.
+3. Navigate to the **Purviewlab-rg** resource group in the Azure portal to access the generated SQL username and password. Under '**Settings > Deployments**', click on '**SQLVMDeployment**'.
 
    ![](../images/module11/shir-install-19b.png)
    ![](../images/module11/shir-install-19.png)
@@ -60,7 +60,7 @@ To invoke the install the self-hosted integration runtime, we must first log int
 >
 > Self-hosted Integration Runtime (SHIR) is an implementation of IR that is installed on an on-premises machine or virtual machine within a virtual network.
 
-1. In the virtual machine, open the browser and navigate to the [integration runtime download page](https://www.microsoft.com/en-us/download/confirmation.aspx?id=39717). If the download doesn't start automatically, download the latest version of the integraion runtime from the list presented. Click '**Run**' when the download begins.
+1. In the virtual machine, open the browser and navigate to this URL `https://www.microsoft.com/en-us/download/confirmation.aspx?id=39717` to download the integration runtime. If the download doesn't start automatically, download the latest version of the integraion runtime from the list presented. Click '**Run**' when the download begins.
 
    ![](../images/module11/shir-install-22.png)
    ![](../images/module11/shir-install-23.png)
