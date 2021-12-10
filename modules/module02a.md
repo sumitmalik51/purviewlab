@@ -79,31 +79,40 @@ Before proceeding with the following steps, you will need to:
 
    ![](../images/module02/stg1.png)
    
-5. Select **Subcription** and sign in using **odl_user** credentials from the **Environment Details** page.
+5. Select **Account Managment** and click on **Add an account** to add the account. 
+
+   ![](../images/module02/stg1.1.png)
+ 
+6. On the **Select Resource** blade, select **Subcription** and sign in using the below credentials.
+
+      * Email/Username: <inject key="AzureAdUserEmail"></inject>
+      * Password: <inject key="AzureAdUserPassword"></inject>
 
    ![](../images/module02/stg2.png) 
 
-6. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+    > You can also find the credentials from the **Environment Details** page
+    
+7. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
     ![Create Blob Container](../images/module02/02.12-explorer-container.png)
 
-7. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
+8. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
 
     ![Upload Folder](../images/module02/02.13-explorer-upload.png)
 
-8. Click on the **ellipsis** to select a folder.
+9. Click on the **ellipsis** to select a folder.
 
     ![Browse](../images/module02/02.14-explorer-browse.png)
 
-9. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
+10. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and click **Select Folder**.
 
     ![Folder](../images/module02/02.15-explorer-folder.png)
 
-10. Click **Upload**.
+11. Click **Upload**.
 
     ![Upload](../images/module02/02.16-explorer-data.png)
 
-11. Monitor the **Activities** until the transfer is complete.
+12. Monitor the **Activities** until the transfer is complete.
 
     ![Transfer Complete](../images/module02/02.17-explorer-transfer.png)
 
