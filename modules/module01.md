@@ -72,7 +72,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Add Role Assignment](../images/module01/Mod1-purview07.png)
 
-3. Select **Collections** and click on **Role assignments**.
+3. Select **Collections (1)** and click on **Role assignments (2)**.
 
     ![Collections](../images/module01/Mod1-purview08.png)
 
