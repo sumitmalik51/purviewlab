@@ -87,12 +87,14 @@ Before proceeding with the following steps, you will need to:
 
    ![](../images/module02/stg1.1.png)
  
-6. On the **Select Resource** blade, select **Subcription** and sign in using the below credentials.
+6. On the **Select Resource** blade, select **Subcription**.
+
+7. On the **select Azure Environment** page, select **Azure** and click on **Next**. Sign in using the below credentials.
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../images/module02/stg2.png) 
+   ![](../images/module02/Mod2A-purview8.png) 
 
     > You can also find the credentials from the **Environment Details** page
     
