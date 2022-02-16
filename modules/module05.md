@@ -138,7 +138,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 2. Navigate to your Azure Data Lake Storage Gen2 Account, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
 
-    ![Open Container](../images/module05/05.12-explorer-container.png)
+    ![Open Container](../images/module05/blob.png)
 
 3. Click on the **New Folder** button, provide the folder a name (e.g. `Twitter`) and click **OK**.
 
