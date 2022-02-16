@@ -126,7 +126,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     Marketing
     ```
 
-9. From the **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
+9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
     ![](../images/module04/04.11-glossary-table.png)
     
