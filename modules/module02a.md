@@ -132,9 +132,9 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
-    ![New Collection](../images/module02/02.18-sources-collection.png)
+    ![New Collection](../images/module02/Mod2A-purview9.png)
 
-2. Provide the collection a **Name** (e.g. Contoso) and click **Create**.
+2. Provide the collection as **Contoso** and click **Create**.
 
     ![New Collection](../images/module02/02.76-collection-create.png)
 
@@ -142,7 +142,7 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
-    ![Register](../images/module02/02.20-sources-register.png)
+    ![Register](../images/module02/Mod2A-purview10.png)
 
 2. Select **Azure Data Lake Storage Gen2** and click **Continue**.
 
@@ -160,7 +160,7 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/02.23-scan-new.png)
+    ![New Scan](../images/module02/Mod2A-purview11.png)
 
 2. Click **Test connection** to ensure the Azure Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
@@ -188,21 +188,21 @@ Before proceeding with the following steps, you will need to:
 
 7. To monitor the progress of the scan run, click **View Details**.
 
-    ![View Details](../images/module02/02.29-sources-details.png)
+    ![View Details](../images/module02/Mod2A-purview12.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![Monitor Scan](../images/module02/02.30-sources-refresh.png)
+    ![Monitor Scan](../images/module02/Mod2A-purview13.png)
 
 ## 6. View Assets
 
 1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
 
-    ![](../images/module02/02.80-wildcard-search.png)
+    ![](../images/module02/Mod2A-purview14.png)
 
 2. You should be able to see a list of assets within the search results, which is a result of the scan.
 
-    ![](../images/module02/02.72-search-wildcard.png)
+    ![](../images/module02/Mod2A-purview15.png)
 
 ## Knowledge Check
 
