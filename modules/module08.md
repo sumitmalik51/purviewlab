@@ -35,7 +35,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     >
     > **Monitoring Reader** role can view all monitoring data but cannot modify any resource or edit any settings related to monitoring resources. This role is appropriate for users in an organization such as Azure Purview administrators.
 
-    ![Assign Role](../images/module08/08.03-access-assign,1.png)
+    ![Assign Role](../images/module08/roleassignment.png)
 
 4. Click **Review + assign** to progress to the final screen, then click **Review + assign** once more to add the role assignment.
 
