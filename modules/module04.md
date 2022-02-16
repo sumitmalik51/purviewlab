@@ -26,11 +26,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/04.00-manage-glossary.png)
+    ![](../images/module04/Mod4-purview1.png)
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/04.01-glossary-new.png)
+    ![New Glossary Term](../images/module04/Mod4-purview2.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -42,7 +42,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 4. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
 
-    ![New Term](../images/module04/04.03-term-create.png)
+    ![New Term](../images/module04/Mod4-purview3.png)
 
     **Status**
     ```
