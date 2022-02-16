@@ -26,13 +26,13 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 3. Provide the below inputs on the **Basics** tab.  
 
-    > Note: Replace the **DID** with the **Deployment Id** from the Environemnt Details Page.
+    > Note: Replace the **{randomId}** with the **Deployment Id** from the Environemnt Details Page.
 
     | Parameter  | Example Value |
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
     | Resource group | `purviewlab-rg` |
-    | Purview account name | `pvlab-[DID]-pv` |
+    | Purview account name | `pvlab-{randomId}-pv` |
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
