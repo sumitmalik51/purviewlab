@@ -33,29 +33,33 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 > 
 > In this module we will walk through how to grant the Azure Purview Managed Identity the necessary access to successfully configure and run a scan.
 
-1. Navigate to your Azure Data Lake Storage Gen2 account (e.g. `pvlab{randomId}adls`) and select **Access Control (IAM)** from the left navigation menu.
+1. Navigate to the **purviewlab-rg** resource group, and then go to `pvlab{randomId}adls` storage account.
 
-    ![Azure Purview](../images/module02/02.06-storage-access.png)
+    ![Azure Purview](../images/module02/Mod2A-purview1.png)
 
-2. Click **Add role assignments**.
+2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
 
-    ![Azure Purview](../images/module02/02.07-storage-addrole.png)
+    ![Azure Purview](../images/module02/Mod2A-purview2.png)
 
-3. Filter the list of roles by searching for `Storage Blob Data Reader`, click the row to select the role, and then click **Next**.
+3. Filter the list of roles by searching for **Storage Blob Data Reader (1)**, click the row to select the role, and then click **Next (2)**.
 
-    ![Access Control Role](../images/module02/02.08-access-role.png)
+    ![Access Control Role](../images/module02/Mod2A-purview3.png)
 
-4. Under **Assign access to**, select **Managed identity**, click **+ Select members**, select **Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Azure Purview account (e.g. `pvlab-{randomId}-pv`), click **Select**. Finally, click **Review + assign**.
+4. Under **Assign access to**, select **Managed identity (1)** and click **+ Select members (2)**. 
 
-    ![Access Control Members](../images/module02/02.09-access-members.png)
+    ![Access Control Members](../images/module02/Mod2A-purview4.png)
+    
+5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity `pvlab-{randomId}-pv`**(2)**, click **Select (3)**. Finally, click **Review + assign**.
+   
+    ![Access Control Members](../images/module02/Mod2A-purview5.png)
 
-5. Click **Review + assign** once more to perform the role assignment.
+6. Click **Review + assign** once more to perform the role assignment.
 
-    ![Access Control Assign](../images/module02/02.10-access-assign.png)
+    ![Access Control Assign](../images/module02/Mod2A-purview7.png)
 
-4. To confirm the role has been assigned, navigate to the **Role assignments** tab and filter the **Scope** to `This resource`. You should be able to see that the Azure Purview managed identity has been granted the **Storage Blob Data Reader** role.
+7. To confirm the role has been assigned, navigate to the **Role assignments (1)** tab and filter the **Scope (2)** to `This resource`. You should be able to see that the Azure Purview managed identity has been granted the **Storage Blob Data Reader (3)** role.
 
-    ![Role Assignment](../images/module02/02.11-role-assignment.png)
+    ![Role Assignment](../images/module02/Mod2A-purview6.png)
 
 ## 2. Upload Data to Azure Data Lake Storage Gen2 Account
 
