@@ -117,9 +117,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Scan Rule Set File Type](../images/module05/05.10-scanruleset-filetype.png)
 
-4. Clear all selected **System rules** and select the custom classification rule **twitter_handle** and click **Create**.
+4. Clear all selected **System rules** and select the custom classification rule **twitter_handle** and click **Continue**.
 
-    ![Scan Rule Set Classification](../images/module05/05.11-scanruleset-rules.png)
+    ![Scan Rule Set Classification](../images/module05/continue.png)
+    
+5. Leave everything as default under **Ignore Patterns** and click on **Create**
+
+    ![create](../images/module05/ignore.png)
 
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
 
