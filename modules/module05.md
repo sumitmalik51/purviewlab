@@ -65,7 +65,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
 3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
 
+1. Now select ```Save as type``` as **All Files** and click on **Save**
+
+     ![save](../images/module05/twitter.png)
+
 4. Click the **Browse** icon and open the local copy of **twitter_handles.csv**.
+
+  > **Note :** Incase if you get an error while uploading the file stating ```the format is not supported```, delete the downloaded copy of `twitter handles.csv` file and perform the step-3 again. Before saving the file clear the file name and re-enter the name **twitter_handles.csv** then save the file.
 
 5. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
