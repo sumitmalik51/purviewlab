@@ -18,27 +18,25 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 ## 1. Create an Azure Purview Account
 
-1. Sign in to the [Azure portal](https://portal.azure.com), navigate to the **Home** screen, click **Create a resource**.
+1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Azure Purview** and select it.
 
-    ![Create a Resource](../images/module01/01.01-create-resource.png)  
+2. On the **Azure Purview** blade, select **Create**.
 
-2. Search the Marketplace for "Azure Purview" and click **Create**.
+    ![Create Purview Resource](../images/module01/Mod1-purview01.png)
 
-    ![Create Purview Resource](../images/module01/01.02-create-purview.png)
+3. Provide the below inputs on the **Basics** tab.  
 
-3. Provide the necessary inputs on the **Basics** tab.  
-
-    > Note: The table below provides example values for illustrative purposes only, ensure to specify values that make sense for your deployment. If you have pre-deployed other Azure resources using the lab template, they would have been created with a `randomId`, it is recommended to use the same `randomId` for the Azure Purview account name as per the example below. For region make sure you select your resource group region.
+    > Note: Replace the **DID** with the **Deployment Id** from the Environemnt Details Page.
 
     | Parameter  | Example Value |
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
-    | Resource group | `pvlab-rg` |
-    | Purview account name | `pvlab-{randomId}-pv` |
-    | Location | `YOUR_LOCATION` |
-    | Managed Resource Group Name | `pvlab-rg-managed` |
+    | Resource group | `purviewlab-rg` |
+    | Purview account name | `pvlab-[DID]-pv` |
+    | Location | `Choose the same region as the Resource Group` |
+    | Managed Resource Group Name | `purviewlab-rg-managed` |
 
-    ![Purview Account Basics](../images/module01/_01.03-create-basic.png)
+    ![Purview Account Basics](../images/module01/Mod1-purview02.png)
 
     > **Did you know?**
     >
@@ -54,40 +52,35 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 4. On the **Networking** tab, select **All networks**.
    
-    ![Networking](../images/module01/_01.04-create-networking.png)
+    ![Networking](../images/module01/Mod1-purview03.png)
 
 5. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
 
-    ![Create Purview Account](../images/module01/_01.05-create-create.png)
+    ![Create Purview Account](../images/module01/Mod1-purview04.png)
 
 6. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
 
-    ![Go to resource](../images/module01/_01.06-goto-resource.png)
+    ![Go to resource](../images/module01/Mod1-purview05.png)
 
 ## 2. Grant Access to Azure Purview's Data Plane
 
 1. Navigate to your Azure Purview account and click **Open** within the **Open Purview Studio** tile.
 
-    ![Access Control](../images/module01/_01.07-open-studio.png)
+    ![Access Control](../images/module01/Mod1-purview06.png)
 
 2. On the left-hand side, navigate to **Data map**.
 
-    ![Add Role Assignment](../images/module01/_01.08-studio-datamap.png)
+    ![Add Role Assignment](../images/module01/Mod1-purview07.png)
 
-3. Select **Collections**.
+3. Select **Collections** and click on **Role assignments**.
 
-    ![Collections](../images/module01/_01.09-datamap-collections.png)
+    ![Collections](../images/module01/Mod1-purview08.png)
 
-    
-4. Select **Role assignments**.
+4. On the right-hand side of **Data curators**, click the **Add** icon.
 
-    ![Role assignments](../images/module01/_01.10-collections-roleassignments.png)
+    ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
-5. On the right-hand side of **Data curators**, click the **Add** icon.
-
-    ![Add Role Assignment](../images/module01/_01.11-roleassignments-datacurator.png)
-
-6. Search for another user (ex; **user_01**) within your Azure Active Directory, select their account, click OK.
+5. Search for another user (ex; **user_01**) within your Azure Active Directory, select their account, click OK.
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
