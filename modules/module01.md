@@ -34,7 +34,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     | Resource group | `purviewlab-rg` |
     | Purview account name | `pvlab-[DID]-pv` |
     | Location | `Choose the same region as the Resource Group` |
-    | Managed Resource Group Name | `purviewlab-rg-managed` |
+    | Managed Resource Group Name | `managed-rg-pvlab` |
 
     ![Purview Account Basics](../images/module01/Mod1-purview02.png)
 
