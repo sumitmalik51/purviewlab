@@ -638,7 +638,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
     * Application (client) ID
     * Directory (tenant) ID
 
-    ![](../images/module10/10.03-spn-copy.png)
+    ![](../images/module10/Mod7-purview7.png)
 
 ## 3. Generate a Client Secret
 
