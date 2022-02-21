@@ -65,7 +65,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
 
-1. Now select ```Save as type``` as **All Files** and click on **Save**
+1. Now select **All Files** under **Save as type** and click on **Save**
 
      ![save](../images/module05/twitter.png)
 
@@ -121,22 +121,17 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Scan Rule Set Classification](../images/module05/continue.png)
     
-5. Leave everything as default under **Ignore Patterns** and click on **Create**
+5. Leave everything as default on the **Ignore Patterns** blade and click on **Create**
 
     ![create](../images/module05/ignore.png)
 
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
 
-Before proceeding with the following steps, you will need to:
-* Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/).
-* Open Azure Storage Explorer.
-* Sign in to Azure via **View > Account Management > Add an account...**.
-
 Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
 1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**. 
 
-2. Navigate to your Azure Data Lake Storage Gen2 Account, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
+2. Navigate back to the Storage Explorer, select your Azure Data Lake Storage Gen2 Account named **pvlab{randomId}adls**, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
 
     ![Open Container](../images/module05/blob.png)
 
@@ -158,7 +153,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 ## 5. Scan an Azure Data Lake Storage Gen2 Account
 
-1. Open Purview Studio, navigate to **Data map** > **Sources** and click **New Scan** within the Azure Data Lake Storage Gen2 tile. Note: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
+1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Data map** > **Sources** and click **New Scan** within the **Azure Data Lake Storage Gen2** tile. Note: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
     ![New Scan](../images/module05/05.17-sources-newscan.png)
 
