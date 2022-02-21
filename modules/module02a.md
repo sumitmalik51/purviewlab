@@ -33,29 +33,33 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 > 
 > In this module we will walk through how to grant the Azure Purview Managed Identity the necessary access to successfully configure and run a scan.
 
-1. Navigate to your Azure Data Lake Storage Gen2 account (e.g. `pvlab{randomId}adls`) and select **Access Control (IAM)** from the left navigation menu.
+1. Navigate to the **purviewlab-rg** resource group, and then go to `pvlab{randomId}adls` storage account.
 
-    ![Azure Purview](../images/module02/02.06-storage-access.png)
+    ![Azure Purview](../images/module02/Mod2A-purview1.png)
 
-2. Click **Add role assignments**.
+2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
 
-    ![Azure Purview](../images/module02/02.07-storage-addrole.png)
+    ![Azure Purview](../images/module02/Mod2A-purview2.png)
 
-3. Filter the list of roles by searching for `Storage Blob Data Reader`, click the row to select the role, and then click **Next**.
+3. Filter the list of roles by searching for **Storage Blob Data Reader (1)**, click the row to select the role, and then click **Next (2)**.
 
-    ![Access Control Role](../images/module02/02.08-access-role.png)
+    ![Access Control Role](../images/module02/Mod2A-purview3.png)
 
-4. Under **Assign access to**, select **Managed identity**, click **+ Select members**, select **Purview account** from the **Managed Identity** drop-down menu, select the managed identity for your Azure Purview account (e.g. `pvlab-{randomId}-pv`), click **Select**. Finally, click **Review + assign**.
+4. Under **Assign access to**, select **Managed identity (1)** and click **+ Select members (2)**. 
 
-    ![Access Control Members](../images/module02/02.09-access-members.png)
+    ![Access Control Members](../images/module02/Mod2A-purview4.png)
+    
+5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity `pvlab-{randomId}-pv`**(2)**, click **Select (3)**. Finally, click **Review + assign**.
+   
+    ![Access Control Members](../images/module02/Mod2A-purview5.png)
 
-5. Click **Review + assign** once more to perform the role assignment.
+6. Click **Review + assign** once more to perform the role assignment.
 
-    ![Access Control Assign](../images/module02/02.10-access-assign.png)
+    ![Access Control Assign](../images/module02/Mod2A-purview7.png)
 
-4. To confirm the role has been assigned, navigate to the **Role assignments** tab and filter the **Scope** to `This resource`. You should be able to see that the Azure Purview managed identity has been granted the **Storage Blob Data Reader** role.
+7. To confirm the role has been assigned, navigate to the **Role assignments (1)** tab and filter the **Scope (2)** to `This resource`. You should be able to see that the Azure Purview managed identity has been granted the **Storage Blob Data Reader (3)** role.
 
-    ![Role Assignment](../images/module02/02.11-role-assignment.png)
+    ![Role Assignment](../images/module02/Mod2A-purview6.png)
 
 ## 2. Upload Data to Azure Data Lake Storage Gen2 Account
 
@@ -83,12 +87,14 @@ Before proceeding with the following steps, you will need to:
 
    ![](../images/module02/stg1.1.png)
  
-6. On the **Select Resource** blade, select **Subcription** and sign in using the below credentials.
+6. On the **Select Resource** blade, select **Subcription**.
+
+7. On the **select Azure Environment** page, select **Azure** and click on **Next**. Sign in using the below credentials.
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../images/module02/stg2.png) 
+   ![](../images/module02/Mod2A-purview8.png) 
 
     > You can also find the credentials from the **Environment Details** page
     
@@ -126,9 +132,9 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
-    ![New Collection](../images/module02/02.18-sources-collection.png)
+    ![New Collection](../images/module02/Mod2A-purview9.png)
 
-2. Provide the collection a **Name** (e.g. Contoso) and click **Create**.
+2. Provide the collection as **Contoso** and click **Create**.
 
     ![New Collection](../images/module02/02.76-collection-create.png)
 
@@ -136,7 +142,7 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
-    ![Register](../images/module02/02.20-sources-register.png)
+    ![Register](../images/module02/Mod2A-purview10.png)
 
 2. Select **Azure Data Lake Storage Gen2** and click **Continue**.
 
@@ -154,7 +160,7 @@ Before proceeding with the following steps, you will need to:
 
 1. Open Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/02.23-scan-new.png)
+    ![New Scan](../images/module02/Mod2A-purview11.png)
 
 2. Click **Test connection** to ensure the Azure Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
@@ -182,21 +188,21 @@ Before proceeding with the following steps, you will need to:
 
 7. To monitor the progress of the scan run, click **View Details**.
 
-    ![View Details](../images/module02/02.29-sources-details.png)
+    ![View Details](../images/module02/Mod2A-purview12.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![Monitor Scan](../images/module02/02.30-sources-refresh.png)
+    ![Monitor Scan](../images/module02/Mod2A-purview13.png)
 
 ## 6. View Assets
 
 1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
 
-    ![](../images/module02/02.80-wildcard-search.png)
+    ![](../images/module02/Mod2A-purview14.png)
 
 2. You should be able to see a list of assets within the search results, which is a result of the scan.
 
-    ![](../images/module02/02.72-search-wildcard.png)
+    ![](../images/module02/Mod2A-purview15.png)
 
 ## Knowledge Check
 

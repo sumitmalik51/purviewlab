@@ -621,7 +621,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 1. Sign in to the [Azure portal](https://portal.azure.com/), navigate to **Azure Active Directory** > **App registrations**, and click **New registration**.
 
-    ![](../images/module10/10.01-azuread-appreg.png)
+    ![](../images/module10/Mod7-purview1.png)
 
 2. Provide the application a **name**, select an **account type**, and click **Register**.
 
@@ -631,29 +631,29 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | Account Type | Accounts in this organizational directory only - Single tenant |
     | Redirect URI (optional) | *Leave blank* |
 
-    ![](../images/module10/10.02-azuread-register.png)
+    ![](../images/module10/Mod7-purview2.png)
 
 3. **Copy** the following values for later use.
 
     * Application (client) ID
     * Directory (tenant) ID
 
-    ![](../images/module10/10.03-spn-copy.png)
+    ![](../images/module10/Mod7-purview7.png)
 
 ## 3. Generate a Client Secret
 
 1. Navigate to **Certifications & secrets** and click **New client secret**.
 
-    ![](../images/module10/10.04-spn-secret.png)
+    ![](../images/module10/Mod7-purview3.png)
 
 2. Provide a **Description** and set the **expiration** to `In 1 year`, click **Add**.
 
     | Property | Example Value |
     | --- | --- |
     | Description | `purview-api` |
-    | Expires | `In 1 year` |
+    | Expires | `In 12 months` |
 
-    ![](../images/module10/10.05-spn-secretadd.png)
+    ![](../images/module10/Mod7-purview4.png)
 
 3. **Copy** the client secret value for later use.
 
@@ -661,13 +661,13 @@ To invoke the REST API, we must first register an application (i.e. service prin
      >
      > A **client secret** is a secret string that the application uses to prove its identity when requesting a token, this can also can be referred to as an application password.
 
-   ![](../images/module10/10.06-secret-copy.png)
+   ![](../images/module10/Mod7-purview5.png)
 
 ## 4. Provide Service Principal Access to Azure Purview
 
 1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION** > **Role Assignments**, and then click **Add data curators**.
 
-    ![](../images/module10/10.14-spn-role.png)
+    ![](../images/module10/Mod7-purview6.png)
 
 2. Search for the name of the Service Principal (e.g. `purview-spn`), select the Service Principal from the search results, and then click **OK**.
 

@@ -72,7 +72,7 @@ In this next step, we are creating a second access policy which will provide Azu
 
     ![Select Principal](../images/module02/02.48-policy-select.png)
 
-4. Search for the name of your Azure Purview account (e.g. `pvlab-{randomId}-pv`), select the item, then click **Select**.
+4. Search for the name of your Azure Purview account `pvlab-{randomId}-pv`, select the item, then click **Select**.
 
     ![Search Principal](../images/module02/02.49-policy-principal.png)
 
@@ -115,7 +115,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 1. Open **Purview Studio**, navigate to **Management Center** > **Credentials**, click **Manage Key Vault connections**.
 
-    ![Manage Key Vault Connections](../images/module02/02.57-management-vault.png)
+    ![Manage Key Vault Connections](../images/module02/Mod2B-purview1.png)
 
 2. Click **New**.
 
@@ -140,7 +140,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 6. Under **Credentials** click **New**.
 
-    ![](../images/module02/02.62-credentials-new.png)
+    ![](../images/module02/Mod2B-purview2.png)
 
 7.  Using the drop-down menu items, set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault`. Once the drop-down menu items are set, **Copy** and **paste** the values below into the matching fields, and then click **Create**.
 
@@ -165,7 +165,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 1. Open Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
 
-    ![](../images/module02/02.42-sources-register.png)
+    ![](../images/module02/Mod2A-purview10.png)
 
 2. Navigate to the **Azure** tab, select **Azure SQL Database**, click **Continue**.
 
@@ -179,7 +179,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 1. Open Purview Studio, navigate to **Data map** > **Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
 
-    ![](../images/module02/02.64-sources-scansql.png)
+    ![](../images/module02/Mod2B-purview03.png)
 
 2. Select the **Database** and **Credential** from the drop-down menus. Click **Test connection**. Click **Continue**.
 
@@ -203,11 +203,11 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 7. To monitor the progress of the scan, click **View Details**.
 
-    ![](../images/module02/02.70-sqlscan-details.png)
+    ![](../images/module02/Mod2B-purview4.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![](../images/module02/02.71-sqlscan-refresh.png)
+    ![](../images/module02/Mod2B-purview5.png)
 
 ## 7. View Assets
 
