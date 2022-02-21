@@ -141,7 +141,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Import terms](../images/module04/04.29-sample-saveas.png)
     
-1. Select ```Save as type``` as **All files** and click on **Save**.
+1. Select **All files** under **Save as type** and click on **Save**.
 
    ![Svae](../images/module04/saveas.png)
 
