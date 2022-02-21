@@ -28,31 +28,33 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 
 Before we can add secrets (such as passwords) to Azure Key Vault, we need to set up an [Access Policy](https://docs.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal). The access policy being created in this particular step, ensures that our account has sufficient permissions to create a secret, which will later be used by Azure Purview to perform a scan.
 
-1. Navigate to your **Azure Key Vault** resource and click **Access policies**.
+1. Navigate back to the browser tab in which Azure Portal is open, select the **purviewlab-rg** resource group and then Azure Key Vault resource named **pvlab-kv{randomid}**.
+
+1. Select **Access policies** from the Key Vault menu.
     
     ![Access Policies](../images/module02/02.73-keyvault-policies.png)
 
-2. Click **Add Access Policy**.
+1. Click **Add Access Policy**.
 
     ![Add Access Policy](../images/module02/02.74-keyvault-addpolicy.png)
 
-3. Under **Select principal**, click **None selected**.
+1. Under **Select principal**, click **None selected**.
 
     ![Select Principal](../images/module02/02.48-policy-select.png)
 
-4. Search for **odl-user**, select the account name from the **search results**, then click **Select**.
+1. Search for **odl_user**, select the account name from the **search results**, then click **Select**.
 
-    ![Search Principal](../images/module02/principal.png)
+    ![Search Principal](../images/module02/02.74-keyvault-addpolicy-1.png)
 
-5. Under **Secret permissions**, click **Select all**.
+1. Under **Secret permissions**, click **Select all**.
 
     ![Secret Permissions](../images/module02/02.78-secret-permissions.png)
 
-6. Review your selections then click **Add**.
+1. Review your selections then click **Add**.
 
     ![Review Access Policy](../images/module02/02.79-review-permissions.png)
 
-7. Click **Save**.
+1. Click **Save**.
 
     ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
 
@@ -60,31 +62,27 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 In this next step, we are creating a second access policy which will provide Azure Purview the necessary access to retrieve secrets from the Key Vault.
 
-1. Navigate to your **Azure Key Vault** resource and click **Access policies**.
-    
-    ![Access Policies](../images/module02/02.73-keyvault-policies.png)
-
-2. Click **Add Access Policy**.
+1. From the **pvlab-kv{randomid} | Access policies** blade, Click **Add Access Policy**.
 
     ![Add Access Policy](../images/module02/02.81-keyvault-addpolicy2.png)
 
-3. Under **Select principal**, click **None selected**.
+1. Under **Select principal**, click **None selected**.
 
     ![Select Principal](../images/module02/02.48-policy-select.png)
 
-4. Search for the name of your Azure Purview account `pvlab-{randomId}-pv`, select the item, then click **Select**.
+1. Search for the name of your Azure Purview account pvlab-<inject key="Deployment ID" enableCopy="false" />-pv, select the item, then click **Select**.
 
-    ![Search Principal](../images/module02/02.49-policy-principal.png)
+    ![Search Principal](../images/module02/02.49-policy-principal-1.png)
 
-5. Under **Secret permissions**, select **Get** and **List**.
+1. Under **Secret permissions**, select **Get** and **List**.
 
     ![Secret Permissions](../images/module02/02.50-secret-permissions.png)
 
-6. Review your selections then click **Add**.
+1. Review your selections then click **Add**.
 
     ![Review Access Policy](../images/module02/02.51-policy-add.png)
 
-7. Click **Save**.
+1. Click **Save**.
 
     ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
 
@@ -107,13 +105,13 @@ In order to securely store our Azure SQL Database password, we need to generate 
     sqlPassword!
     ```
 
-    ![Create Secret](../images/module02/02.56-vault-sqlsecret.png)
+    ![Create Secret](../images/module02/02.56-vault-sqlsecret-1.png)
 
 ## 4. Add Credentials to Azure Purview
 
 To make the secret accessible to Azure Purview, we must first establish a connection to Azure Key Vault.
 
-1. Open **Purview Studio**, navigate to **Management Center** > **Credentials**, click **Manage Key Vault connections**.
+1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Management Center** > **Credentials**, click **Manage Key Vault connections**.
 
     ![Manage Key Vault Connections](../images/module02/Mod2B-purview1.png)
 
@@ -121,14 +119,14 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![New Key Vault Connection](../images/module02/02.58-vault-new.png)
 
-3. **Copy** and **paste** the value below to set the name of your **Key Vault connection**, and then use the drop-down menu items to select the appropriate **Subscription** and **Key Vault name**, then click **Create**.
+3. **Copy** and **paste** the value below to set the name of your **Key Vault connection**, and then use the drop-down menu items to select the appropriate **Subscription** and **Key Vault** named **pvlab-kv{randomid}**, then click **Create**.
 
     **Name**
     ```
     myKeyVault
     ```
 
-    ![Create Key Vault Connection](../images/module02/02.59-vault-create.png)
+    ![Create Key Vault Connection](../images/module02/02.59-vault-create-1.png)
 
 4. Since we have already granted the Azure Purview managed identity access to our Azure Key Vault, click **Confirm**.
 
@@ -163,7 +161,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 ## 5. Register a Source (Azure SQL DB)
 
-1. Open Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
+1. From the Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
 
     ![](../images/module02/Mod2A-purview10.png)
 
@@ -171,17 +169,22 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![](../images/module02/02.43-register-sqldb.png)
 
-3. Select the **Azure subscritpion**, **Server name**, and **Collection**. Click **Register**.
+3. On the **Register sources (Azure SQL Database)** blade, enter the following information:
+
+    - **Azure subscription**: Select your subscription from the dropdown.
+    - **Server name**: Select **pvlab-{randomId}-sqlsvr** from the dropdown.
+    - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
+    -  Leave other values as default and click on **Register**.
 
     ![](../images/module02/02.44-register-azuresql.png)
 
 ## 6. Scan a Source with Azure Key Vault Credentials
 
-1. Open Purview Studio, navigate to **Data map** > **Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
+1. From the Purview Studio, navigate to **Data map** > **Sources**, and within the Azure SQL Database tile, click the **New Scan** button.
 
-    ![](../images/module02/Mod2B-purview03.png)
+    ![](../images/module02/Mod2B-purview03-1.png)
 
-2. Select the **Database** and **Credential** from the drop-down menus. Click **Test connection**. Click **Continue**.
+2. Select the **Database** named **pvlab-{randomId}-sqldb** and **Credential** named **credential-SQL** from the drop-down menus. Click **Test connection**. Click **Continue**.
 
     ![](../images/module02/02.65-sqlscan-credentials.png)
 
@@ -203,7 +206,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 7. To monitor the progress of the scan, click **View Details**.
 
-    ![](../images/module02/Mod2B-purview4.png)
+    ![](../images/module02/Mod2B-purview4-1.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
