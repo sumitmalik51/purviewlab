@@ -31,7 +31,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
     ![](../images/module06/06.06-purview-management.png)
 
-2. Select your Azure Data Factory account instance from the drop-down menu (e.g. `pvlab-{randomId}-adf`) and click **OK**.
+2. Select your subscription and Azure Data Factory account instance named `pvlab-{randomId}-adf` from the drop-down menu and click **OK**.
 
     > **Did you know?**
     >
@@ -122,7 +122,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 ## 3. View Lineage in Azure Purview
 
-1. Open Purview Studio, from the **Data catalog** screen click **Browse assets**.
+1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse assets**.
 
     ![](../images/module06/06.29-purview-browse.png)
 
