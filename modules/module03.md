@@ -45,11 +45,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/Lab03-purview3.png)
+    ![Update Description](../images/module03/Lab03-purview3-1.png)
 
-3. Assign a **Classification** (e.g. World Cities) using the drop-down menu.
+3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
-    ![Update Classification](../images/module03/Lab03-purview4.png)
+    ![Update Classification](../images/module03/Lab03-purview4-1.png)
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
@@ -84,7 +84,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     Value between 1 and 100 inclusive. 1 indicates least popular query on the day/State/Country with Coronavirus intent, and 100 indicates the most popular query for the same geography on the same day.
     ```
 
-5. Navigate to the **Contacts** tab and set someone within your organization to be an **Expert** and an **Owner**. Click **Save**.
+5. Navigate to the **Contacts** tab and set the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** to be an **Expert** and an **Owner**. Click **Save**.
 
     > **Did you know?**
     >
@@ -135,7 +135,7 @@ Azure Purview allows us to perform certain operations (add/replace/remove) again
 
     ![Bulk Edit](../images/module03/03.14-bulk-edit.png)
 
-4. Set the **Attribute** to `Owner`, set **Operation** to `Add`, select one or more users in your organization, and click **Apply**.
+4. Set the **Attribute** to `Owner`, set **Operation** to `Add`, select the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** , and click **Apply**.
  
     ![Apply Changes](../images/module03/03.15-bulk-apply.1.png)
 
