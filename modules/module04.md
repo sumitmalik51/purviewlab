@@ -131,7 +131,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ![](../images/module04/04.10-term-create2.png)
 
 
-9. From the **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
+9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
     ![](../images/module04/04.11-glossary-table.png)
     
@@ -140,6 +140,10 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, click **Save as** .
 
     ![Import terms](../images/module04/04.29-sample-saveas.png)
+    
+1. Select ```Save as type``` as **All files** and click on **Save**.
+
+   ![Svae](../images/module04/saveas.png)
 
 2. From the **Glossary** screen, click **Import terms**.
 

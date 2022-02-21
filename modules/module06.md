@@ -100,9 +100,9 @@ This module steps through what is required for connecting an Azure Data Factory 
 
     ![](../images/module06/06.23-adf-merge.png)
 
-16. Set the **file format** to **Parquet format** and click **Next**.
+16. Set the **file format** to **Parquet** and click **Next**.
 
-    ![](../images/module06/06.24-adf-format.png)
+    ![](../images/module06/parquet.png)
 
 17. Leave the default settings and click **Next**.
 

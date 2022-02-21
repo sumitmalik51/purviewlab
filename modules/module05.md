@@ -65,7 +65,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
 3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
 
+1. Now select ```Save as type``` as **All Files** and click on **Save**
+
+     ![save](../images/module05/twitter.png)
+
 4. Click the **Browse** icon and open the local copy of **twitter_handles.csv**.
+
+  > **Note :** Incase if you get an error while uploading the file stating ```the format is not supported```, delete the downloaded copy of `twitter handles.csv` file and perform the step-3 again. Before saving the file clear the file name and re-enter the name **twitter_handles.csv** then save the file.
 
 5. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
@@ -111,9 +117,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Scan Rule Set File Type](../images/module05/05.10-scanruleset-filetype.png)
 
-4. Clear all selected **System rules** and select the custom classification rule **twitter_handle** and click **Create**.
+4. Clear all selected **System rules** and select the custom classification rule **twitter_handle** and click **Continue**.
 
-    ![Scan Rule Set Classification](../images/module05/05.11-scanruleset-rules.png)
+    ![Scan Rule Set Classification](../images/module05/continue.png)
+    
+5. Leave everything as default under **Ignore Patterns** and click on **Create**
+
+    ![create](../images/module05/ignore.png)
 
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
 
@@ -128,7 +138,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 2. Navigate to your Azure Data Lake Storage Gen2 Account, expand **Blob Containers**, and **Open** the **raw** container. Note: If a raw container does not exist, create one.
 
-    ![Open Container](../images/module05/05.12-explorer-container.png)
+    ![Open Container](../images/module05/blob.png)
 
 3. Click on the **New Folder** button, provide the folder a name (e.g. `Twitter`) and click **OK**.
 
