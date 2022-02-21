@@ -184,11 +184,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Edit Asset](../images/module04/04.20-asset-edit.png)
 
-3. Open the **Glossary terms** drop-down menu and select a glossary term (e.g. `Contoso parent > Contoso Child`). Click **Save**.
+3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
     ![Assign Term](../images/module04/04.21-asset-term.png)
 
-4. Click on the hyperlinked term under **Glossary items (1)** name to view the glossary term details.
+4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
     ![Assigned Terms](../images/module04/04.22-term-assigned.png)
 
