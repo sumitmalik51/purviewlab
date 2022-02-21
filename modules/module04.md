@@ -42,8 +42,6 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 4. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
 
-    ![New Term](../images/module04/Mod4-purview3.png)
-
     **Status**
     ```
     Approved
@@ -60,6 +58,8 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ```
     CP
     ```
+    > **Info**: Click on **+ Add a resource** to add the resource.
+
     **Resource Name**
     ```
     Azure Purview
@@ -69,6 +69,8 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     https://aka.ms/Azure-Purview
     ```
     
+    ![New Term](../images/module04/Mod4-purview3.png)
+
 ## 2. Create a Term (Custom Term Template)
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
@@ -83,7 +85,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![New term template](../images/module04/04.05-template-new.png)
 
-4. Provide the Term Template a **Name** (e.g. `Contoso Template`) and click **New attribute**.
+4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
     ![Term template](../images/module04/04.06-attribute-new.png)
 
@@ -94,6 +96,8 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     | Attribute name | `Business Unit` |
     | Field type | `Single choice` |
     | Choices | `Sales`, `Marketing`, `Finance`, `Human Resources`, `IT`, |
+
+    > **Info**: Click on **Choices** to add a choice.
 
     ![Attribute](../images/module04/04.07-attribute-properties.png)
 
@@ -106,8 +110,6 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ![Custom Term Template](../images/module04/04.09-term-custom.png)
 
 8. Change the **Status** of the term to `Approved` and then **copy** and **paste** the values below into the appropriate field, then click **Create**.
-
-    ![](../images/module04/04.10-term-create2.png)
 
     **Name**
     ```
@@ -125,6 +127,9 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ```
     Marketing
     ```
+    
+    ![](../images/module04/04.10-term-create2.png)
+
 
 9. From the **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
@@ -172,7 +177,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 ## 5. Assign a Term to an Asset
 
-1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title (e.g. `QueriesByState`) to view the details.
+1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
     ![Wildcard Search](../images/module04/04.19-search-wildcard.png)
 
@@ -180,11 +185,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Edit Asset](../images/module04/04.20-asset-edit.png)
 
-3. Open the **Glossary terms** drop-down menu and select a glossary term (e.g. `Contoso Child`). Click **Save**.
+3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
     ![Assign Term](../images/module04/04.21-asset-term.png)
 
-4. Click on the hyperlinked term name to view the glossary term details.
+4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
     ![Assigned Terms](../images/module04/04.22-term-assigned.png)
 
@@ -194,7 +199,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     
 ## 6. Update an Existing Term
 
-1. From the **Glossary** screen, open an existing term (e.g. `Aggregation`).
+1. From the **Glossary** screen, open an existing term `Aggregation`.
 
     ![Term Details](../images/module04/04.24-term-view.png)
 
@@ -214,7 +219,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Related Terms](../images/module04/04.27-term-related.png)
 
-5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward**. Click **Save**.
+5. Navigate to the **Contacts** tab, click **Edit** and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
 
     > **Did you know?**
     >
