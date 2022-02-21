@@ -49,7 +49,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 
     ![Access Control Members](../images/module02/Mod2A-purview4.png)
     
-5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
+5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="Deployment ID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
    
     ![Access Control Members](../images/module02/Mod2A-purview5.png)
 
@@ -155,7 +155,7 @@ Before proceeding with the following steps, you will need to:
 3. Now, on the **Register sources (Azure Data Lake Storage Gen2)** blade, enter the following information:
     - **Azure subscription**: Select your subscription from the dropdown.
     - **Storage account name**: Select **pvlab{randomId}adls** from the dropdown.
-    - **Collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
+    - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
     > **Did you know?**
