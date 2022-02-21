@@ -49,7 +49,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 
     ![Access Control Members](../images/module02/Mod2A-purview4.png)
     
-5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity `pvlab-{randomId}-pv`**(2)**, click **Select (3)**. Finally, click **Review + assign**.
+5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="DeploymentID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
    
     ![Access Control Members](../images/module02/Mod2A-purview5.png)
 
@@ -98,11 +98,11 @@ Before proceeding with the following steps, you will need to:
 
     > You can also find the credentials from the **Environment Details** page
     
-7. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+7. Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription and then `pvlab{randomId}adls` Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
 
     ![Create Blob Container](../images/module02/02.12-explorer-container.png)
 
-8. With the container name selected, click on the **Upload** button and select **Upload Folder...**.
+8. With the **raw** container selected, click on the **Upload** button and select **Upload Folder...**.
 
     ![Upload Folder](../images/module02/02.13-explorer-upload.png)
 
@@ -130,35 +130,43 @@ Before proceeding with the following steps, you will need to:
 >
 > For more information, check out [Collection Architectures and Best Practices](https://docs.microsoft.com/en-us/azure/purview/concept-best-practices-collections).
 
-1. Open Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
+1. Navigate back to the browser tab in which Purview Studio is open. From the Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
     ![New Collection](../images/module02/Mod2A-purview9.png)
 
-2. Provide the collection as **Contoso** and click **Create**.
+2. Provide the below value for the collection name and click on **Create**.
+
+   ```
+   Contoso
+   ```
 
     ![New Collection](../images/module02/02.76-collection-create.png)
 
 ## 4. Register a Source (ADLS Gen2)
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
+1. From the Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
     ![Register](../images/module02/Mod2A-purview10.png)
 
-2. Select **Azure Data Lake Storage Gen2** and click **Continue**.
+2. On the **Register Sources** blade, scroll down and select **Azure Data Lake Storage Gen2** and click **Continue**.
 
     ![Sources](../images/module02/02.21-sources-adls.png)
 
-3. Select the **Azure subscription**, **Storage account name**, **Collection**, and click **Register**.
+3. Now, on the **Register sources (Azure Data Lake Storage Gen2)** blade, enter the following information:
+    - **Azure subscription**: Select your subscription from the dropdown.
+    - **Storage account name**: Select **pvlab{randomId}adls** from the dropdown.
+    - **Collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
+    -  Leave other values as default and click on **Register**.
 
     > **Did you know?**
     >
     > At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
 
-    ![Source Properties](../images/module02/02.22-sources-properties.png)
+    ![Source Properties](../images/module02/02.22-sources-properties-1.png)
 
 ## 5. Scan a Source with the Azure Purview Managed Identity
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
+1. From the Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
     ![New Scan](../images/module02/Mod2A-purview11.png)
 
