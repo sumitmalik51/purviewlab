@@ -76,7 +76,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Collections](../images/module01/Mod1-purview08.png)
 
-4. On the right-hand side of **Data curators**, click the **Add** icon.
+4. On the **Role assignments (2)** blade, scroll down and click on the **Add** icon that is next to **Data curators**.
 
     ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
