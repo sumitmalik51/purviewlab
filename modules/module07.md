@@ -32,9 +32,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 1. Asset Insights
 
-1. Open Purview Studio, navigate to **Insights** > **Assets**.
+1. Open Purview Studio, navigate to **Data Insights** > **Assets**.
 
-    ![Assets Insights](../images/module07/07.01-assets-insights.png)
+    ![Assets Insights](../images/module07/07.01-assets-insights-1.png)
 
 2. The Assets page displays the following **high-level metrics**.
     * Number of Source Types
@@ -64,9 +64,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 2. Scan Insights
 
-1. Open Purview Studio, navigate to **Insights** > **Scans**.
+1. Open Purview Studio, navigate to **Data Insights** > **Scans**.
 
-    ![Scan Insights](../images/module07/07.06-scans-insights.png)
+    ![Scan Insights](../images/module07/07.06-scans-insights-1.png)
 
 2. The Scans page displays the following **high-level metrics**.
     * Number of Scans
@@ -88,9 +88,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 3. Glossary Insights
 
-1. Open Purview Studio, navigate to **Insights** > **Glossary**.
+1. Open Purview Studio, navigate to **Data Insights** > **Glossary**.
 
-    ![Glossary Insights](../images/module07/07.09-glossary-insights.png)
+    ![Glossary Insights](../images/module07/07.09-glossary-insights-1.png)
 
 2. The Glossary page displays the following **high-level metrics**.
     * Total terms
@@ -119,9 +119,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 4. Classification Insights
 
-1. Open Purview Studio, navigate to **Insights** > **Classification**.
+1. Open Purview Studio, navigate to **Data Insights** > **Classification**.
 
-    ![Classification Insights](../images/module07/07.14-classification-insights.png)
+    ![Classification Insights](../images/module07/07.14-classification-insights-1.png)
 
 2. The Classification page displays the following **high-level metrics**.
     * Total assets classified
@@ -152,7 +152,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 5. Sensitivity Labels Insights
 
-1. Open Purview Studio, navigate to **Insights** > **Sensitivity Labels**.
+1. Open Purview Studio, navigate to **Data Insights** > **Sensitivity Labels**.
 
     > **Did you know?**
     >
@@ -160,7 +160,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Azure Purview's ability to apply sensitivity labels is due to the close integration with **Microsoft Information Protection** offered in Microsoft 365. Note: You must turn on Information Protection for Azure Purview in the Microsoft 365 compliance center. For more information, check out how to [Labeling in Azure Purview](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label).
 
-    ![Sensitivity Labels Insights](../images/module07/07.20-labels-insights.png)
+    ![Sensitivity Labels Insights](../images/module07/07.20-labels-insights-1.png)
 
 2. The Sensitivity Labels page displays the following **high-level metrics**.
     * Total assets labeled
