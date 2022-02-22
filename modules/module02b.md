@@ -173,7 +173,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     - **Azure subscription**: Select your subscription from the dropdown.
     - **Server name**: Select **pvlab-{randomId}-sqlsvr** from the dropdown.
-    - **Select a collection**: Select **pvlab-randomId}-pv > Contoso** from the dropdown.
+    - **Select a collection**: Select **pvlab-{randomId}-pv > Contoso** from the dropdown.
     -  Leave other values as default and click on **Register**.
 
     ![](../images/module02/02.44-register-azuresql.png)
