@@ -29,7 +29,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Role Assignment](../images/module08/08.02-access-add.png)
 
-3. Click **Select members**, search for a user within your Azure Active Directory, select that user from the list, and then click **Select**.
+3. Click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list, and then click **Select**.
 
     > **Did you know?**
     >
@@ -81,7 +81,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Diagnostic Setting](../images/module08/08.14-diagnostic-add.png)
 
-2. Provide the diagnostic setting a name (e.g. `Audit`), select **ScanStatusLogEvent**, select **Archive to a storage account**, select an existing storage account (e.g. `pvlab{randomId}adls`) and click **Save**.
+2. Provide the diagnostic setting a name as `Audit`, select **ScanStatusLogEvent**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
     > **Did you know?**
     >
@@ -89,25 +89,29 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Save Diagnostic Setting](../images/module08/08.15-diagnostic-save.png)
 
-3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on an existing source.
+3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
 
-    ![Source Details](../images/module08/08.16-sources-details.png)
+    ![Source Details](../images/module08/08.16-sources-details-1.png)
 
 4. Navigate to the **Scans** tab and click the name of a previously run scan.
 
-    ![Source Scans](../images/module08/08.17-sources-scans.png)
+    ![Source Scans](../images/module08/08.17-sources-scans-1.png)
 
 5. Open the **Run scan now** drop-down menu and select **Full Scan**.
 
-    ![Full Scan](../images/module08/08.18-scan-full.png)
+    ![Full Scan](../images/module08/08.18-scan-full-1.png)
 
 6. Monitor the scan status by periodically clicking the **Refresh** button.
 
-    ![Scan Progress](../images/module08/08.19-scan-progress.png)
+    ![Scan Progress](../images/module08/08.19-scan-progress-1.png)
 
-7. Once the scan is complete, navigate to your storage account within the Azure Portal, select **Storage Explorer**, expand **CONTAINERS** and select **insights-logs-scanstatuslogevent**, navigate down the folder hierarchy until you reach a JSON document (e.g. `PT1H.json`).
+7. Once the scan is complete, navigate to the storage account named **pvlab{randomId}adls** within the Azure Portal, select **Storage Browser** from the left hand side menu.
 
-    ![Storage Explorer](../images/module08/08.20-storage-explorer.png)
+    ![Storage Explorer](../images/module08/08.20-storage-explorer-1.1.png)
+
+8. Now, expand **Blob containers** and select **insights-logs-scanstatuslogevent**, navigate down the folder hierarchy until you reach a JSON document `PT1H.json`.
+
+    ![Storage Explorer](../images/module08/08.20-storage-explorer-1.png)
 
 8. Download and open a local copy of the JSON document to see the details (e.g. dataSourceName, dataSourceType, assetsDiscovered, scanTotalRunTimeInSeconds, etc).
 
