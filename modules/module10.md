@@ -669,7 +669,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/Mod7-purview6.png)
 
-2. Search for the name of the Service Principal (e.g. `purview-spn`), select the Service Principal from the search results, and then click **OK**.
+2. Search for the name of the Service Principal `purview-spn`, select the Service Principal from the search results, and then click **OK**.
 
     ![](../images/module10/10.15-spn-add.png)
 
@@ -682,9 +682,11 @@ To invoke the REST API, we must first register an application (i.e. service prin
    choco install postman -y -force
    ```
  
-1. Go to Start button in the VM, search for **Postman** and select **Postman** to open it.
+1. Once installed, go to Start button in the VM, search for **Postman** and select **Postman** to open it.
  
 1. Now, click on **Skip and go to the app** to skip the account creation and create a new **HTTP request** as per the details below.
+ 
+    > **Info**: You can create a new **HTTP request** by clicking on **New** then selecting the **HTTP request**.
 
     > **Did you know?**
     >
@@ -696,6 +698,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | URL | `https://login.microsoftonline.com/YOUR_TENANT_ID/oauth2/token` |
     | Body Type | `x-wwww-form-urlencoded` |
 
+    > **Note**: Please make sure you replace the `YOUR_TENANT_ID` with the tenant id value that you copied earlier.
+ 
     Navigate to **Body**, select `x-wwww-form-urlencoded` and provide the following key value pairs. Once HTTP request is ready, click **Send**. If successful, the response will contain an **access token**, copy this value for later use.
 
     | Form Key | Form Value |
@@ -704,6 +708,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | client_id | `YOUR_CLIENT_ID` |
     | client_secret | `YOUR_CLIENT_SECRET` |
     | resource | `https://purview.azure.net` |
+ 
+    > **Note**: Please make sure you replace the `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` values with the client id and secret values that you copied earlier.
 
     ![](../images/module10/10.09-postman-login.png)
 
@@ -713,7 +719,9 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![Purview Properties](../images/module10/10.11-purview-properties.png)
 
-3. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below. 
+1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below. 
+ 
+     > **Info**: You can create a new **HTTP request** by clicking on **New** then selecting the **HTTP request**.
 
     * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
     * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/types/typedefs`
@@ -735,7 +743,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/10.10-postman-get.png)
 
-4. If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
+1. Once HTTP request is ready, click **Send**. If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
     > **Did you know?**
     >
