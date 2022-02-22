@@ -31,9 +31,9 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
     ![Storage RBAC Assignment](../images/module09/09.02-storage-rbac.png)
 
-3. To add your account click **Select members**, search for your account by typing your username into the text box, select your account from the list, and click **Select**.
+3. To add your account click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory , select the account from the list, and click **Select**.
 
-    ![Storage RBAC Assignment](../images/module09/09.16-rbac-members.png)
+    ![Storage RBAC Assignment](../images/module09/09.16-rbac-members-1.png)
 
 4. Click **Review + assign** to progress to the final confirmation screen and then click **Review + assign** once more.
 
@@ -41,13 +41,13 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
 ## 2. Connect to a Purview Account
 
-1. Within the Azure portal, open the Synapse workspace and click **Open Synapse Studio**.
+1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click **Open Synapse Studio**.
 
     ![Open Synapse Studio](../images/module09/09.08-synapse-studio.png)
 
-2. Navigate to **Manage** > **Azure Purview (Preview)** and click **Connect to a Purview account**.
+2. Navigate to **Manage** > **Azure Purview** and click **Connect to a Purview account**.
 
-    ![Connect to a Purview Account](../images/module09/09.09-synapse-connect.png)
+    ![Connect to a Purview Account](../images/module09/09.09-synapse-connect-1.png)
 
 3. Select your **Purview account** from the drop-down menu and click **Apply**.
 
@@ -59,7 +59,7 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
     >
     > When connecting a Synapse workspace to Purview, Synapse will attempt to add the necessary Purview role assignment (i.e. `Data Curator`) to the Synapse managed identity automatically. This operation will be successful if you belong to the **Collection admins** role on the Purview root collection and have access to the Azure Purview account. For more information, check out [Connect a Synapse workspace to an Azure Purview account](https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview).
 
-    ![Purview Account Registered](../images/module09/09.11-synapse-success.png)
+    ![Purview Account Registered](../images/module09/09.11-synapse-success-1.png)
 
 5. To validate that Synapse was able to succesfully add the Synapse managed identity to the Data Curator role, navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION**, switch to the **Role assignments** tab and expand **Data curators**. You should be able to see the Synapse Service Principal listed as one of the Data curators. This will provide Synapse read/write access to the catalog.
 
@@ -67,11 +67,11 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
 ## 3. Search a Purview Account
 
-1. Within the Synapse workspace, navigate to the **Data** screen and perform a **keyword search** (e.g. `parquet`). Notice that the search bar now defaults to searching the entire Purview catalog as opposed to the Synapse workspace only.
+1. Within the Synapse workspace, navigate to the **Data** screen and perform a **keyword search** by entering the keyword `parquet` in the search bar of Synapse workspace. Notice that the search bar now defaults to searching the entire Purview catalog as opposed to the Synapse workspace only.
 
     ![Search Purview Account](../images/module09/09.12-synapse-search.png)
 
-2. Click to open the **asset details** of one of the items (e.g. `twitter_handles.parquet`).
+2. Click to open the **asset details** of the items `twitter_handles.parquet`.
 
     ![Open Asset Details](../images/module09/09.13-synapse-open.png)
 
