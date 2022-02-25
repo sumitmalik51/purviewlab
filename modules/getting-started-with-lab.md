@@ -27,18 +27,14 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
    ![](../images/getting-started-with-lab/windows1.png)
    
-1. When you click on Azure portal, the edge browser welcome screen will come up, select **Get started**.
+1. When you click on Azure portal, the edge browser welcome screen will come up, select **Start without your data**.
 
-   ![](../images/getting-started-with-lab/getstarted.png)
-   
-1. On the next window, click on **Confirm**.
+   ![](../images/getting-started-with-lab/browser-1.png)
 
-   ![](../images/getting-started-with-lab/tabpage.png)
-   
-1. You can close the popup that appears.
+1. On the next window, click on Confirm and start browsing.
 
-   ![](../images/getting-started-with-lab/withoutsi.png)
-   
+   ![](../images/getting-started-with-lab/browser-2.png)
+
 1. Now, you will see two tabs in the edge browser, close the first tab named with **Microsoft Edge**.
 
 1. On the **Sign in to Microsoft Azure** window, you will see the login screen, enter the following username and click on **Next**.
