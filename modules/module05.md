@@ -47,7 +47,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![New Classification Rule](../images/module05/05.04-classificationrules-new.png)
 
-2. Populate the classification rule fields as per the example below and click **Continue**.
+1. Populate the classification rule fields as per the example below and click **Continue**.
 
     | Field  | Example Value |
     | --- | --- |
@@ -63,17 +63,17 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Regular Expression Classification Rule](../images/module05/05.05-classificationrules-regex.png)
 
-3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
+1. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
 
 1. Now select **All Files** under **Save as type** and click on **Save**
 
      ![save](../images/module05/twitter.png)
 
-4. Click the **Browse** icon and open the local copy of **twitter_handles.csv**.
+1. Click the **Browse** icon and open the local copy of **twitter_handles.csv**.
 
-  > **Note :** Incase if you get an error while uploading the file stating ```the format is not supported```, delete the downloaded copy of `twitter handles.csv` file and perform the step-3 again. Before saving the file clear the file name and re-enter the name **twitter_handles.csv** then save the file.
+   > **Note :** Incase if you get an error while uploading the file stating ```the format is not supported```, delete the downloaded copy of `twitter handles.csv` file and perform the step-3 again. Before saving the file clear the file name and re-enter the name **twitter_handles.csv** then save the file.
 
-5. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
+1. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
     > **Did you know?**
     >
@@ -81,12 +81,12 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Pattern Detection](../images/module05/05.06-regex-file.png)
 
-6. Modify the Data Pattern by replacing the plus symbol (`+`) with with `{5,15}`.
+1. Modify the Data Pattern by replacing the plus symbol (`+`) with with `{5,15}`.
 
     * The plus symbol (`+`) indicates one or more characters matching the preceding item. This may lead to false positives as it would allow for an unlimited number of alphanumeric characters. Twitter handles must be a minimum of 5 and a maximum of 15 characters.
     * With `{5,15}`, this will ensure matches only occur where there is a at least 5 and at most 15 occurrences of the preceding item.
 
-7. While we can also specify a **Column Pattern**, in this example we will rely solely on the Data Pattern. Clear the **Column Pattern** input and click **Create**.
+1. While we can also specify a **Column Pattern**, in this example we will rely solely on the Data Pattern. Clear the **Column Pattern** input and click **Create**.
 
     ![Create Classification Rule](../images/module05/05.07-regex-create.png)
 
