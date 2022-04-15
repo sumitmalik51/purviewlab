@@ -22,7 +22,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 2. On the **Azure Purview** blade, select **Create**.
 
-    ![Create Purview Resource](../images/module01/Mod1-purview01.png)
+    ![Create Purview Resource](../images/module01/azure-purview-create.png)
 
 3. Provide the below inputs on the **Basics** tab.  
 
