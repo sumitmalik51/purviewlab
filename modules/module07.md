@@ -67,6 +67,10 @@ Insights provides customers, a single pane of glass view into their catalog and 
 1. Open Purview Studio, navigate to **Data Insights** > **Scans**.
 
     ![Scan Insights](../images/module07/07.06-scans-insights-1.png)
+    
+2. With the latest update Scan insights are now moved under Data map. Please click on the **Data map** to navigate to scans. This will redirect you to the **Data Map-->Monitoring** section.
+
+.   ![Scan Insights](../images/module07/newscan.png)
 
 2. The Scans page displays the following **high-level metrics**.
     * Number of Scans
