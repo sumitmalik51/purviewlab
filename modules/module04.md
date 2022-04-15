@@ -75,15 +75,15 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/04.00-manage-glossary.png)
+    ![](../images/module04/pvnw1.png)
 
 2. Click **New term**.
 
-    ![New Term](../images/module04/04.04-glossary-new2.png)
+    ![New Term](../images/module04/pvnw2.png)
 
 3. Click **New term template**.
 
-    ![New term template](../images/module04/04.05-template-new.png)
+    ![New term template](../images/module04/pvnw3.png)
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
@@ -147,7 +147,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. From the **Glossary** screen, click **Import terms**.
 
-    ![Import terms](../images/module04/04.12-glossary-import.png)
+    ![Import terms](../images/module04/pvnw4.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -163,7 +163,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 6. Once complete, you should see 50 additional terms beneath the parent (Workplace Analytics). **Tip**: You can quickly find specific types of terms using the filters at the top (e.g. Status = Approved).
 
-    ![Filter Terms](../images/module04/04.16-glossary-filter.png)
+    ![Filter Terms](../images/module04/pvnw5.png)
 
 ## 4. Bulk Export Terms
 
@@ -173,7 +173,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     >
     > When using Purview Studio to **Export terms**, all terms selected for the export must use the same **Term template**. Selecting terms from different term templates will result in the **Export terms** button being greyed out.
 
-    ![Export Terms](../images/module04/04.17-glossary-export.png)
+    ![Export Terms](../images/module04/pvnw6.png)
 
 2. If the export was successful, you should find a **CSV** file has been copied to your local machine (e.g. Downloads).
 
@@ -183,33 +183,33 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/04.19-search-wildcard.png)
+    ![Wildcard Search](../images/module04/pvnw7.png)
 
 2. Click **Edit**.
 
-    ![Edit Asset](../images/module04/04.20-asset-edit.png)
+    ![Edit Asset](../images/module04/pvnw8.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
-    ![Assign Term](../images/module04/04.21-asset-term.png)
+    ![Assign Term](../images/module04/pvnw9.png)
 
 4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
-    ![Assigned Terms](../images/module04/04.22-term-assigned.png)
+    ![Assigned Terms](../images/module04/pvnw10.png)
 
 5. Click **Refresh** to view the **Catalog assets** the term is assigned to.
 
-    ![Catalog assets](../images/module04/04.23-term-assets.png)
+    ![Catalog assets](../images/module04/pvnw11.png)
     
 ## 6. Update an Existing Term
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/04.24-term-view.png)
+    ![Term Details](../images/module04/pvnw12.png)
 
 2. Navigate to the **Related** tab and click **Edit**.
 
-    ![Related](../images/module04/04.25-term-related.png)
+    ![Related](../images/module04/pvnw13.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
@@ -217,11 +217,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
-    ![Synonyms](../images/module04/04.26-term-synonym.png)
+    ![Synonyms](../images/module04/pvnw14.png)
 
 4. Use the drop-down menu to assign two glossary terms as **Related terms**.
 
-    ![Related Terms](../images/module04/04.27-term-related.png)
+    ![Related Terms](../images/module04/pvnw15.png)
 
 5. Navigate to the **Contacts** tab, click **Edit** and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
 
