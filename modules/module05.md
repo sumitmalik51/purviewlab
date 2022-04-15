@@ -22,7 +22,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 1. Open Purview Studio, navigate to **Data map** > **Classifications** (under Annotation management) and click **New**.
 
-    ![New Classification](../images/module05/05.01-classifications-new.png)
+    ![New Classification](../images/module05/pvcl1.png)
 
 2. **Copy** and **paste** the values below into the appropriate fields and click **OK**.
 
@@ -39,13 +39,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
 3. Navigate to the **Custom** tab to confirm the custom classification has been created.
 
-    ![Create Classification](../images/module05/05.03-classifications-custom.png)
+    ![Create Classification](../images/module05/pvcl2.png)
 
 ## 2. Create a Custom Classification Rule (Regular Expression)
 
 1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
 
-    ![New Classification Rule](../images/module05/05.04-classificationrules-new.png)
+    ![New Classification Rule](../images/module05/pvcl3.png)
 
 1. Populate the classification rule fields as per the example below and click **Continue**.
 
@@ -98,7 +98,7 @@ Azure Purview provides a large set of default classifications that represent typ
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    ![New Scan Rule Set](../images/module05/05.08-scanruleset-new.png)
+    ![New Scan Rule Set](../images/module05/pvcl4.png)
 
 2. Change the **Source Type** to `Azure Data Lake Storage Gen2` then **copy** and **paste** the values below into the appropriate fields. Click **Continue**.
 
@@ -155,7 +155,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Data map** > **Sources** and click **New Scan** within the **Azure Data Lake Storage Gen2** tile. Note: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-    ![New Scan](../images/module05/05.17-sources-newscan.png)
+    ![New Scan](../images/module05/pvcl5.png)
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
@@ -187,29 +187,29 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 9. To view the progress of the scan, navigate to **Sources** and click **View details** on the Azure Data Lake Storage Gen2 tile.
 
-    ![Source Details](../images/module05/05.25-source-viewdetails.png)
+    ![Source Details](../images/module05/pvcl6.png)
 
 10. Periodically click **Refresh** to update the scan status until **Complete**. Note: This will take approximately 5 to 10 minutes.
 
-    ![Scan Progress](../images/module05/05.26-source-progress.png)
+    ![Scan Progress](../images/module05/pvcl7.png)
 
 ## 6. Search by Classification
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
-    ![Wildcard Search](../images/module05/05.27-search-wildcard.png)
+    ![Wildcard Search](../images/module05/pvcl7.png)
 
 2. Limit the search results by setting **Classification** within the filter panel to **Twitter Handle**. Click on the asset title (**twitter_handles.parquet**) to view the asset details.
 
-    ![Filter Classification](../images/module05/05.28-search-filter.png)
+    ![Filter Classification](../images/module05/pvcl8.png)
 
 3. You will notice on the Overview tab that the schema includes the Twitter Handle classification. To identity which column has been classified, navigate to the **Schema** tab.
 
-    ![Asset Details](../images/module05/05.29-asset-details.png)
+    ![Asset Details](../images/module05/pvcl9.png)
 
 4. Within the Schema tab we can see that **Account name** is the column that has been classified.
 
-    ![Asset Schema](../images/module05/05.30-asset-schema.png)
+    ![Asset Schema](../images/module05/pvcl9.png)
 
 ## Knowledge Check
 
