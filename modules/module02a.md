@@ -172,7 +172,7 @@ Before proceeding with the following steps, you will need to:
 
 2. Click **Test connection** to ensure the Azure Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
-    ![Test Connection](../images/module02/02.24-scan-test.png)
+    ![Test Connection](../images/module02/azure-purview-new-scan.png)
 
 3. Expand the hierarchy to see which assets will be within the scans scope, and click **Continue**.
 
