@@ -72,7 +72,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 .   ![Scan Insights](../images/module07/newscan.png)
 
-2. The Scans page displays the following **high-level metrics**.
+3. The Scans page displays the following **high-level metrics**.
     * Number of Scans
     * Number of Succeeded (Scans)
     * Number of Canceled (Scans)
@@ -80,7 +80,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Scan KPI](../images/module07/07.07-scans-kpi.png)
 
-3. The Scans page includes the following **graphs**:
+4. The Scans page includes the following **graphs**:
     
     **Scan status**
 
