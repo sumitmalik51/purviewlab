@@ -113,7 +113,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Management Center** > **Credentials**, click **Manage Key Vault connections**.
 
-    ![Manage Key Vault Connections](../images/module02/Mod2B-purview1.png)
+    ![Manage Key Vault Connections](../images/module02/azure-purview-credentials.png)
 
 2. Click **New**.
 
@@ -138,7 +138,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
 6. Under **Credentials** click **New**.
 
-    ![](../images/module02/Mod2B-purview2.png)
+    ![](../images/module02/azure-purview-credentials-new.png)
 
 7.  Using the drop-down menu items, set the **Authentication method** to `SQL authentication` and the **Key Vault connection** to `myKeyVault`. Once the drop-down menu items are set, **Copy** and **paste** the values below into the matching fields, and then click **Create**.
 
@@ -184,9 +184,9 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![](../images/module02/Mod2B-purview03-1.png)
 
-2. Select the **Database** named **pvlab-{randomId}-sqldb** and **Credential** named **credential-SQL** from the drop-down menus. Click **Test connection**. Click **Continue**.
+2. Select the **Database** named **pvlab-{randomId}-sqldb** and **Credential** named **credential-SQL** from the drop-down menus. Set **Lineage extraction (preview)** to **Off**. Click **Test connection**. Click **Continue**.
 
-    ![](../images/module02/02.65-sqlscan-credentials.png)
+    ![](../images/module02/azure-purview-azuresqldatabase.png)
 
 3. Click **Continue**.
 
