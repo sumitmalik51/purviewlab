@@ -62,35 +62,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Using the quick filters on the **Asset count by source type** graph and drilling into the details by clicking **View details**, is a quick and easy way of identifying which sources contain certain types of data.
 
-## 2. Scan Insights
-
-1. Open Purview Studio, navigate to **Data estate insights** > **Scans**.
-
-    ![Scan Insights](../images/module07/07.06-scans-insights-1.png)
-    
-2. With the latest update Scan insights are now moved under Data map. Please click on the **Data map** to navigate to scans. This will redirect you to the **Data Map-->Monitoring** section.
-
-.   ![Scan Insights](../images/module07/newscan.png)
-
-3. The Scans page displays the following **high-level metrics**.
-    * Number of Scans
-    * Number of Succeeded (Scans)
-    * Number of Canceled (Scans)
-    * Number of Failed (Scans)
-
-    ![Scan KPI](../images/module07/07.07-scans-kpi.png)
-
-4. The Scans page includes the following **graphs**:
-    
-    **Scan status**
-
-    ![Scan Graph 01](../images/module07/07.08-scans-graph01.png)
-
-    > **Did you know?**
-    >
-    > Clicking **View details** on the **Scan Status** graph will show scans that have occurred over the last 30 days with aggregated counts by status (Success, Failed, Canceled). Drilling further by clicking on a scan name will reveal the scan run history with quick action buttons to edit, delete, or run.
-
-## 3. Glossary Insights
+## 2. Glossary Insights
 
 1. Open Purview Studio, navigate to **Data estate insights** > **Glossary**.
 
@@ -121,7 +93,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Terms are considered **incomplete** if they are missing a definition, expert, or steward. If a term is missing more than one of these things, it is shown as **Missing multiple items**.
 
-## 4. Classification Insights
+## 3. Classification Insights
 
 1. Open Purview Studio, navigate to **Data estate insights** > **Classification**.
 
@@ -154,7 +126,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Classification Graph 04](../images/module07/07.19-classification-graph04.png)
 
-## 5. Sensitivity Labels Insights
+## 4. Sensitivity Labels Insights
 
 1. Open Purview Studio, navigate to **Data estate insights** > **Sensitivity Labels**.
 
