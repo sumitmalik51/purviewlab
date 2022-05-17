@@ -22,7 +22,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 2. On the **Microsoft Purview** blade, select **Create**.
 
-    ![Create Purview Resource](../images/module01/azure-purview-create.png)
+    ![Create Purview Resource](../images/module01/purv1.png)
 
 3. Provide the below inputs on the **Basics** tab.  
 
@@ -36,7 +36,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
-    ![Purview Account Basics](../images/module01/Mod1-purview02.png)
+    ![Purview Account Basics](../images/module01/purv2.png)
 
     > **Did you know?**
     >
@@ -52,11 +52,11 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 4. On the **Networking** tab, select **All networks**.
    
-    ![Networking](../images/module01/Mod1-purview03.png)
+    ![Networking](../images/module01/purv3.png)
 
 5. On the **Review + Create** tab, once the message in the ribbon returns "Validation passed", verify your selections and click **Create**.
 
-    ![Create Purview Account](../images/module01/Mod1-purview04.png)
+    ![Create Purview Account](../images/module01/purv4.png)
 
 6. Wait several minutes while your deployment is in progress. Once complete, click **Go to resource**.
 
@@ -66,7 +66,7 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 1. Navigate to your Azure Purview account and click **Open** within the **Open Purview Studio** tile.
 
-    ![Access Control](../images/module01/Mod1-purview06.png)
+    ![Access Control](../images/module01/purv5.png)
 
 2. On the left-hand side, navigate to **Data map**.
 
