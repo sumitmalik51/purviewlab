@@ -2,44 +2,44 @@
 
 ## Introduction
 
-To populate Azure Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Azure Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
+To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
 
 ## Objectives
 
 * Create a collection.
-* Register and scan an Azure Data Lake Storage Gen2 account using the Azure Purview managed identity.
+* Register and scan an Azure Data Lake Storage Gen2 account using the Microsoft Purview managed identity.
 
 
 ## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
-| 1 | [Grant the Azure Purview Managed Identity Access](#1-grant-the-azure-purview-managed-identity-access) | Azure Administrator |
+| 1 | [Grant the Microsoft Purview Managed Identity Access](#1-grant-the-azure-purview-managed-identity-access) | Azure Administrator |
 | 2 | [Upload Data to Azure Data Lake Storage Gen2 Account](#2-upload-data-to-azure-data-lake-storage-gen2-account) | Azure Administrator |
 | 3 | [Create a Collection](#3-create-a-collection) | Collection Administrator |
 | 4 | [Register a Source (ADLS Gen2)](#4-register-a-source-adls-gen2) | Data Source Administrator |
-| 5 | [Scan a Source with the Azure Purview Managed Identity](#5-scan-a-source-with-the-azure-purview-managed-identity) | Data Source Administrator |
+| 5 | [Scan a Source with the Microsoft Purview Managed Identity](#5-scan-a-source-with-the-azure-purview-managed-identity) | Data Source Administrator |
 | 6 | [View Assets](#6-view-assets) | Data Reader |
 
-## 1. Grant the Azure Purview Managed Identity Access
+## 1. Grant the Microsoft Purview Managed Identity Access
 
 > **Did you know?**
 >
-> To scan a source, Azure Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Azure Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
+> To scan a source, Microsoft Purview requires a set of **credentials**. For Azure Data Lake Storage Gen2, Microsoft Purview supports the following [authentication methods](https://docs.microsoft.com/en-gb/azure/purview/register-scan-adls-gen2#setting-up-authentication-for-a-scan).
 >
 > * Managed Identity (recommended)
 >* Service Principal
 > * Account Key
 > 
-> In this module we will walk through how to grant the Azure Purview Managed Identity the necessary access to successfully configure and run a scan.
+> In this module we will walk through how to grant the Microsoft Purview Managed Identity the necessary access to successfully configure and run a scan.
 
 1. Navigate to the **purviewlab-rg** resource group, and then go to `pvlab{randomId}adls` storage account.
 
-    ![Azure Purview](../images/module02/Mod2A-purview1.png)
+    ![Microsoft Purview](../images/module02/Mod2A-purview1.png)
 
 2. Select **Access Control (IAM) (1)** from the left navigation menu and click **Add role assignments (2)**.
 
-    ![Azure Purview](../images/module02/Mod2A-purview2.png)
+    ![Microsoft Purview](../images/module02/Mod2A-purview2.png)
 
 3. Filter the list of roles by searching for **Storage Blob Data Reader (1)**, click the row to select the role, and then click **Next (2)**.
 
@@ -57,7 +57,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 
     ![Access Control Assign](../images/module02/Mod2A-purview7.png)
 
-7. To confirm the role has been assigned, navigate to the **Role assignments (1)** tab and filter the **Scope (2)** to `This resource`. You should be able to see that the Azure Purview managed identity has been granted the **Storage Blob Data Reader (3)** role.
+7. To confirm the role has been assigned, navigate to the **Role assignments (1)** tab and filter the **Scope (2)** to `This resource`. You should be able to see that the Microsoft Purview managed identity has been granted the **Storage Blob Data Reader (3)** role.
 
     ![Role Assignment](../images/module02/Mod2A-purview6.png)
 
@@ -126,7 +126,7 @@ Before proceeding with the following steps, you will need to:
 
 > **Did you know?**
 >
-> [Collections](https://docs.microsoft.com/en-us/azure/purview/how-to-create-and-manage-collections) in Azure Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Azure Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata). 
+> [Collections](https://docs.microsoft.com/en-us/azure/purview/how-to-create-and-manage-collections) in Microsoft Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Microsoft Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata). 
 >
 > For more information, check out [Collection Architectures and Best Practices](https://docs.microsoft.com/en-us/azure/purview/concept-best-practices-collections).
 
@@ -164,13 +164,13 @@ Before proceeding with the following steps, you will need to:
 
     ![Source Properties](../images/module02/02.22-sources-properties-1.png)
 
-## 5. Scan a Source with the Azure Purview Managed Identity
+## 5. Scan a Source with the Microsoft Purview Managed Identity
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
     ![New Scan](../images/module02/Mod2A-purview11.png)
 
-2. Click **Test connection** to ensure the Azure Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
+2. Click **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
     ![Test Connection](../images/module02/azure-purview-new-scan.png)
 
@@ -222,9 +222,9 @@ Before proceeding with the following steps, you will need to:
     B ) Collections  
     C ) Groups  
 
-2. At which point does Azure Purview begin to populate the data map with assets?
+2. At which point does Microsoft Purview begin to populate the data map with assets?
 
-    A ) After an Azure Purview account is created  
+    A ) After an Microsoft Purview account is created  
     B ) After a Data Source has been registered    
     C ) After a Data Source has been scanned
 
