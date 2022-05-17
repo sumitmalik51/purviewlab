@@ -62,7 +62,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     **Resource Name**
     ```
-    Azure Purview
+    Microsoft Purview
     ```
     **Resource Link**
     ```
@@ -253,4 +253,4 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     
 ## Summary
 
-This module provided an overview of how to create, export, and import terms into the Azure Purview glossary.
+This module provided an overview of how to create, export, and import terms into the Microsoft Purview glossary.
