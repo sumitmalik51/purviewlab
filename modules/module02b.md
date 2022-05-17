@@ -2,7 +2,7 @@
 
 ## Introduction
 
-To populate Azure Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Azure Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
+To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
 
 ## Objectives
 
@@ -13,9 +13,9 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 | #  | Section | Role |
 | --- | --- | --- |
 | 1 | [Key Vault Access Policy #1 (Grant Yourself Access)](#1-key-vault-access-policy-1-grant-yourself-access) | Azure Administrator |
-| 2 | [Key Vault Access Policy #2 (Grant Azure Purview Access)](#2-key-vault-access-policy-2-grant-azure-purview-access) | Azure Administrator |
+| 2 | [Key Vault Access Policy #2 (Grant Microsoft Purview Access)](#2-key-vault-access-policy-2-grant-azure-purview-access) | Azure Administrator |
 | 3 | [Generate a Secret](#3-generate-a-secret) | Azure Administrator |
-| 4 | [Add Credentials to Azure Purview](#4-add-credentials-to-azure-purview) | Azure Purview Administrator |
+| 4 | [Add Credentials to Microsoft Purview](#4-add-credentials-to-azure-purview) | Microsoft Purview Administrator |
 | 5 | [Register a Source (Azure SQL DB)](#5-register-a-source-azure-sql-db) | Data Source Administrator |
 | 6 | [Scan a Source with Azure Key Vault Credentials](#6-scan-a-source-with-azure-key-vault-credentials) | Data Source Administrator |
 | 7 | [View Assets](#7-view-assets) | Data Reader |
@@ -26,7 +26,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
 >
 > **Azure Key Vault** is a cloud service that provides a secure store for secrets. Azure Key Vault can be used to securely store keys, passwords, certificates, and other secrets. For more information, check out [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview).
 
-Before we can add secrets (such as passwords) to Azure Key Vault, we need to set up an [Access Policy](https://docs.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal). The access policy being created in this particular step, ensures that our account has sufficient permissions to create a secret, which will later be used by Azure Purview to perform a scan.
+Before we can add secrets (such as passwords) to Azure Key Vault, we need to set up an [Access Policy](https://docs.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal). The access policy being created in this particular step, ensures that our account has sufficient permissions to create a secret, which will later be used by Microsoft Purview to perform a scan.
 
 1. Navigate back to the browser tab in which Azure Portal is open, select the **purviewlab-rg** resource group and then Azure Key Vault resource named **pvlab-kv{randomid}**.
 
@@ -58,9 +58,9 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
     ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
 
-## 2. Key Vault Access Policy #2 (Grant Azure Purview Access)
+## 2. Key Vault Access Policy #2 (Grant Microsoft Purview Access)
 
-In this next step, we are creating a second access policy which will provide Azure Purview the necessary access to retrieve secrets from the Key Vault.
+In this next step, we are creating a second access policy which will provide Microsoft Purview the necessary access to retrieve secrets from the Key Vault.
 
 1. From the **Key Vault Access policies** blade, Click **Add Access Policy**.
 
@@ -70,7 +70,7 @@ In this next step, we are creating a second access policy which will provide Azu
 
     ![Select Principal](../images/module02/02.48-policy-select.png)
 
-1. Search for the name of your Azure Purview account pvlab-<inject key="Deployment ID" enableCopy="false" />-pv, select the item, then click **Select**.
+1. Search for the name of your Microsoft Purview account pvlab-<inject key="Deployment ID" enableCopy="false" />-pv, select the item, then click **Select**.
 
     ![Search Principal](../images/module02/02.49-policy-principal-1.png)
 
@@ -107,9 +107,9 @@ In order to securely store our Azure SQL Database password, we need to generate 
 
     ![Create Secret](../images/module02/02.56-vault-sqlsecret-1.png)
 
-## 4. Add Credentials to Azure Purview
+## 4. Add Credentials to Microsoft Purview
 
-To make the secret accessible to Azure Purview, we must first establish a connection to Azure Key Vault.
+To make the secret accessible to Microsoft Purview, we must first establish a connection to Azure Key Vault.
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Management Center** > **Credentials**, click **Manage Key Vault connections**.
 
@@ -128,7 +128,7 @@ To make the secret accessible to Azure Purview, we must first establish a connec
 
     ![Create Key Vault Connection](../images/module02/02.59-vault-create-1.png)
 
-4. Since we have already granted the Azure Purview managed identity access to our Azure Key Vault, click **Confirm**.
+4. Since we have already granted the Microsoft Purview managed identity access to our Azure Key Vault, click **Confirm**.
 
     ![](../images/module02/02.60-vault-access.png)
 
@@ -228,9 +228,9 @@ To make the secret accessible to Azure Purview, we must first establish a connec
     B ) Collections  
     C ) Groups  
 
-2. At which point does Azure Purview begin to populate the data map with assets?
+2. At which point does Microsoft Purview begin to populate the data map with assets?
 
-    A ) After an Azure Purview account is created  
+    A ) After an Microsoft Purview account is created  
     B ) After a Data Source has been registered    
     C ) After a Data Source has been scanned
 
