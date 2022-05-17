@@ -51,7 +51,7 @@ To populate Azure Purview with assets for data discovery and understanding, we m
     
 5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="Deployment ID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
    
-    ![Access Control Members](../images/module02/Mod2A-purview5.png)
+    ![Access Control Members](../images/module02/purvex2tsk1stp5.png)
 
 6. Click **Review + assign** once more to perform the role assignment.
 
