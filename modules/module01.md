@@ -18,9 +18,9 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 ## 1. Create an Azure Purview Account
 
-1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Azure Purview** and select it.
+1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
 
-2. On the **Azure Purview** blade, select **Create**.
+2. On the **Microsoft Purview** blade, select **Create**.
 
     ![Create Purview Resource](../images/module01/azure-purview-create.png)
 
