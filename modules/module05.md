@@ -159,7 +159,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
-    ![Test Connection](../images/module05/05.18-scan-test.png)
+    ![Test Connection](../images/module05/scan-test.png)
 
 3. By default, Azure Purview will have the parent Azure Data Lake Storage Gen2 account selected and therefore include all paths in scope. To reduce the scope, deselect the parent and select the **Twitter** folder only. Click **Continue**.
 
