@@ -32,7 +32,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 1. Asset Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Assets**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Assets**.
 
     ![Assets Insights](../images/module07/07.01-assets-insights-1.1.png)
 
@@ -64,7 +64,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 2. Scan Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Scans**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Scans**.
 
     ![Scan Insights](../images/module07/07.06-scans-insights-1.png)
     
@@ -92,7 +92,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 3. Glossary Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Glossary**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Glossary**.
 
     ![Glossary Insights](../images/module07/07.09-glossary-insights-1.1.png)
 
@@ -123,7 +123,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 4. Classification Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Classification**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Classification**.
 
     ![Classification Insights](../images/module07/07.14-classification-insights-1.1.png)
 
@@ -156,7 +156,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 5. Sensitivity Labels Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Sensitivity Labels**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Sensitivity Labels**.
 
     > **Did you know?**
     >
