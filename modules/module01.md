@@ -1,22 +1,22 @@
-# Module 01 - Create an Azure Purview Account
+# Module 01 - Create an Microsoft Purview Account
 
 ## Introduction
 
-To create and use the Azure Purview platform, you will need to provision an Azure Purview account.
+To create and use the Microsoft Purview platform, you will need to provision an Microsoft Purview account.
 
 ## Objectives
 
-* Create an Azure Purview account using the Azure portal.
-* Provide additional users access to Azure Purview's data plane.
+* Create an Microsoft Purview account using the Azure portal.
+* Provide additional users access to Microsoft Purview's data plane.
 
 ## Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
-| 1 | [Create an Azure Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
-| 2 | [Grant Access to Azure Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
+| 1 | [Create an Microsoft Purview Account](#1-create-an-azure-purview-account) | Azure Administrator |
+| 2 | [Grant Access to Microsoft Purview's Data Plane](#2-grant-access-to-azure-purviews-data-plane) | Collection Administrator |
 
-## 1. Create an Azure Purview Account
+## 1. Create an Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
 
@@ -40,15 +40,15 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     > **Did you know?**
     >
-    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Azure Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
+    > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
-    > Capacity Units are required regardless of whether you plan to invoke the Azure Purview API endpoints directly (i.e. ISV scenario) or indirectly via Purview Studio (GUI).
+    > Capacity Units are required regardless of whether you plan to invoke the Microsoft Purview API endpoints directly (i.e. ISV scenario) or indirectly via Purview Studio (GUI).
     >
-    > Note: With the introduction of the [Elastic Data Map](https://docs.microsoft.com/en-us/azure/purview/concept-elastic-data-map), you no longer need to specify how many Capacity Units that you need. Azure Purview will scale capacity elastically based on the request load.
+    > Note: With the introduction of the [Elastic Data Map](https://docs.microsoft.com/en-us/azure/purview/concept-elastic-data-map), you no longer need to specify how many Capacity Units that you need. Microsoft Purview will scale capacity elastically based on the request load.
     > 
     > **vCore Hours** on the other hand, is the unit of measure for **serverless** compute that is needed to run a scan. You only pay per vCore Hour of scanning that you consume (rounded up to the nearest minute).
     >
-    > For more information, check out the [Azure Purview Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-purview/) page.
+    > For more information, check out the [Microsoft Purview Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-purview/) page.
 
 4. On the **Networking** tab, select **All networks**.
    
@@ -62,9 +62,9 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     ![Go to resource](../images/module01/Mod1-purview05.png)
 
-## 2. Grant Access to Azure Purview's Data Plane
+## 2. Grant Access to Microsoft Purview's Data Plane
 
-1. Navigate to your Azure Purview account and click **Open** within the **Open Purview Studio** tile.
+1. Navigate to your Microsoft Purview account and click **Open** within the **Open Purview Studio** tile.
 
     ![Access Control](../images/module01/purv5.png)
 
@@ -86,9 +86,9 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
     > **Did you know?**
     >
-    > Azure Purview has a set of predefined data plane roles that can be used to control who can access what.
+    > Microsoft Purview has a set of predefined data plane roles that can be used to control who can access what.
     >
-    > For more information, check out [Access control in Azure Purview](https://docs.microsoft.com/en-us/azure/purview/catalog-permissions).
+    > For more information, check out [Access control in Microsoft Purview](https://docs.microsoft.com/en-us/azure/purview/catalog-permissions).
 
     | Role  | Collections | Catalog | Sources/Scans | Description | 
     | --- | --- | --- | --- | --- |
@@ -101,25 +101,25 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
 
-1. Which of the following Azure Purview pricing meters is fluid, with consumption varying based on usage?
+1. Which of the following Microsoft Purview pricing meters is fluid, with consumption varying based on usage?
 
     A ) Capacity Units  
     B ) vCore Hours  
     C ) Neither
 
-2. Which of the following Azure Purview pricing meters is always on, with consumption based on quantity provisioned?
+2. Which of the following Microsoft Purview pricing meters is always on, with consumption based on quantity provisioned?
 
     A ) Capacity Units  
     B ) vCore Hours  
     C ) Neither
 
-3. Which Azure Purview module provides the base functionality (i.e. source registration, automated scanning and classification, data discovery)?
+3. Which Microsoft Purview module provides the base functionality (i.e. source registration, automated scanning and classification, data discovery)?
 
     A ) C0  
     B ) C1  
     C ) D0
 
-4. Which predefined Azure Purview role provides access to manage data sources?
+4. Which predefined Microsoft Purview role provides access to manage data sources?
 
     A ) Purview Data Reader  
     B ) Purview Data Curator  
@@ -127,4 +127,4 @@ To create and use the Azure Purview platform, you will need to provision an Azur
 
 ## Summary
 
-This module provided an overview of how to provision an Azure Purview account using the Azure Portal and how to grant the appropriate level of access to Azure Purview's data plane.
+This module provided an overview of how to provision an Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
