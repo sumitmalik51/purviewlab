@@ -39,13 +39,13 @@ Azure Purview provides a large set of default classifications that represent typ
 
 3. Navigate to the **Custom** tab to confirm the custom classification has been created.
 
-    ![Create Classification](../images/module05/pvcl2.png)
+    ![Create Classification](../images/module05/pvcl2.1.png)
 
 ## 2. Create a Custom Classification Rule (Regular Expression)
 
 1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
 
-    ![New Classification Rule](../images/module05/pvcl3.png)
+    ![New Classification Rule](../images/module05/pvcl3.1.png)
 
 1. Populate the classification rule fields as per the example below and click **Continue**.
 
@@ -98,7 +98,7 @@ Azure Purview provides a large set of default classifications that represent typ
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    ![New Scan Rule Set](../images/module05/pvcl4.png)
+    ![New Scan Rule Set](../images/module05/pvcl4.1.png)
 
 2. Change the **Source Type** to `Azure Data Lake Storage Gen2` then **copy** and **paste** the values below into the appropriate fields. Click **Continue**.
 
@@ -155,7 +155,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Data map** > **Sources** and click **New Scan** within the **Azure Data Lake Storage Gen2** tile. Note: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-    ![New Scan](../images/module05/pvcl5.png)
+    ![New Scan](../images/module05/pvcl5.1.png)
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
@@ -187,17 +187,17 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 9. To view the progress of the scan, navigate to **Sources** and click **View details** on the Azure Data Lake Storage Gen2 tile.
 
-    ![Source Details](../images/module05/pvcl6.png)
+    ![Source Details](../images/module05/pvcl6.1.png)
 
 10. Periodically click **Refresh** to update the scan status until **Complete**. Note: This will take approximately 5 to 10 minutes.
 
-    ![Scan Progress](../images/module05/pvcl7.png)
+    ![Scan Progress](../images/module05/pvcl7.2.png)
 
 ## 6. Search by Classification
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
-    ![Wildcard Search](../images/module05/pvcl.png)
+    ![Wildcard Search](../images/module05/pvcl7.1.png)
 
 2. Limit the search results by setting **Classification** within the filter panel to **Twitter Handle**. Click on the asset title (**twitter_handles.parquet**) to view the asset details.
 
