@@ -197,7 +197,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 1. Once the scan has complete, perform a wildcard search by typing in the asterisk character (**\***) into the search bar and hit Enter.
 
-    ![Wildcard Search](../images/module05/pvcl7.png)
+    ![Wildcard Search](../images/module05/pvcl.png)
 
 2. Limit the search results by setting **Classification** within the filter panel to **Twitter Handle**. Click on the asset title (**twitter_handles.parquet**) to view the asset details.
 
@@ -205,7 +205,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 3. You will notice on the Overview tab that the schema includes the Twitter Handle classification. To identity which column has been classified, navigate to the **Schema** tab.
 
-    ![Asset Details](../images/module05/pvcl9.png)
+    ![Asset Details](../images/module05/pvcl9.1.png)
 
 4. Within the Schema tab we can see that **Account name** is the column that has been classified.
 
