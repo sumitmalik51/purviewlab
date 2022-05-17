@@ -22,7 +22,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 1. Open Purview Studio, navigate to **Data map** > **Classifications** (under Annotation management) and click **New**.
 
-    ![New Classification](../images/module05/pvcl1.png)
+    ![New Classification](../images/module05/pvcl1.1.png)
 
 2. **Copy** and **paste** the values below into the appropriate fields and click **OK**.
 
