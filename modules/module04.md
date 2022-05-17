@@ -26,11 +26,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/Mod4-purview1.png)
+    ![](../images/module04/Mod4-purview1.1.png)
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/Mod4-purview2.png)
+    ![New Glossary Term](../images/module04/Mod4-purview2.1.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -69,21 +69,21 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     https://aka.ms/Azure-Purview
     ```
     
-    ![New Term](../images/module04/Mod4-purview3.png)
+    ![New Term](../images/module04/Mod4-purview3.1.png)
 
 ## 2. Create a Term (Custom Term Template)
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/pvnw1.png)
+    ![](../images/module04/Mod4-purview1.1.png)
 
 2. Click **New term**.
 
-    ![New Term](../images/module04/pvnw2.png)
+    ![New Term](../images/module04/pvnw2.1.png)
 
-3. Click **New term template**.
+3. Click **New term template** and click on **Continue**.
 
-    ![New term template](../images/module04/pvnw3.png)
+    ![New term template](../images/module04/pvnw3.1.png)
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
@@ -128,12 +128,12 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     Marketing
     ```
     
-    ![](../images/module04/04.10-term-create2.png)
+    ![](../images/module04/04.10-term-create2.1.png)
 
 
 9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
-    ![](../images/module04/04.11-glossary-table.png)
+    ![](../images/module04/04.11-glossary-table.1.png)
     
 ## 3. Bulk Import Terms
 
@@ -147,7 +147,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. From the **Glossary** screen, click **Import terms**.
 
-    ![Import terms](../images/module04/pvnw4.png)
+    ![Import terms](../images/module04/pvnw4.1.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -183,11 +183,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/pvnw7.png)
+    ![Wildcard Search](../images/module04/pvnw7.1.png)
 
 2. Click **Edit**.
 
-    ![Edit Asset](../images/module04/pvnw8.png)
+    ![Edit Asset](../images/module04/pvnw8.1.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
