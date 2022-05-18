@@ -146,7 +146,7 @@ Before proceeding with the following steps, you will need to:
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and click on **Register**.
 
-    ![Register](../images/module02/Mod2A-purview10.png)
+    ![Register](../images/module02/M2AT4S1.png)
 
 2. On the **Register Sources** blade, scroll down and select **Azure Data Lake Storage Gen2** and click **Continue**.
 
