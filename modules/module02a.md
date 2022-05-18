@@ -196,11 +196,11 @@ Before proceeding with the following steps, you will need to:
 
 7. To monitor the progress of the scan run, click **View Details**.
 
-    ![View Details](../images/module02/Mod2A-purview12.png)
+    ![View Details](../images/module02/M2AT5S7.png)
 
 8. Click **Refresh** to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
 
-    ![Monitor Scan](../images/module02/Mod2A-purview13.png)
+    ![Monitor Scan](../images/module02/M2AT5S8.png)
 
 ## 6. View Assets
 
