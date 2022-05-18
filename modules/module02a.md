@@ -132,7 +132,7 @@ Before proceeding with the following steps, you will need to:
 
 1. Navigate back to the browser tab in which Purview Studio is open. From the Purview Studio, navigate to **Data Map** > **Collections**, and click  **Add a collection**.
 
-    ![New Collection](../images/module02/Mod2A-purview9.png)
+    ![New Collection](../images/module02/M2AT3S1.png)
 
 2. Provide the below value for the collection name and click on **Create**.
 
