@@ -168,7 +168,7 @@ Before proceeding with the following steps, you will need to:
 
 1. From the Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, click the **New Scan** button.
 
-    ![New Scan](../images/module02/Mod2A-purview11.png)
+    ![New Scan](../images/module02/M2AT5S1.png)
 
 2. Click **Test connection** to ensure the Microsoft Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click **Continue**.
 
