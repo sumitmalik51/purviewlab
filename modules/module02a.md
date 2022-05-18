@@ -204,13 +204,13 @@ Before proceeding with the following steps, you will need to:
 
 ## 6. View Assets
 
-1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
+1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hit the Enter key to submit the query.
 
-    ![](../images/module02/Mod2A-purview14.png)
+    ![](../images/module02/M2AT6S1.png)
 
 2. You should be able to see a list of assets within the search results, which is a result of the scan.
 
-    ![](../images/module02/Mod2A-purview15.png)
+    ![](../images/module02/M2AT6S2.png)
 
 ## Knowledge Check
 
