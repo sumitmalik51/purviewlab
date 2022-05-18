@@ -70,11 +70,11 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 
 2. On the left-hand side, navigate to **Data map**.
 
-    ![Add Role Assignment](../images/module01/Mod1-purview07.png)
+    ![Add Role Assignment](../images/module01/purvex1tsk2stp2.png)
 
 3. Select **Collections (1)** and click on **Role assignments (2)**.
 
-    ![Collections](../images/module01/Mod1-purview08.png)
+    ![Collections](../images/module01/m1ex2stp3.png)
 
 4. On the **Role assignments (2)** blade, scroll down and click on the **Add** icon that is next to **Data curators**.
 
