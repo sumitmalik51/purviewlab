@@ -26,11 +26,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/Mod4-purview1.1.png)
+    ![](../images/module04/M4T1S1.png)
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/Mod4-purview2.1.png)
+    ![New Glossary Term](../images/module04/M4T1S2.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -69,7 +69,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     https://aka.ms/Azure-Purview
     ```
     
-    ![New Term](../images/module04/Mod4-purview3.1.png)
+    ![New Term](../images/module04/M4T1S4.png)
 
 ## 2. Create a Term (Custom Term Template)
 
