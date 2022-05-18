@@ -125,11 +125,11 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
 1. Open Purview Studio and from the **Data catalog** screen, type the asterisk character (**\***) into the search bar and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/Mod2A-purview14.png)
+    ![Search Wildcard](../images/module03/M3T4S1.png)
 
 2. Hover your mouse over an item in the list to reveal the checkbox on the right-hand side. Select five items and click **View selected**.
 
-    ![View Selected](../images/module03/Lab03-purview11.png)
+    ![View Selected](../images/module03/M3T4S2.png)
 
 3. Click **Bulk edit**.
 
