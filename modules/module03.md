@@ -104,19 +104,19 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 
 1. Open Purview Studio and from the **Data catlog** screen, click **Browse assets**.
 
-    ![Browse Assets](../images/module03/Lab03-purview7.png)
+    ![Browse Assets](../images/module03/M3T3S1.png)
 
 2. Switch to the **By source type** tab and select a **source** `Azure Data Lake Storage Gen2`.
 
-    ![ADLS Gen2](../images/module03/Lab03-purview8.png)
+    ![ADLS Gen2](../images/module03/M3T3S2.png)
 
 3. Select an **account** named `pvlab{randomId}adls`.
 
-    ![ADLS Gen2 Account](../images/module03/Lab03-purview9.png)
+    ![ADLS Gen2 Account](../images/module03/M3T3S3.png)
 
 4. Select a **container** with the name `raw`.
 
-    ![ADLS Gen2 Container](../images/module03/Lab03-purview10.png)
+    ![ADLS Gen2 Container](../images/module03/M3T3S4.png)
 
 ## 4. Bulk Edit
 
