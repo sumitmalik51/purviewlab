@@ -214,9 +214,9 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 ## 7. View Assets
 
-1. To view the assets that have materialised as an outcome of running the scans, perform a wildcard search by typing the asterisk character (`*`) into the search bar and hitting the Enter key to submit the query and return the search results.
+1. To view the assets that have materialised as an outcome of running the scans, perform a wildcard search by typing the asterisk character (`*`) into the search bar and hit the Enter key to submit the query and return the search results.
 
-    ![](../images/module02/02.72-search-wildcard.png)
+    ![](../images/module02/M2BT7S1.png)
 
 ## Knowledge Check
 
