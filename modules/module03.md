@@ -22,11 +22,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 1. Open Purview Studio and from the **Data catalog** screen, type the asterisk character (**\***) into the search bar and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/Mod2A-purview14.png)
+    ![Search Wildcard](../images/module03/M3T1S1.png)
 
 2. Filter the search results by **Classification** (e.g. **Country/Region**) and click the hyperlinked asset name to view the details (e.g. `QueriesByState`).
 
-    ![Filter by Classification](../images/module03/Lab03-purview1.png)
+    ![Filter by Classification](../images/module03/M3T1S2.png)
 
 
 > **Did you know?**
@@ -37,7 +37,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 1. Click **Edit** to modify the asset details.
 
-    ![Edit Asset](../images/module03/Lab03-purview2.png)
+    ![Edit Asset](../images/module03/M3T2S1.png)
 
 2. Update the **Description** by copying and pasting the sample text below.
 
@@ -45,11 +45,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/Lab03-purview3-1.png)
+    ![Update Description](../images/module03/M3T2S2.png)
 
 3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
-    ![Update Classification](../images/module03/Lab03-purview4-1.png)
+    ![Update Classification](../images/module03/M3T2S3.png)
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
@@ -57,7 +57,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
-    ![Update Schema](../images/module03/Lab03-purview5.png)
+    ![Update Schema](../images/module03/M3T2S4.png)
 
     **Date**
     ```
@@ -92,11 +92,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
     >
     > For assets in which you are tagged as a **Contact**, these will appear on the home screen (Data catalog), under **My items**.
 
-    ![Update Contacts](../images/module03/03.07-asset-contacts.1.png)
+    ![Update Contacts](../images/module03/M3T2S5.png)
 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
-    ![Related Assets](../images/module03/Lab03-purview6.png)
+    ![Related Assets](../images/module03/M3T2S6.png)
 
 ## 3. Browse Assets
 
