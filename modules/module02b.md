@@ -163,7 +163,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
 1. From the Purview Studio, navigate to **Data map** > **Sources**, and click **Register**.
 
-    ![](../images/module02/Mod2A-purview10.png)
+    ![](../images/module02/M2BT5S1.png)
 
 2. Navigate to the **Azure** tab, select **Azure SQL Database**, click **Continue**.
 
