@@ -75,15 +75,15 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/Mod4-purview1.1.png)
+    ![](../images/module04/M4T2S1.png)
 
 2. Click **New term**.
 
-    ![New Term](../images/module04/pvnw2.1.png)
+    ![New Term](../images/module04/M4T2S2.png)
 
 3. Click **New term template** and click on **Continue**.
 
-    ![New term template](../images/module04/pvnw3.1.png)
+    ![New term template](../images/module04/M4T2S3.png)
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
@@ -128,12 +128,12 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     Marketing
     ```
     
-    ![](../images/module04/04.10-term-create2.1.png)
+    ![](../images/module04/M4T2S8.png)
 
 
 9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
-    ![](../images/module04/04.11-glossary-table.1.png)
+    ![](../images/module04/M4T2S9.png)
     
 ## 3. Bulk Import Terms
 
