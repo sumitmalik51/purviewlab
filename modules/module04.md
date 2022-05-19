@@ -191,25 +191,25 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
-    ![Assign Term](../images/module04/pvnw9.png)
+    ![Assign Term](../images/module04/pvnw9.1.png)
 
 4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
-    ![Assigned Terms](../images/module04/pvnw10.png)
+    ![Assigned Terms](../images/module04/pvnw10.1.png)
 
 5. Click **Refresh** to view the **Catalog assets** the term is assigned to.
 
-    ![Catalog assets](../images/module04/pvnw11.png)
+    ![Catalog assets](../images/module04/pvnw11.1.png)
     
 ## 6. Update an Existing Term
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/pvnw12.png)
+    ![Term Details](../images/module04/pvnw12.1.png)
 
 2. Navigate to the **Related** tab and click **Edit**.
 
-    ![Related](../images/module04/pvnw13.png)
+    ![Related](../images/module04/pvnw13.1.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
