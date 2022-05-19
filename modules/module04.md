@@ -207,7 +207,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Term Details](../images/module04/pvnw12.1.png)
 
-2. Navigate to the **Related** tab and click **Edit**.
+2. Navigate to the **Related** tab.
 
     ![Related](../images/module04/pvnw13.1.png)
 
