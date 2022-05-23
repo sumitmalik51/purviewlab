@@ -59,7 +59,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 1. Now you can see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](../images/getting-started-with-lab/rgs.png)
+   ![](../images/getting-started-with-lab/rgs1.png)
 
 1. Now, click on **Next** from the lower right corner to move to the next page.
 
