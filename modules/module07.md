@@ -44,6 +44,8 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Assets KPI](../images/module07/07.02-assets-kpi.png)
 
+    > **Note**: It might take some time for the data to load. Meanwhile, you can continue with next module, come back later and verify the results.
+
 3. Further down the page you will find additional **data visualizations**, typically these tiles will allow interactive filtering and the ability to drill-down into the underlying detail by clicking **View details**. The Assets page includes the following **graphs**:
 
     **Asset count by source type**
@@ -74,6 +76,8 @@ Insights provides customers, a single pane of glass view into their catalog and 
     * Expired terms with assets
 
     ![Glossary KPI](../images/module07/07.10-glossary-kpi.png)
+
+    > **Note**: It might take some time for the data to load. Meanwhile, you can continue with next module, come back later and verify the results.
 
 3. The Glossary page includes the following **graphs**:
      
@@ -107,6 +111,8 @@ Insights provides customers, a single pane of glass view into their catalog and 
     * Sources classified
 
     ![Classification KPI](../images/module07/07.15-classification-kpi.png)
+
+    > **Note**: It might take some time for the data to load. Meanwhile, you can continue with next module, come back later and verify the results.
 
 3. The Classification page includes the following **graphs**:
      
