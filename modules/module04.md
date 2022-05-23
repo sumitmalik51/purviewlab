@@ -26,11 +26,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/Mod4-purview1.png)
+    ![](../images/module04/M4T1S1.png)
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/Mod4-purview2.png)
+    ![New Glossary Term](../images/module04/M4T1S2.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -62,28 +62,28 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     **Resource Name**
     ```
-    Azure Purview
+    Microsoft Purview
     ```
     **Resource Link**
     ```
     https://aka.ms/Azure-Purview
     ```
     
-    ![New Term](../images/module04/Mod4-purview3.png)
+    ![New Term](../images/module04/M4T1S4.png)
 
 ## 2. Create a Term (Custom Term Template)
 
 1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
 
-    ![](../images/module04/pvnw1.png)
+    ![](../images/module04/M4T2S1.png)
 
 2. Click **New term**.
 
-    ![New Term](../images/module04/pvnw2.png)
+    ![New Term](../images/module04/M4T2S2.png)
 
-3. Click **New term template**.
+3. Click **New term template** and click on **Continue**.
 
-    ![New term template](../images/module04/pvnw3.png)
+    ![New term template](../images/module04/M4T2S3.png)
 
 4. Provide the Term Template a **Name** as `Contoso Template` and click **New attribute**.
 
@@ -128,12 +128,12 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     Marketing
     ```
     
-    ![](../images/module04/04.10-term-create2.png)
+    ![](../images/module04/M4T2S8.png)
 
 
 9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
 
-    ![](../images/module04/04.11-glossary-table.png)
+    ![](../images/module04/M4T2S9.png)
     
 ## 3. Bulk Import Terms
 
@@ -147,7 +147,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. From the **Glossary** screen, click **Import terms**.
 
-    ![Import terms](../images/module04/pvnw4.png)
+    ![Import terms](../images/module04/pvnw4.1.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -183,33 +183,33 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/pvnw7.png)
+    ![Wildcard Search](../images/module04/pvnw7.1.png)
 
 2. Click **Edit**.
 
-    ![Edit Asset](../images/module04/pvnw8.png)
+    ![Edit Asset](../images/module04/pvnw8.1.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
-    ![Assign Term](../images/module04/pvnw9.png)
+    ![Assign Term](../images/module04/pvnw9.1.png)
 
 4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
-    ![Assigned Terms](../images/module04/pvnw10.png)
+    ![Assigned Terms](../images/module04/pvnw10.1.png)
 
 5. Click **Refresh** to view the **Catalog assets** the term is assigned to.
 
-    ![Catalog assets](../images/module04/pvnw11.png)
+    ![Catalog assets](../images/module04/pvnw11.1.png)
     
 ## 6. Update an Existing Term
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/pvnw12.png)
+    ![Term Details](../images/module04/pvnw12.1.png)
 
-2. Navigate to the **Related** tab and click **Edit**.
+2. Navigate to the **Related** tab.
 
-    ![Related](../images/module04/pvnw13.png)
+    ![Related](../images/module04/pvnw13.1.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
@@ -253,4 +253,4 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     
 ## Summary
 
-This module provided an overview of how to create, export, and import terms into the Azure Purview glossary.
+This module provided an overview of how to create, export, and import terms into the Microsoft Purview glossary.

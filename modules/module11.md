@@ -86,7 +86,7 @@ To invoke the install the self-hosted integration runtime, we must first log int
 
 1. Within the Azure Purview Studio, navigate to the **Data Map** in the left blade, click **Integration Runtime** and click **+ New**.
 
-   ![](../images/module11/shir-install-9.png)
+   ![](../images/module11/shir-install-9.1.png)
 
 2. Ensure the **Self-Hosted** option is selected, then click **Continue**.
 

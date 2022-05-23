@@ -32,9 +32,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 ## 1. Asset Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Assets**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Assets**.
 
-    ![Assets Insights](../images/module07/07.01-assets-insights-1.png)
+    ![Assets Insights](../images/module07/07.01-assets-insights-1.1.png)
 
 2. The Assets page displays the following **high-level metrics**.
     * Number of Source Types
@@ -62,39 +62,11 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Using the quick filters on the **Asset count by source type** graph and drilling into the details by clicking **View details**, is a quick and easy way of identifying which sources contain certain types of data.
 
-## 2. Scan Insights
+## 2. Glossary Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Scans**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Glossary**.
 
-    ![Scan Insights](../images/module07/07.06-scans-insights-1.png)
-    
-2. With the latest update Scan insights are now moved under Data map. Please click on the **Data map** to navigate to scans. This will redirect you to the **Data Map-->Monitoring** section.
-
-.   ![Scan Insights](../images/module07/newscan.png)
-
-3. The Scans page displays the following **high-level metrics**.
-    * Number of Scans
-    * Number of Succeeded (Scans)
-    * Number of Canceled (Scans)
-    * Number of Failed (Scans)
-
-    ![Scan KPI](../images/module07/07.07-scans-kpi.png)
-
-4. The Scans page includes the following **graphs**:
-    
-    **Scan status**
-
-    ![Scan Graph 01](../images/module07/07.08-scans-graph01.png)
-
-    > **Did you know?**
-    >
-    > Clicking **View details** on the **Scan Status** graph will show scans that have occurred over the last 30 days with aggregated counts by status (Success, Failed, Canceled). Drilling further by clicking on a scan name will reveal the scan run history with quick action buttons to edit, delete, or run.
-
-## 3. Glossary Insights
-
-1. Open Purview Studio, navigate to **Data Insights** > **Glossary**.
-
-    ![Glossary Insights](../images/module07/07.09-glossary-insights-1.png)
+    ![Glossary Insights](../images/module07/07.09-glossary-insights-1.1.png)
 
 2. The Glossary page displays the following **high-level metrics**.
     * Total terms
@@ -121,11 +93,11 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Terms are considered **incomplete** if they are missing a definition, expert, or steward. If a term is missing more than one of these things, it is shown as **Missing multiple items**.
 
-## 4. Classification Insights
+## 3. Classification Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Classification**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Classification**.
 
-    ![Classification Insights](../images/module07/07.14-classification-insights-1.png)
+    ![Classification Insights](../images/module07/07.14-classification-insights-1.1.png)
 
 2. The Classification page displays the following **high-level metrics**.
     * Total assets classified
@@ -154,9 +126,9 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Classification Graph 04](../images/module07/07.19-classification-graph04.png)
 
-## 5. Sensitivity Labels Insights
+## 4. Sensitivity Labels Insights
 
-1. Open Purview Studio, navigate to **Data Insights** > **Sensitivity Labels**.
+1. Open Purview Studio, navigate to **Data estate insights** > **Sensitivity Labels**.
 
     > **Did you know?**
     >
@@ -164,7 +136,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
     >
     > Azure Purview's ability to apply sensitivity labels is due to the close integration with **Microsoft Information Protection** offered in Microsoft 365. Note: You must turn on Information Protection for Azure Purview in the Microsoft 365 compliance center. For more information, check out how to [Labeling in Azure Purview](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label).
 
-    ![Sensitivity Labels Insights](../images/module07/07.20-labels-insights-1.png)
+    ![Sensitivity Labels Insights](../images/module07/07.20-labels-insights-1.1.png)
 
 2. The Sensitivity Labels page displays the following **high-level metrics**.
     * Total assets labeled

@@ -667,7 +667,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION** > **Role Assignments**, and then click **Add data curators**.
 
-    ![](../images/module10/Mod7-purview6.png)
+    ![](../images/module10/Mod7-purview6.1.png)
 
 2. Search for the name of the Service Principal `purview-spn`, select the Service Principal from the search results, and then click **OK**.
 
@@ -733,7 +733,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | HTTP Method | `GET` |
     | URL | `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/types/typedefs` |
 
-    Navigate to **Headers**, provide the following key value pair, click **Send**.
+    Navigate to **Headers**, provide the following key value pair. Once HTTP request is ready, click **Send**.
 
     | Header Key | Header Value |
     | --- | --- |
@@ -743,7 +743,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![](../images/module10/10.10-postman-get.png)
 
-1. Once HTTP request is ready, click **Send**. If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
+1.  If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
     > **Did you know?**
     >
