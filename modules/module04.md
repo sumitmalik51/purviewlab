@@ -81,7 +81,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![New Term](../images/module04/M4T2S2.png)
 
-3. Click **New term template** and click on **Continue**.
+3. Click **New term template**.
 
     ![New term template](../images/module04/M4T2S3.png)
 
