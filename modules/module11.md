@@ -65,6 +65,10 @@ To invoke the install the self-hosted integration runtime, we must first log int
    ![](../images/module11/shir-install-22.png)
    ![](../images/module11/shir-install-23.png)
 
+> **Note** If you facing any issues with downloading Microsoft integration runtime. Follow the steps **Go to start window search for Server Manager Click on Server Manager> Local server>click on IE enhance security configuration** make sure it is off.
+
+   ![](../images/module11/intergration.png)
+
 2. Follow the instruction on screen to complete the installation process and click finish to proceed to the next step.
 
    ![](../images/module11/shir-install-1.png)
