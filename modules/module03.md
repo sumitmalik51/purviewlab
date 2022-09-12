@@ -22,11 +22,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 1. Open Purview Studio and from the **Data catalog** screen, type the asterisk character (**\***) into the search bar and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/M3T1S1.png)
+    ![Search Wildcard](../images/module03/prv20.png)
 
 2. Filter the search results by **Classification** (e.g. **Country/Region**) and click the hyperlinked asset name to view the details (e.g. `QueriesByState`).
 
-    ![Filter by Classification](../images/module03/M3T1S2.png)
+    ![Filter by Classification](../images/module03/prv21.png)
 
 
 > **Did you know?**
@@ -37,7 +37,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 1. Click **Edit** to modify the asset details.
 
-    ![Edit Asset](../images/module03/M3T2S1.png)
+    ![Edit Asset](../images/module03/prv22.png)
 
 2. Update the **Description** by copying and pasting the sample text below.
 
@@ -45,11 +45,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
     This dataset was curated from the Bing search logs (desktop users only) over the period of Jan 1st, 2020 – (Current Month - 1). Only searches that were issued many times by multiple users were included. The dataset includes queries from all over the world that had an intent related to the Coronavirus or Covid-19. In some cases this intent is explicit in the query itself (e.g., “Coronavirus updates Seattle”), in other cases it is implicit , e.g. “Shelter in place”
     ```
 
-    ![Update Description](../images/module03/M3T2S2.png)
+    ![Update Description](../images/module03/prv23.png)
 
 3. Assign a **Classification** named **World Cities** using the drop-down menu.
 
-    ![Update Classification](../images/module03/M3T2S3.png)
+    ![Update Classification](../images/module03/prv24.png)
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
@@ -57,7 +57,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
-    ![Update Schema](../images/module03/M3T2S4.png)
+    ![Update Schema](../images/module03/prv25.png)
 
     **Date**
     ```
@@ -84,7 +84,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     Value between 1 and 100 inclusive. 1 indicates least popular query on the day/State/Country with Coronavirus intent, and 100 indicates the most popular query for the same geography on the same day.
     ```
 
-5. Navigate to the **Contacts** tab and set the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** to be an **Expert** and an **Owner**. Click **Save**.
+5. Navigate to the **Contacts** tab and set the user named **odl_user <inject key="DeploymentID" enableCopy="false" />** to be an **Expert** and an **Owner**. Click **Save**.
 
     > **Did you know?**
     >
@@ -92,11 +92,11 @@ Once sources have been registered and scanned, the underlying data catalog will 
     >
     > For assets in which you are tagged as a **Contact**, these will appear on the home screen (Data catalog), under **My items**.
 
-    ![Update Contacts](../images/module03/M3T2S5.png)
+    ![Update Contacts](../images/module03/prv26.png)
 
 6. To see other assets within the same path, navigate to the **Related** tab.
 
-    ![Related Assets](../images/module03/M3T2S6.png)
+    ![Related Assets](../images/module03/prv27.png)
 
 ## 3. Browse Assets
 
@@ -104,19 +104,19 @@ While the search experience is ideal for keyword based discovery, Purview Studio
 
 1. Open Purview Studio and from the **Data catlog** screen, click **Browse assets**.
 
-    ![Browse Assets](../images/module03/M3T3S1.png)
+    ![Browse Assets](../images/module03/prv28.png)
 
 2. Switch to the **By source type** tab and select a **source** `Azure Data Lake Storage Gen2`.
 
-    ![ADLS Gen2](../images/module03/M3T3S2.png)
+    ![ADLS Gen2](../images/module03/prv29.png)
 
 3. Select an **account** named `pvlab{randomId}adls`.
 
-    ![ADLS Gen2 Account](../images/module03/M3T3S3.png)
+    ![ADLS Gen2 Account](../images/module03/prv30.png)
 
 4. Select a **container** with the name `raw`.
 
-    ![ADLS Gen2 Container](../images/module03/M3T3S4.png)
+    ![ADLS Gen2 Container](../images/module03/prv31.png)
 
 ## 4. Bulk Edit
 
@@ -125,11 +125,11 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
 1. Open Purview Studio and from the **Data catalog** screen, type the asterisk character (**\***) into the search bar and hit **Enter**.
 
-    ![Search Wildcard](../images/module03/M3T4S1.png)
+    ![Search Wildcard](../images/module03/prv32.png)
 
 2. Hover your mouse over an item in the list to reveal the checkbox on the right-hand side. Select five items and click **View selected**.
 
-    ![View Selected](../images/module03/M3T4S2.png)
+    ![View Selected](../images/module03/prv33.png)
 
 3. Click **Bulk edit**.
 
