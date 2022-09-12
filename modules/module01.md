@@ -34,7 +34,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
     | Resource group | `purviewlab-rg` |
-    | Purview account name | `pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv` |
+    | Purview account name | `pvlab-**<inject key="Deployment ID" enableCopy="true"/>**-pv` |
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
