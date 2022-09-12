@@ -62,29 +62,30 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 In this next step, we are creating a second access policy which will provide Microsoft Purview the necessary access to retrieve secrets from the Key Vault.
 
-1. From the **Key Vault Access policies** blade, Click **Add Access Policy**.
 
-    ![Add Access Policy](../images/module02/02.81-keyvault-addpolicy2.png)
+1. Click **create**.
 
-1. Under **Select principal**, click **None selected**.
+    ![prv3](../images/module02/prv3.png)
 
-    ![Select Principal](../images/module02/02.48-policy-select.png)
+1. Under **Permission**, select **secret permission(1)**,click on  **select Get,List(2)** and click on **Next(3)**.
 
-1. Search for the name of your Microsoft Purview account pvlab-<inject key="Deployment ID" enableCopy="false" />-pv, select the item, then click **Select**.
+    ![prv11](../images/module02/prv11.png)
 
-    ![Search Principal](../images/module02/02.49-policy-principal-1.png)
+1. Under **Principal**, Search for **pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv**, select the account name, then click **Next**.
 
-1. Under **Secret permissions**, select **Get** and **List**.
+    ![Search Principal](../images/module02/prv12.png)
 
-    ![Secret Permissions](../images/module02/02.50-secret-permissions.png)
+1. Under **Appliction** leave everything as default and click on **Next**.
+   
+    ![Search Principal](../images/module02/prv13.png)
 
-1. Review your selections then click **Add**.
+1. Under **Review + create** click on **create**.
 
-    ![Review Access Policy](../images/module02/02.51-policy-add.png)
+    ![Search Principal](../images/module02/prv14.png)
 
-1. Click **Save**.
+1. Make sure that keyvault updation is success.
 
-    ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
+    ![Search Principal](../images/module02/prv10.png)
 
 ## 3. Generate a Secret
 
