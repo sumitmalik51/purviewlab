@@ -32,31 +32,31 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 
 1. Select **Access policies** from the Key Vault menu.
     
-    ![Access Policies](../images/module02/02.73-keyvault-policies.png)
+    ![Access Policies](../images/module02/prv4.png)
 
-1. Click **Add Access Policy**.
+1. Click **create**.
 
-    ![Add Access Policy](../images/module02/02.74-keyvault-addpolicy.png)
+    ![prv3](../images/module02/prv3.png)
 
-1. Under **Select principal**, click **None selected**.
+1. Under **Permission**, select **secret permission(1)**,click on  **select all(2)** and click on **Next(3)**.
 
-    ![Select Principal](../images/module02/02.48-policy-select.png)
+    ![prv5](../images/module02/prv6.png)
 
-1. Search for **odl_user**, select the account name from the **search results**, then click **Select**.
+1. Under **Principal**, Search for **odl_user_<inject key="Deployment ID" enableCopy="true"/>**, select the account name, then click **Next**.
 
-    ![Search Principal](../images/module02/02.74-keyvault-addpolicy-1.png)
+    ![Search Principal](../images/module02/prv7.png)
 
-1. Under **Secret permissions**, click **Select all**.
+1. Under **Appliction** leave everything as default and click on **Next**.
+   
+    ![Search Principal](../images/module02/prv8.png)
 
-    ![Secret Permissions](../images/module02/02.78-secret-permissions.png)
+1. Under **Review + create** click on **create**.
 
-1. Review your selections then click **Add**.
+    ![Search Principal](../images/module02/prv9.png)
 
-    ![Review Access Policy](../images/module02/02.79-review-permissions.png)
+1. Make sure that keyvault updation is success.
 
-1. Click **Save**.
-
-    ![Save Access Policy](../images/module02/02.75-keyvault-savepolicy.png)
+    ![Search Principal](../images/module02/prv10.png)
 
 ## 2. Key Vault Access Policy #2 (Grant Microsoft Purview Access)
 
