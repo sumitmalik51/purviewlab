@@ -19,6 +19,8 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 ## 1. Create an Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
+   
+    ![prv1](../images/module01/prv2.png)
 
 2. On the **Microsoft Purview** blade, select **Create**.
 
@@ -32,7 +34,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     | --- | --- |
     | Subscription | `YOUR_AZURE_SUBSCRIPTION` |
     | Resource group | `purviewlab-rg` |
-    | Purview account name | `pvlab-{randomId}-pv` |
+    | Purview account name | `pvlab-<inject key="Deployment ID" enableCopy="true"/>-pv` |
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
@@ -80,7 +82,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 
     ![Add Role Assignment](../images/module01/Mod1-purview09.png)
 
-5. Search for the user **user_01** within your Azure Active Directory, select their account, click OK.
+5. Search for the user **user 01** within your Azure Active Directory, select their account, click OK.
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
