@@ -63,12 +63,6 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
 
 ## 2. Upload Data to Azure Data Lake Storage Gen2 Account
 
-Before proceeding with the following steps, you will need to:
-
-* Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/).
-* Open Azure Storage Explorer.
-* Sign in to Azure via **View > Account Management > Add an account...**.
-
 1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
 
 2. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting **Extract All...**.
