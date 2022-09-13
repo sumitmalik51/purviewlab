@@ -667,7 +667,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION** > **Role Assignments**, and then click **Add data curators**.
 
-    ![](../images/module10/Mod7-purview6.1.png)
+    ![](../images/module10/M10-T4-S1.png)
 
 2. Search for the name of the Service Principal `purview-spn`, select the Service Principal from the search results, and then click **OK**.
 
