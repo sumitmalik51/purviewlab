@@ -81,7 +81,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Diagnostic Setting](../images/module08/08.14-diagnostic-add.png)
 
-2. Provide the diagnostic setting a name as `Audit`, select **ScanStatus**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` and click **Save**.
+2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
     > **Did you know?**
     >
