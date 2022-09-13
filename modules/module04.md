@@ -73,9 +73,9 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 ## 2. Create a Term (Custom Term Template)
 
-1. Open Purview Studio and from the **Data catalog**, click **Manage glossary**.
+1. Open Purview Studio and from the **Data catalog** (1), click **Manage glossary** (2).
 
-    ![](../images/module04/M4T2S1.png)
+    ![](../images/module04/M4-T1-S1.png)
 
 2. Click **New term**.
 
