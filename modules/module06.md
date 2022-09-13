@@ -124,15 +124,15 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 1. Navigate back to the Purview Studio, from the **Data catalog** screen click **Browse assets**.
 
-    ![](../images/module06/pvdf4.1.png)
+    ![](../images/module06/M6-T3-S1.png)
 
 2. Switch to the **By source type** tab and then select **Azure Data Factory**.
 
-    ![](../images/module06/pvdf6.1.png)
+    ![](../images/module06/M6-T3-S2.png)
 
 3. Select the **Azure Data Factory account instance**.
 
-    ![](../images/module06/pvdf7.1.png)
+    ![](../images/module06/M6-T3-S3.png)
 
 4. Select the **Copy Pipeline** and click to open the **Copy Activity**.
     
@@ -142,7 +142,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 6. You can see the lineage information has been automatically pushed from Azure Data Factory to Purview. On the left are the two sets of files that share a common schema in the source folder, the copy activity sits in the center, and the output file sits on the right.
 
-    ![](../images/module06/pvdf9.png)
+    ![](../images/module06/M6-T3-S6.png)
 
 ## Knowledge Check
 
