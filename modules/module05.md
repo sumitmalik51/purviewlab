@@ -45,7 +45,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 1. Navigate to **Data map** > **Classification rules** (under Annotation management) and click **New**.
 
-    ![New Classification Rule](../images/module05/pvcl3.1.png)
+    ![New Classification Rule](../images/module05/M5-T2-S1.png)
 
 1. Populate the classification rule fields as per the example below and click **Continue**.
 
