@@ -115,20 +115,20 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     ```
     Contoso Child
     ```
-    **Definition**
-    ```
-    This will be the long description for the child glossary term.
-    ```
-    **Parent**
+   **Parent**
     ```
     Contoso Parent
+    ```   
+   **Definition**
+    ```
+    This will be the long description for the child glossary term.
     ```
     **Business Unit**
     ```
     Marketing
     ```
     
-    ![](../images/module04/M4T2S8.png)
+    ![](../images/module04/M4-T2-S8.png)
 
 
 9. Navigate back to **Glossary** screen, change the view to **Hierarchical view** to see the hierarchical glossary.
