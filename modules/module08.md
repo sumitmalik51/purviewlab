@@ -81,13 +81,13 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Add Diagnostic Setting](../images/module08/08.14-diagnostic-add.png)
 
-2. Provide the diagnostic setting a name as `Audit`, select **ScanStatusLogEvent**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` and click **Save**.
+2. Provide the diagnostic setting a name as `Audit`, select **ScanStatus**, select **Archive to a storage account**, select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
     > **Did you know?**
     >
-    > **ScanStatusLogEvent** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
+    > **ScanStatus** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
 
-    ![Save Diagnostic Setting](../images/module08/08.15-diagnostic-save.png)
+    ![Save Diagnostic Setting](../images/module08/M8-T3-S2.png)
 
 3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
 
