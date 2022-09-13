@@ -147,7 +147,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. From the **Glossary** screen, click **Import terms**.
 
-    ![Import terms](../images/module04/pvnw4.1.png)
+    ![Import terms](../images/module04/M4-T3-S3.png)
 
 3. Select the **System default** term template and click **Continue**.
 
