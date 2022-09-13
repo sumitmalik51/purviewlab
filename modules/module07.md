@@ -34,7 +34,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 1. Open Purview Studio, navigate to **Data estate insights** > **Assets**.
 
-    ![Assets Insights](../images/module07/07.01-assets-insights-1.1.png)
+    ![Assets Insights](../images/module07/M7-T1-S1.png)
 
 2. The Assets page displays the following **high-level metrics**.
     * Number of Source Types
