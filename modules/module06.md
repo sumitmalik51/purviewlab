@@ -29,7 +29,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
     > To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
 
-    ![](../images/module06/pvdf1.1.png)
+    ![](../images/module06/M6-T1-S1.png)
 
 2. Select your subscription and Azure Data Factory account instance named `pvlab-{randomId}-adf` from the drop-down menu and click **OK**.
 
@@ -49,7 +49,7 @@ This module steps through what is required for connecting an Azure Data Factory 
     >
     > When a user creates an Azure Data Factory connection, behind the scenes the Data Factory managed identity is added to the `Data Curator` role. This provides Azure Data Factory the necessary access to push lineage to Azure Purview during a pipeline execution. See [supported Azure Data Factory activities](https://docs.microsoft.com/en-us/azure/purview/how-to-link-azure-data-factory#supported-azure-data-factory-activities) for more information.
 
-    ![](../images/module06/pvdf3.1.png)
+    ![](../images/module06/M6-T1-S4.png)
 
 ## 2. Copy Data using Azure Data Factory
 
