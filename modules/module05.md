@@ -98,7 +98,7 @@ Azure Purview provides a large set of default classifications that represent typ
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
-    ![New Scan Rule Set](../images/module05/pvcl4.1.png)
+    ![New Scan Rule Set](../images/module05/M5-T3-S1.png)
 
 2. Change the **Source Type** to `Azure Data Lake Storage Gen2` then **copy** and **paste** the values below into the appropriate fields. Click **Continue**.
 
