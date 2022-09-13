@@ -30,7 +30,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. Click **New term**.
 
-    ![New Glossary Term](../images/module04/M4T1S2.png)
+    ![New Glossary Term](../images/module04/M4-T1-S2.png)
 
 3. Select the **System default** term template and click **Continue**.
 
@@ -79,7 +79,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 2. Click **New term**.
 
-    ![New Term](../images/module04/M4T2S2.png)
+    ![New Term](../images/module04/M4-T1-S2.png)
 
 3. Click **New term template**.
 
