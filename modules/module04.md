@@ -205,11 +205,11 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. From the **Glossary** screen, open an existing term `Aggregation`.
 
-    ![Term Details](../images/module04/pvnw12.1.png)
+    ![Term Details](../images/module04/M4-T6-S1.png)
 
-2. Navigate to the **Related** tab.
+2. Select edit and navigate to the **Related** tab.
 
-    ![Related](../images/module04/pvnw13.1.png)
+    ![Related](../images/module04/M4-T6-S2.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
@@ -217,13 +217,13 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
-    ![Synonyms](../images/module04/pvnw14.png)
+    ![Synonyms](../images/module04/M4-T6-S3.png)
 
 4. Use the drop-down menu to assign two glossary terms as **Related terms**.
 
-    ![Related Terms](../images/module04/pvnw15.png)
+    ![Related Terms](../images/module04/M4-T6-S4.png)
 
-5. Navigate to the **Contacts** tab, click **Edit** and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
+5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
 
     > **Did you know?**
     >
