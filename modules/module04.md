@@ -173,7 +173,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     >
     > When using Purview Studio to **Export terms**, all terms selected for the export must use the same **Term template**. Selecting terms from different term templates will result in the **Export terms** button being greyed out.
 
-    ![Export Terms](../images/module04/pvnw6.png)
+    ![Export Terms](../images/module04/M4-T4-S1.png)
 
 2. If the export was successful, you should find a **CSV** file has been copied to your local machine (e.g. Downloads).
 
