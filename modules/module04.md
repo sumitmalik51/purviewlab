@@ -163,7 +163,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 6. Once complete, you should see 50 additional terms beneath the parent (Workplace Analytics). **Tip**: You can quickly find specific types of terms using the filters at the top (e.g. Status = Approved).
 
-    ![Filter Terms](../images/module04/pvnw5.png)
+    ![Filter Terms](../images/module04/M4-T3-S7.png)
 
 ## 4. Bulk Export Terms
 
