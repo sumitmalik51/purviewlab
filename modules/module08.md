@@ -91,15 +91,15 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
 
-    ![Source Details](../images/module08/pvcl6.1.png)
+    ![Source Details](../images/module08/M8-T3-S3.png)
 
 4. Navigate to the **Scans** tab and click the name of a previously run scan.
 
-    ![Source Scans](../images/module08/08.17-sources-scans-1.1.png)
+    ![Source Scans](../images/module08/M8-T3-S4.png)
 
 5. Open the **Run scan now** drop-down menu and select **Full Scan**.
 
-    ![Full Scan](../images/module08/08.18-scan-full-1.1.png)
+    ![Full Scan](../images/module08/M8-T3-S5.png)
 
 6. Monitor the scan status by periodically clicking the **Refresh** button.
 
