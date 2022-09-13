@@ -155,7 +155,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Data map** > **Sources** and click **New Scan** within the **Azure Data Lake Storage Gen2** tile. Note: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-    ![New Scan](../images/module05/pvcl5.1.png)
+    ![New Scan](../images/module05/M5-T5-S1.png)
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
@@ -187,7 +187,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 9. To view the progress of the scan, navigate to **Sources** and click **View details** on the Azure Data Lake Storage Gen2 tile.
 
-    ![Source Details](../images/module05/pvcl6.1.png)
+    ![Source Details](../images/module05/M5-T5-S9.png)
 
 10. Periodically click **Refresh** to update the scan status until **Complete**. Note: This will take approximately 5 to 10 minutes.
 
