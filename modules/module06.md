@@ -88,9 +88,9 @@ This module steps through what is required for connecting an Azure Data Factory 
     
     ![](../images/module06/06.19-adf-preview.png)
 
-13. Change the **Target type** to `Azure Data Lake Storage Gen2`, set the **Connection** to the existing connection (e.g. `AzureDataLakeStorage1`), and then click **Browse**.
+13. Change the **Destination type** to `Azure Data Lake Storage Gen2`, set the **Connection** to the existing connection (e.g. `AzureDataLakeStorage1`), and then click **Browse**.
 
-    ![](../images/module06/06.21-adf-browseoutput.png)
+    ![](../images/module06/M6-T2-S10.png)
 
 14. Navigate to `raw/` and click **OK**.
 
@@ -98,23 +98,23 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 15. Confirm your folder path selection, set the **file name** to `2020_merged.parquet`, set the **copy behavior** to **Merge files**, and click **Next**.
 
-    ![](../images/module06/06.23-adf-merge.png)
+    ![](../images/module06/M6-T2-S12.png)
 
 16. Set the **file format** to **Parquet** and click **Next**.
 
-    ![](../images/module06/parquet.png)
+    ![](../images/module06/M6-T2-S13.png)
 
 17. Leave the default settings and click **Next**.
 
-    ![](../images/module06/06.25-adf-settings.png)
+    ![](../images/module06/M6-T2-S14.png)
 
 18. Review the summary and proceed by clicking **Next**.
 
-    ![](../images/module06/06.26-adf-summary.png)
+    ![](../images/module06/M6-T2-S15.png)
 
 19. Once the deployment is complete, click **Finish**.
 
-    ![](../images/module06/06.27-adf-finish.png)
+    ![](../images/module06/M6-T2-S16.png)
 
 20. Navigate to the **Monitoring** screen to confirm the pipeline has run **successfully**.
 
