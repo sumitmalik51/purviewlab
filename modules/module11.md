@@ -87,29 +87,31 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 Your next step is creating a private endpoint: a network interface that uses a private IP address from your virtual network. This network interface connects you privately and securely to your storage account. It also means all network traffic is routed internally, which is useful to mitigate network exfiltration risks.
 
-1. For creating a new private endpoint, go to your storage account. Click on networking on the left side. Go to private endpoints and click on the + icon.
+1. For creating a new private endpoint, go to your storage account. Click on **Networking**(1) on the left side. Go to **Private endpoint connections**(2) and click on the **+ Private endpoint**(3) icon.
 
-   ![ALT](../images/module11/pic06.png)
+   ![ALT](../images/module11/M11-T3-img1.png)
 
-2. Start with the basics by providing a name. This will be name of your network interface created in the virtual network.
+2. On the basics tab provide a name. This will be name of your **Network Interface** created in the virtual network. Click on **Next:Resource>**
 
-   ![ALT](../images/module11/pic07.png)
+   
+   ![ALT](../images/module11/M11-T3-img2.png)
 
-3. Next, you need to select which resource type you want to expose. For this demo we will use blob.
 
-   ![ALT](../images/module11/pic08.png)
+3. Next on the **Resource** tab, you need to select which resource type you want to expose. For this demo we will use blob, from the dropdown select blob for **Target sub-resource**. Click on **Next: Virtual Network>**.
+
+   ![ALT](../images/module11/M11-T3-img3.png)
 
 4. The last configuration is selecting which virtual network the private endpoint must be deployed within. You should use the virtual network which you created in the previous steps. For the Private IP configuration you can select to dynamically allocate IP addresses.
 
-   ![ALT](../images/module11/pic09.png)
+   ![ALT](../images/module11/M11-T3-img4.png)
+ 
+ 5. Leave rest of the configurations default and click **Create**
 
-5. When returning to the network overview settings, there is one additional step: allowing network traffic from your subnet. Go back to the firewall and virtual networks settings within your Storage Account. Add an existing virtual network, select your subnet from the list, and click Add.
+   ![ALT](../images/module11/M11-T3-img5.png)
 
-   ![ALT](../images/module11/pic27-networkadd.png)
+6. After creating the endpoint return to the network overview settings, Go back to the **Firewall and virtual networks**(1) settings within your Storage Account. Under Public network access select **Enabled from selected virtual networks and IP addresses**(2), select **Add existing virtual network**(3) under Virtual networks. On the Add network pane select your **virtual network**(4) and **subnet**(5) from the list that you created previously, and click **Enable**(6) and **Add**. Then select **Save**(7).
 
-6. The virtual network should be added to the list. Don’t forget to hit the ‘save’ button!
-
-   ![ALT](../images/module11/pic28-networkadd.png)
+   ![ALT](../images/module11/M11-T3-img6.png)
 
 7. After this configuration you’re set. Let’s continue and setup your virtual machine.
 
