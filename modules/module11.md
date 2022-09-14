@@ -123,9 +123,9 @@ A self-hosted integration runtime is a software component that scans for metadat
 
 For this demo you will be using Windows 10. Open the Azure Portal again to search for virtual machines.
 
-1. Create new and select Windows 10 Pro as the image version. Remember to enter a username and password. Click next to examine the network settings. The newly created virtual network using the 10.0.0.0 space should be selected here.
+1. On the Azure portal search bar type **Virtual Machine** and select, in the virtual machine tab select **Create** in the dropdown select **Azure virtual machine** Create new and select Windows 10 Pro as the image version. Remember to enter a username and password. Click next to examine the network settings. The newly created virtual network using the 10.0.0.0 space should be selected here.
 
-   ![ALT](../images/module11/pic10.png)
+   ![ALT](../images/module11/M11-T4-img1.png)
 
 2. After the virtual machine has been created, download the RDP file for easily taking over remote control.
 
