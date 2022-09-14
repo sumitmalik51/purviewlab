@@ -834,8 +834,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below.
 
    * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
-   * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}?includeTermHierarchy=True`, Replace **{termGuid}** with the GUID you copied in the previous exercise. 
-
+   * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}?includeTermHierarchy=True`, Replace **{termGuid}** with the GUID you copied in the previous exercise.(e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/glossary/term/XXXXX?includeTermHierarchy=True`) 
    Note: Calling this particular endpoint will result in **updating a glossary term**.
 
    | Property | Value |
@@ -880,7 +879,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below.
 
    * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
-   * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}?includeTermHierarchy=True`,  Replace **{termGuid}** with the GUID you copied in the previous exercise. 
+   * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}?includeTermHierarchy=True`,  Replace **{termGuid}** with the GUID you copied in the previous exercise. (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/glossary/term/XXXXX?includeTermHierarchy=True`) 
 
    Note: Calling this particular endpoint will result in **updating a glossary term**.
 
