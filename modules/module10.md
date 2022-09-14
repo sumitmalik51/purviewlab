@@ -1101,7 +1101,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 4. Create custom lineage.
 
-   * Replace the body with the following code. Replace the GUIDs with the ones captured in the previous section.
+   * Replace the body with the following code. Replace the **entity1_GUID** & **entity2_GUID** with the ones captured in the previous section.
 
    ```json
    {
@@ -1112,12 +1112,12 @@ To invoke the REST API, we must first register an application (i.e. service prin
          "attributes":{
             "inputs":[
                {
-                  "guid":"e18cdcc6-c7ff-4d7a-ae7e-048c5e60a1dc"
+                  "guid":"entity1_GUID"
                }
             ],
             "outputs":[
                {
-                  "guid":"c71fa5b2-ff5a-4b54-96e2-487962a05af5"
+                  "guid":"entity2_GUID"
                }
             ],
             "qualifiedName":"apacheatlas://customlineage01",
