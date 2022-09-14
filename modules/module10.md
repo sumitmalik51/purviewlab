@@ -26,7 +26,7 @@ The primary focus of this module is the **catalog** which is based on the open-s
 5. [Get an Access Token](#5-get-an-access-token)
 6. [Read data from Azure Purview](#6-read-data-from-azure-purview)
 
-## 1. Apache Atlas
+## 1. Apache Atlas (Read Only)
 
 > **What is Apache Atlas?**
 >
