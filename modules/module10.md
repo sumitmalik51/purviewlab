@@ -1130,9 +1130,13 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    ![ALT](../images/module10/rest08.png)
 
-   ![ALT](../images/module10/rest09.png)
+   * Navigate to Azure Purview portal select **Data Catalog>Browse Assets>By Source Type>Custom Source>Orders Table**
 
-   ![ALT](../images/module10/rest10.png)
+ ![ALT](../images/module10/rest09.png)
+      
+5. Under **Orders Table** select **Lineage** to view the output
+   
+ ![ALT](../images/module10/rest10.png)
 
 <div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
