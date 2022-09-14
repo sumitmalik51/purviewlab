@@ -138,7 +138,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 |Password|demo!pass123|
 
 
-       ![ALT](../images/module11/M11-T4-img2.png)
+   ![ALT](../images/module11/M11-T4-img2.png)
 
 3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
 ![ALT](../images/module11/M11-T4-img3.png)
@@ -219,7 +219,8 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 For securely accessing your storage account you will store your storage account key in a Key Vault. A key vault is a central place for managing your keys, secrets, credentials and certifications. This avoids keys get lost or changing these is a cumbersome task.
 
 1. For creating a Key Vault go back to your Azure Portal. Search for Key Vault, hit create, provide the details mentioned below and select **Review+Create**.
-|Setting|Value|
+
+|Settings|Value|
 |---|---|
 |Resource Group|purviewlab-rg|
 |Key vault name|Keyvault-DID|
