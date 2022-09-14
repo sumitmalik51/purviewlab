@@ -138,41 +138,79 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 |Password|demo!pass123|
 
 
-   ![ALT](../images/module11/M11-T4-img2.png)
+       ![ALT](../images/module11/M11-T4-img2.png)
 
 3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
 ![ALT](../images/module11/M11-T4-img3.png)
 
 4. Once the Virtual Machine is created **go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
 
- ![ALT](../images/module11/M11-T4-img4.png)
+      ![ALT](../images/module11/M11-T4-img4.png)
 
-3. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
+5. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
 
    ```text
    nslookup storageaccountname.blob.core.windows.net
    ```
 
-4. If everything works correctly, the privatelink.blob.core.windows.net should show up in the list. This means is that your default access location has become an alias for an internal address. Although you use a public name, network is routed internally via the virtual network.
+6. If everything works correctly, the privatelink.blob.core.windows.net should show up in the list. This means is that your default access location has become an alias for an internal address. Although you use a public name, network is routed internally via the virtual network.
 
-   ![ALT](../images/module11/pic12.png)
+      ![ALT](../images/module11/pic12.png)
 
-5. When everything is working, you must download the self-hosted integration runtime package. The installation is straight forward. Just hit next and wait for the service to show up. While waiting, you should open Microsoft Purview. Open the data map and go to integration runtimes. Hit + new and select the self-hosted from the panel and continue.
+7. When everything is working, you must download the self-hosted integration runtime package. To do this navigate to the **Azure purview portal** on your browser. Select **Data map** and go to **Integration runtimes** select **+ New**
 
-   ![ALT](../images/module11/pic13.png)
+      ![ALT](../images/module11/M11-T4-img5.png)
 
-6. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
+8. On the **Intergartion run time setup** pane select **Self hosted**, and **Continue**.
+  
+ 
+      ![ALT](../images/module11/M11-T4-img6.png)
 
-   ![ALT](../images/module11/pic14.png)
+8. After completing the wizard, you see a link where you can download the latest version of the runtime. You also find two keys. Copy the first one to your clipboard.
 
-7. Next, go back to your virtual machine. Copy paste the link into the manager and hit ‘register’. Wait a minute or so, the integration runtime should show up in the list very soon!
+> Note: The runtime has to be installed on the VM you are connected through RDP (i.e,- *pur-M11-VM*).
+   
+      ![ALT](../images/module11/pic14.png)
+ 
+9. Open the download link in the Remote VM, and select download.
 
-   ![ALT](../images/module11/pic15.png)
+      ![ALT](../images/module11/M11-T4-img7.png)
+   
+10. On **Choose the download you want** select the lasted runtime and select **Next**.
+    
+      ![ALT](../images/module11/M11-T4-img8.png)
+   
 
-8. If everything works well your self-hosted integration runtime should be running within Purview. Congrats that you made it this far!
+11. Once the runtime is downloaded open runtime, on **Microsoft Integration Runtime setup** click **Next**.
 
-   ![ALT](../images/module11/pic16.png)
+   
+      ![ALT](../images/module11/M11-T4-img9.png)
 
+
+12. On the **End-User License** accept the terms and click **Next**.
+
+      ![ALT](../images/module11/M11-T4-img10.png)
+
+13. Leave the **Destination Floder** default and click **Next**.
+
+      ![ALT](../images/module11/M11-T4-img11.png)
+
+14. Click **Install** on **Ready to install Microsoft Integration Runtime**.
+
+      ![ALT](../images/module11/M11-T4-img12.png)
+
+15. Click **Finish** to complete the installation.
+
+      ![ALT](../images/module11/M11-T4-img13.png)
+      
+ 16. After the **Runtime** is installed, on the **Register Integration Runtime (Self-hosted)** enter the key copied in Step-8 and select **Register** and select **Finsh** once registerd .
+ 
+      ![ALT](../images/module11/M11-T4-img14.png)
+  
+  17. If everything works well your self-hosted integration runtime should be running within Purview. Congrats that you made it this far!
+
+      ![ALT](../images/module11/pic16.png)
+      
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
 ## 5. Key vault creation
