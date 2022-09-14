@@ -63,18 +63,23 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
    
    ![ALT](../images/module11/M11-T2-img1.png)
 
-2. Search Storage Account and select **Create**
+2. Search Storage Account and select **Create**.
 
    ![ALT](../images/module11/M11-T2-img2.png)
-4. For the Storage Account we will ensure that hierarchical namespaces are selected. Click next to jump over to the Networking tab.
+3. On the **Create Storage Account** tab, select your subcription, and from the dropdown for **Resource Group** select **purviewlab-rg**. 
+   
+  ![ALT](../images/module11/M11-T2-img3.png)
+4. Provide a unique name for your storage account and click **Next: Advanced>**.
+  
+   ![ALT](../images/module11/M11-T2-img4.png)
 
-   ![ALT](../images/module11/pic04.png)
+5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
 
-3. For networking, select Private endpoint as the connectivity method. Don’t create any private endpoints at this stage. This comes later.
+   ![ALT](../images/module11/M11-T2-img5.png)
 
-   ![ALT](../images/module11/pic05.png)
+6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review** and **Review+Create** to create the storage account.
 
-4. After this step you can hit review + create, finalize and wait for the storage account to be created.
+   ![ALT](../images/module11/M11-T2-img6.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
