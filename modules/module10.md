@@ -805,9 +805,17 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![ALT](../images/module10/10.18-create-term-auth.png)
 
-2. Navigate to **Body** and for the **raw** section, select **JSON** option. To create a basic glossary term, add the minimum mandatory payload, by providing the glossary guid (saved at the previous exercise) and the name for your new term, then click **Send**.
+2. Navigate to **Body** and to the **raw** section, select **JSON** option. To create a basic glossary term, copy the following **JSON** and paste, replace **"YOUR_GUID"** with the guid you copied in the previous task , then click **Send**.
+ ```json
+{
+    "anchor":{
+        "glossaryGuid":"YOUR_GUID"
+    },
+    "nickName":"MyOwnTerm"
+}
+```
 
-    ![ALT](../images/module10/10.19-create-term-body.png)
+![ALT](../images/module10/10.19-create-term-body.png)
 
 3. If successful, Postman should return a JSON document in the body of the response. Save your **termGuid** for later use – this is on the first line in the json response, as shown below (e.g. guid: " a8859aa4-f3b1-47ee-b835-8ec8c07d0638")
 
@@ -845,9 +853,17 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![ALT](../images/module10/10.22-edit-term-auth.png)
 
-2. Navigate to **Body** and for the **raw** section, select **JSON** option. To update a simple attribute for your glossary term, add the minimum mandatory payload, by providing the **glossary guid** (saved at the previous exercise) and the **nickName** for your term, add the attribute you want to update – in this exercise, you will modify the **Status** from **Draft** (the default when a new term is created) to **Approved**, then click **Send**.
-
-    ![ALT](../images/module10/10.23-edit-term-body.png)
+2. Navigate to **Body** and for the **raw** section, select **JSON** option. To update a simple attribute for your glossary term, copy the following **JSON** and paste, replace **"YOUR_GUID"** with the guid you copied in the previous task , then click **Send**, in this exercise you will modify the **Status** from **Draft** (the default when a new term is created) to **Approved**.
+```json
+{
+    "anchor":{
+        "glossaryGuid":"YOUR_GUID"
+    },
+    "nickName":"MyOwnTerm",
+    "status":"Approved"
+}
+```
+  ![ALT](../images/module10/10.23-edit-term-body.png)
 
 3. If successful, Postman should return a JSON document in the body of the response:
 
@@ -883,15 +899,35 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
     ![ALT](../images/module10/10.22-edit-term-auth.png)
 
-2. Navigate to **Body** and for the **raw** section, select **JSON** option. In this exercise you will add contacts to your glossary term. First, you need to add the minimum mandatory payload, by providing the **glossary guid** (saved at the previous exercise) and the **nickName** for your term, then add the contacts object that include both **Steward** and **Expert**.  
+2. Navigate to **Body** and for the **raw** section, select **JSON** option. In this exercise you will add contacts to your glossary term. Copy the following **JSON** and paste, replace **"YOUR_GUID"** with the guid you copied in the previous task.
+```json
+{
+    "anchor":{
+        "glossaryGuid":"YOUR_GUID"
+    },
+    "nickName":"MyOwnTerm",
+    "status":"Approved",
+    "contacts":{
+        "Expert":[
+            {
+                "id":"YOUR_ID"
+            }
+        ],
+        "Steward":[
+            {
+                "id":"YOUR_ID"
+            }
+        ]
+    }
+}
+```
+  ![ALT](../images/module10/10.26-edit-contacts-body.png)
 
-    ![ALT](../images/module10/10.26-edit-contacts-body.png)
+  For this exercise, to get **"YOUR_ID"**, you can go to the Azure Active Directory and copy the id next to your name:
 
-    For this exercise, to get the Expert/Steward id, you can go to the Azure Active Directory and copy the id next to your name:
+  ![ALT](../images/module10/10.27-AAD-ids.png)
 
-    ![ALT](../images/module10/10.27-AAD-ids.png)
-
-    After you add the details in the JSON section, click **Send**.
+  After you add the details in the JSON section, click **Send**.
 
 3. If successful, Postman should return a JSON document in the body of the response:
 
