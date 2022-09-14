@@ -176,7 +176,7 @@ For this demo you will be using Windows 10. Open the Azure Portal again to searc
 
       ![ALT](../images/module11/M11-T4-img7.png)
    
-10. On **Choose the download you want** select the lasted runtime and select **Next**.
+10. On **Choose the download you want** select the latest runtime and select **Next**.
     
       ![ALT](../images/module11/M11-T4-img8.png)
    
