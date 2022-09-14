@@ -991,9 +991,9 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | HTTP Method | `POST` |
     | URL | `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/types/typedefs` |
 
-    * In Postman, Navigate to **Auth**, provide the auth code from the previous step.
+    * In Postman, Navigate to **Auth** select the Bearer Token option from the drop down, provide the auth code from the previous step.
 
-    ![Purview Properties](../images/module10/rest02.png)
+    ![Purview Properties](../images/module10/M10-T12-S2.png)
 
     * In Postman, Navigate to **Body**, and copy paste the content from below.
 
@@ -1060,9 +1060,9 @@ To invoke the REST API, we must first register an application (i.e. service prin
    }
    ```
 
-   * Submit and validate your output. **Important:** copy paste the GUID from the newly created entity. You'll need it in the next section when creating custom lineage.
+   * Submit and validate your output. **Important:** copy the GUID from the newly created entity. You'll need it in the next section when creating custom lineage.
 
-   ![ALT](../images/module10/rest04.png)
+   ![ALT](../images/module10/M10-T12-S3-e1.png)
 
    * By now, you can also view and validate your results in Purview.
 
@@ -1095,7 +1095,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    * You will have two newly created entities. Also validate within your Microsoft the Microsoft Purview Governance Portal environment that these new entities are created. Don't forget to capture the GUID from the second entity.
 
-   ![ALT](../images/module10/rest06.png)
+   ![ALT](../images/module10/M10-T12-S3-e2.png)
 
    ![ALT](../images/module10/rest07.png)
 
