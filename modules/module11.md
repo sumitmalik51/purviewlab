@@ -123,13 +123,29 @@ A self-hosted integration runtime is a software component that scans for metadat
 
 For this demo you will be using Windows 10. Open the Azure Portal again to search for virtual machines.
 
-1. On the Azure portal search bar type **Virtual Machine** and select, in the virtual machine tab select **Create** in the dropdown select **Azure virtual machine** Create new and select Windows 10 Pro as the image version. Remember to enter a username and password. Click next to examine the network settings. The newly created virtual network using the 10.0.0.0 space should be selected here.
+1. On the Azure portal search bar type **Virtual Machine** and select, in the virtual machine tab select **Create** in the dropdown select **Azure virtual machine**. 
 
    ![ALT](../images/module11/M11-T4-img1.png)
 
-2. After the virtual machine has been created, download the RDP file for easily taking over remote control.
+2. In the **Create virtual machine** pane on **Basics** tab enter the following value. After the virtual machine has been created, download the RDP file for easily taking over remote control.
 
-   ![ALT](../images/module11/pic11.png)
+|Settings|Value|
+|---|---|
+|Resource Group|purviewlab-rg|
+|Virtual machine name|pur-M11-VM|
+|Image|Windows 10 pro|
+|Username|demouser|
+|Password|demo!pass123|
+
+
+   ![ALT](../images/module11/M11-T4-img2.png)
+
+3. In the **Create virtual machine** pane select **Networking** and ensure the virtual network created in the previous task is selected and select **Review+Create**
+![ALT](../images/module11/M11-T4-img3.png)
+
+4. Once the Virtual Machine is created **go to resource** on the deployment page, select **Connect**(1) on the left pane under **Settings** and select **RDP**(2) and **Download RDP file**(3)
+
+ ![ALT](../images/module11/M11-T4-img4.png)
 
 3. After downloading your RDP file, open it and enter your username and password from the previous section. If everything goes well, you should be connected and see the virtual machine’s desktop. To validate that your private endpoint works correctly, open CMD and type:
 
