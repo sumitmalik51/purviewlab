@@ -31,19 +31,35 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 ## 1. Virtual network creation
 
-1. For deploying your Self-Hosted Integration Runtime you first need to create a new virtual network. This is needed for the virtual machine and private endpoint to be created. Open the Azure Portal, search for Virtual Network and click Create. First you need to give your new network a name. I’m using the same resource group that is used for Microsoft Purview.
+1. Navigate back to the tab where the Azure Portal is open, search for **Virtual Network**. 
 
-   ![ALT](../images/module11/pic01.png)
+> **Note**: For deploying your Self-Hosted Integration Runtime you first need to create a new virtual network. This is needed for the virtual machine and private endpoint to be created.
+  
+  ![ALT](../images/module11/M11-T1-img1.png)
 
-2. Next you need to define your address spaces. If the proposed 10.0.0.0 is what you like, you can continue and hit next.
+2. Click **Create** in the Virtual network page.
+ 
+ ![ALT](../images/module11/M11-T1-img2.png)
 
-   ![ALT](../images/module11/pic02.png)
+3.  In the **Create Virtual Network** tab select your subcription, from the drop down for **Resource Group** select **purviewlab-rg**
+
+  ![ALT](../images/module11/M11-T1-img3.png)
+
+4. Provide a unique name for your Virtual Network and your desired region, click on **Next: IP Addresses>**.
+  
+  ![ALT](../images/module11/M11-T1-img4.png)
+
+5.  On the **IP Addresses** review the proposed configuration and select **Review+Create** to create the **Virtual Network**.
+
+   ![ALT](../images/module11/M11-T1-img5.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
 ## 2. Storage account creation
 
-1. Next we will setup a storage account for demonstration. This is the resource that will be scanned during this demo. Select create new resource, choose Storage Account, select the resource group you just created, provide a unique name, and hit next.
+
+ > **Note**: Next we will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
+1.  Select create new resource, choose Storage Account, select the resource group you just created, provide a unique name, and hit next.
 
    ![ALT](../images/module11/pic03.png)
 
