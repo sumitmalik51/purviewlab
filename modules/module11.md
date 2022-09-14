@@ -57,13 +57,16 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 ## 2. Storage account creation
 
+1.  On the Azure Portal home page select create new resource. , select the resource group you just created, provide a unique name, and hit next.
+ 
+ > **Note**: We will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
+   
+   ![ALT](../images/module11/M11-T2-img1.png)
 
- > **Note**: Next we will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
-1.  Select create new resource, choose Storage Account, select the resource group you just created, provide a unique name, and hit next.
+2. Search Storage Account and select **Create**
 
-   ![ALT](../images/module11/pic03.png)
-
-2. For the Storage Account we will ensure that hierarchical namespaces are selected. Click next to jump over to the Networking tab.
+   ![ALT](../images/module11/M11-T2-img2.png)
+4. For the Storage Account we will ensure that hierarchical namespaces are selected. Click next to jump over to the Networking tab.
 
    ![ALT](../images/module11/pic04.png)
 
