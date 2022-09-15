@@ -88,18 +88,22 @@ To make a data resource available for policy management, the Data Use Management
     ![Add policy](../images/module14/14.08-new-policy.png)
 
 3. Select the **Effect** dropdown and choose **Allow**.
+
 4. Select the **Action** dropdown and choose **Read** or **Modify**.
-5. Select the **Data Resources** button This will bring up a window to enter the Data resource information. Use the **Assets** box and enter the **Data Source Type** and the **Name** of a previously registered and scanned data source.
 
-    ![Data Resource](../images/module14/14.09-data-resource.png)
+5. Select the **Data Resources** button This will bring up a window to enter the Data resource information. Use the **Assets** box and enter the **Data Source Type** -**"Azure Data Lake Storge Gen2"** and the **Name**-**"pvlabxxxadls"** of a previously registered and scanned data source.
 
-6. Select the **Continue** button and transverse the hierarchy to select and underlying data-object (for example: folder, file, etc.). Select **Recursive** to apply the policy from that point in the hierarchy down to any child data-objects. Then select the **Add** button. This will take you back to the policy editor.
+    ![Data Resource](../images/module14/M14-T2-img2.png)
 
-    ![Data Resource1](../images/module14/14.10-data-resource2.png)
+6. Select the **Continue** button and transverse the hierarchy to select and underlying data-object (for example: pvlab4050feadls>raw>Twitter) and select **twitter_handles.parquet**. Select **Recursive** to apply the policy from that point in the hierarchy down to any child data-objects. Then select the **Add** button. This will take you back to the policy editor.
+    
+    > **Note**: For **twitter_handles.parquet** check module-9
+    
+    ![Data Resource1](../images/module14/M14-T2-img1.png)
 
-7. Select the **Subjects** button and enter the subject identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor
+7. Select the **Subjects** button and enter **`odl_user_DID@cloudevents.ai`** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
 
-    ![Policy Subject](../images/module14/14.11-policy-subject.png)
+    ![Policy Subject](../images/module14/M14-T2-img3.png)
 
 8. Select the **Save** button to save the policy.
 9. Select the newly created policy from the list of policies on the the Policy portal. Select the **Publish** button on the right top corner of the page.
@@ -108,7 +112,11 @@ To make a data resource available for policy management, the Data Use Management
 
 10. A list of data sources is displayed. You can enter a name to filter the list. Then, select each data source where this policy is to be published and then select the **Publish** button.
 
-    ![Data Source](../images/module14/14.13-publish-policy2.png)
+    ![Data Source](../images/module14/M14-T2-img3.png)
+  
+  11. If everything works you should be able to see your **Data lake storage** under **Resources published to**!
+    
+   ![Data Source](../images/module14/M14-T2-img4.png)
 
 <div align="right"><a href="#module-14---data-owner-policies-azure-storage">↥ back to top</a></div>
 
