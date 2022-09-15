@@ -35,25 +35,40 @@ A **policy** is a named collection of policy statements. When a policy is publis
 
 To make a data resource available for policy management, the Data Use Management (DUM) toggle needs to be enabled. A user, who will manage the policies in Purview, will need certain IAM privileges on the resource and MS Purview in order to enable the DUM toggle.
 
-1. Grant IAM privileges to the user on the storage resource. Navigate to the **Access Control (IAM)** page of the storage account resource. Click on **+ Add** --> **Add role assignment**. Grant either of the following IAM role combinations:
-    * Owner
-    * Both Contributor and User Access Administrator
+1. To grant IAM privileges to the user on the storage resource. Navigate to the **Access Control (IAM)** page of the storage account **pvlabxxxadls**. Click on **+ Add** --> **Add role assignment**. 
 
      ![Grant IAM privilege](../images/module14/14.01-storage-iam.png)
 
-     ![Grant Contributor privilege](../images/module14/14.02-contributor-role.png)
+     
+2. On the **Add role assignment** page select **Owner** and move to the **Members** tab by clicking on **Next**.
 
-     ![Grant User Management privilege](../images/module14/14.03-user-management.png)  
-  
-2. Grant roles to the same user in MS Purview. In Purview grant the same user **Data Source Administrator (DSA)** and **Policy authors** role at the root collection level. Navigate to **Collections**. Click on the root collection. Click on **Role assignments**
+   ![Grant Contributor privilege](../images/module14/M14-T1-img2.png)
+   
+3. On the **Members** tab click on **+ Select member** search for your ODL user and add then click on **Select**. 
+   
+   > **Note**: You can the get the ODL user ID from the **Environment details** page.
+   
+   ![Grant Contributor privilege](../images/module14/M14-T1-img3.png) 
 
-     ![Grant DSA privilege](../images/module14/14.04-purview-role.png)
+4. On the Review+assign page click **Review+assign** to add the role.
+     
+     ![Grant Contributor privilege](../images/module14/M14-T1-img4.png) 
 
-     ![Grant policy privilege](../images/module14/14.05-policy-role.png)
+5. Navigate to the Azure purview tab on your browser. In Purview grant the same user **Policy authors** role at the root collection level. Navigate to **Data map** >**Collections**>**Role assignments**. On the **Policy authors** click on **Add policy author**.
 
-3. Enable Data Use Management. After a source is registered, edit the source. Set the **Data Use Management** toggle to **Enabled** as shown below.
+     ![Grant DSA privilege](../images/module14/M14-T1-img5.png)
 
-    ![Enable DUM](../images/module14/14.06-data-management.png)
+6. Search for your ODL user on the **Add or remove policy authors** tab and add, click **Ok**.
+
+   ![Grant DSA privilege](../images/module14/M14-T1-img6.png)
+   
+ 7. Next move to the **Source** on the **Data map** , click on edit for **AzureDataLakeStorage** on the map view.
+    
+      ![Grant DSA privilege](../images/module14/M14-T1-img7.png)
+
+8. Enable Data Use Management. After a source is registered, edit the source. Set the **Data Use Management** toggle to **Enabled** as shown below and **Apply**.
+
+    ![Enable DUM](../images/module14/M14-T1-img8.png)
 
     > :bulb: **Did you know?**
     >
