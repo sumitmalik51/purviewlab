@@ -307,7 +307,7 @@ Now the Storage Account Key has been stored in the Key Vault it is time to move 
 
 4. Next you need to start scanning your source. Click new scan 
 
-    ![ALT](../images/module11/M11-T6-img3.png)
+    ![ALT](../images/module11/M11-T6-img4.png)
 
 
 5. Select your Self-Hosted Integration Runtime from the list. Before you continue ensure everything works by testing your connection.
