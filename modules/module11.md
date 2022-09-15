@@ -283,25 +283,40 @@ For securely accessing your storage account you will store your storage account 
 
 Now the Storage Account Key has been stored in the Key Vault it is time to move back to Microsoft Purview for your final configuration. Go to your settings panel on the right and select Credentials.
 
-1. Click on Manage Key Vault connections, provide a new name and select your newly created key vault from the list. Hit create for saving.
+1. Navigate back to the Azure purview tab on the browser, go to **Management**(1) select **Credentials**(2) and click **+New**(3). On the **New credential** tab provide the following details and click **Create**:  
 
-   ![ALT](../images/module11/pic24.png)
+|Settings|Value|
+|---|---|
+|Name|key-purview-secret|
+|Authentication method|Account key|
+|Key vault connection| myKeyVault|
+|Secret name|key-purview-secret|
 
-2. Next, you need to store a new credential. Click on + New, enter a new name, select Account Key from the list of authentication options. Finally, you need to enter a secret name. It is important that this name exactly matches the name of your secret in the Key Vault! Hit create to finalize.
+ > **Note**: It is important that this name exactly matches the name of your secret in the Key Vault!
+   
+  ![ALT](../images/module11/M11-T6-img1.png)
 
-   ![ALT](../images/module11/pic25.png)
+2. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
 
-3. Now you can move to Sources. Register a new source, select Azure Data Lake Storage Gen2 and select your storage account from the list.
 
-   ![ALT](../images/module11/pic26.png)
+     ![ALT](../images/module11/M11-T6-img2.png)
 
-4. Next you need to start scanning your source. Click new scan and select your Self-Hosted Integration Runtime from the list. Before you continue ensure everything works by testing your connection.
+3. In the **Register sources** select your storage account and register.
+     
+     ![ALT](../images/module11/M11-T6-img3.png)
+
+4. Next you need to start scanning your source. Click new scan 
+
+    ![ALT](../images/module11/M11-T6-img3.png)
+
+
+5. Select your Self-Hosted Integration Runtime from the list. Before you continue ensure everything works by testing your connection.
 
    ![ALT](../images/module11/pic29.png)
 
 5. If everything works you should be able to select your folders and start scanning!
 
-   ![ALT](../images/module11/pic30.png)
+     ![ALT](../images/module11/pic30.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
