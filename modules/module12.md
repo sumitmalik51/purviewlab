@@ -54,27 +54,27 @@ In this lab you'll learn how to make use a managed private endpoints. You'll lea
 
    ![](../images/module12/Step07.png)
 
-## 3. Microsoft Purview creation
+## 3. Authentication for a scan
 
-1. After you created your storage account we can move to creating a Microsoft Purview account. Select create new resource, select Purview, and provide your account details. Remember to use the same region as for the resource group and storage account. You can press review + create.
+1.  Next you need to ensure two things: 1) purview’s managed identity has access to read from the storage account 2) the storage account key has been stored in the Key Vault. Go back to your storage account. Navigate to **Access Control (IAM)** and select **Add** in the drop down select **Add role assignment**.
 
-   ![](../images/module12/Step05.png)
+   ![ALT](../images/module11/M11-T5-img7.png)
+   
+2. In the **Add role Assignment** pane under **Role** add **Storage Blob Data Reader** and select **Next**
 
-**Note;** we don’t deploy purview here using a private endpoint. You can consider this when you entirely want to lock-down any access to Microsoft Purview. For example when you allow only client to call to Microsoft Purview that originate from within the private network. In this demo I don’t want to overcomplicate things.
+   ![ALT](../images/module11/M11-T5-img8.png)
+   
+3. Under **Members** choose **Managed identity**(1) for **Assign access to**, click on **+Select members**(2), in the **Select managed identities** pane from the drop down for **Managed identities** select **Microsoft Purview account**(3), under **Select** choose **pvlab-728330-pv**(4) and **Select**(5).
 
-2. After the resources have been deployed successfully your resource group should look like this:
-
-   ![](../images/module12/Step06.png)
-
-## 4. Authentication for a scan
-
-1. Next we need to give permissions to the storage account so Microsoft Purview is able to scan. Open the storage account, click on IAM, assign a new role. Set the role to Storage Blob Data Reader and select the managed identity from the newly created Purview account.
-
-   ![](../images/module12/Step08.png)
+ ![ALT](../images/module11/M11-T5-img9.png)
+ 
+4. Leave the rest default and select **Review+assign**.
+ 
+ ![ALT](../images/module11/M11-T5-img10.png)
 
 At this stage we’re all set and can continue by opening Microsoft Purview.
 
-## 5. Managed Virtual Network Integration Runtime
+## 4. Managed Virtual Network Integration Runtime
 
 With the newly released features Microsoft Purview now provides three options for scanning sources:
 
@@ -82,62 +82,85 @@ With the newly released features Microsoft Purview now provides three options fo
 - **Self-hosted integration runtimes (SHIR)**: this option particularly useful for VM-based data sources or applications that either sit in a private network (VNET) or other networks, such as on-premises.
 - **Managed Virtual Network Integration Runtime**: this new option supports connecting to data stores using private link service in private network environment. This ensures that data scanning process is completely isolated and secure, while also being fully managed.
 
-1. For this demonstration we will use the Managed Virtual Network Integration Runtime. Use your Microsoft the Microsoft Purview Governance Portal Portal and navigate to your data map on the left. Select integration runtime and choose Azure.
+1. Go to Microsoft Purview, select on **Data Map(1)** from left menu, select on **Integration runtime(2)**, click on **+ New(3)**, select **Azure(4)** Integration runtime setup and click on **Continue(5)**.
 
-   ![](../images/module12/Step09.png)
+   ![](../images/module12/Ex12-Task4-p1.png)
 
-2. Give your new integration runtime a new, description and ensure that interactive authoring is enabled.
+2. Give your new integration runtime a new, description and ensure that interactive authoring is **enabled** and click on **create**.
 
-   ![](../images/module12/Step10.png)
+   ![](../images/module12/Ex12-Task4-p2.png)
 
-3. After deployment you must wait for the approval notifications. When ready, click on the blue links and navigate to the newly created resources.
+3. After deployment you must wait for the approval notifications. When ready, click on the **blue links** and navigate to the newly created resources.
 
-   ![](../images/module12/Step11.png)
+   ![](../images/module12/Ex12-Task4-p3.png)
+   
+   >**Note**: make sure to select all the approval links and approve it 
 
-4. For the newly created resources you must approve the Private Endpoint connections. Click on each of them and change the status to Approve.
+4. For the newly created resources you must approve the **Private Endpoint connections**. Click on each of them and change the status to **Approve**.
 
    ![](../images/module12/Step13.png)
+      
+      * When Approve connection pop-up appears click on **ok**
+      
+         ![](../images/module12/Ex12-Task4-p4.png)
+      
+5. Next, hover back to **Microsoft Purview**, click on **Management** from left menu and click on **Managed private endpoints**.
 
-5. Next, hover back to Microsoft Purview and look up your newly created private endpoints. You can find this option on the left (settings).
+   ![](../images/module12/Ex12-Task4-p5.png)
 
-   ![](../images/module12/Step14.png)
+## 5. Private endpoint for Azure Blob Storage
 
-## 6. Private endpoint for Azure Blob Storage
+1. The next step is creating a private endpoint for the newly created storage account. When you are still in the managed private endpoints section, click on **+ new**. Select **Azure Data Lake Storage Gen2** and click **continue**.
 
-1. The next step is creating a private endpoint for the newly created storage account. When you are still in the managed private endpoints section, click on new. Select Azure Data Lake Storage Gen2 and continue.
+   ![](../images/module12/Ex12-Task5-p1.png)
 
-   ![](../images/module12/Step15.png)
-
-2. Lookup the storage account name under your subscription and click Create.
+2. In **New managed private endpoint (Azure Data Lake Storage Gen2)** blade select your subscription, the select your **storage account** which created previously and click **Create**.
 
    ![](../images/module12/Step16.png)
 
-3. The same approval process kicks in. Navigate to your storage account, go to networking, private endpoint connections, and you will see a newly requested item is created. Repeat the same steps by approving the endpoint.
+3. The same approval process kicks in. Go back to Azure portal, navigate to your **storage account**, go to **networking** under Security + networking, click on **private endpoint connections**, and you will see a newly requested item is created. Repeat the same steps by approving the endpoint.
 
    ![](../images/module12/Step17.png)
 
-4. Go back to Microsoft Purview and wait for all managed private endpoints to be approved.
+4. Go back to **Microsoft Purview** and wait for all managed private endpoints to be approved.
 
    ![](../images/module12/Step18.png)
 
-## 7. Configure source and scanning
+## 6. Configure source and scanning
 
-1. Next you need to add your newly created source and setup the scanning. Go to the data map and collection overview. Add a new source and click on Azure Data Lake Storage Gen2.
+1.Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
+   
+   ![ALT](../images/module11/M11-T6-img2.png)
 
-   ![](../images/module12/Step19.png)
+2. Next, register your source. Select your **Storage account** previously created, you will see the public endpoint listed here, but this configuration will be overwritten once we start scanning. Hit **register** and finish.
 
-2. Next, register your source. You will see the public endpoint listed here, but this configuration will be overwritten once we start scanning. Hit register and finish.
+   ![](../images/module12/Ex12-Task6-p2.png)
 
-   ![](../images/module12/Step20.png)
+3. Next you need to start scanning your source. Click **new scan**
 
-3. Next you configure scanning for your newly created source. It’s important to select the IntegrationRuntime (Managed Virtual Network) from the list. Add your source to a collection, and hit continue.
+   ![](../images/module12/Ex12-Task6-p3.png)
+
+4. Next you configure scanning for your newly created source. It’s important to select the **IntegrationRuntime (Managed Virtual Network)** from the list. Add your source to a collection, and hit continue.
 
    ![](../images/module12/Step21.png)
 
-4. Finally, you must test your connection and hit continue. Complete the scanning by selecting a schedule.
+5. Finally, you must test your connection and hit continue. Complete the scanning by selecting a schedule. 
 
    ![](../images/module12/Step22.png)
+   
+6. In select a scan rule set blade, select **AdlsGen2** and click on **Continue**.
 
+
+   ![](../images/module12/Ex12-Task6-p6.png)
+   
+7.  In Set a scan trigger blade set, set it to **once** and click on **Continue**.
+
+     ![](../images/module12/Ex12-Task6-p7.png)
+   
+8. In Review your scan blade reviev it and click on **save and run**. 
+
+   ![](../images/module12/Ex12-Task6-p8.png)
+   
 If everything goes well you’ll notice new metadata will be added to Purview. This all will be very secure, because all metadata is transferred using private endpoints.
 
 > :bulb: **Did you know?**
