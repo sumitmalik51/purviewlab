@@ -213,7 +213,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Related](../images/module04/M4-T6-S2.png)
 
-3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
+3. Use the drop-down menu to assign two glossary terms as **Synonyms** i.e **Workspace Analytics> Attended** and **Workspace Analytics> Attendee**.
 
     > :bulb: **Did you know?**
     >
@@ -221,7 +221,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Synonyms](../images/module04/M4-T6-S3.png)
 
-4. Use the drop-down menu to assign two glossary terms as **Related terms**.
+4. Use the drop-down menu to assign two glossary terms as **Related terms** i.e  **Workspace Analytics> Collaborator group** and **Workspace Analytics> Collaborators** .
 
     ![Related Terms](../images/module04/M4-T6-S4.png)
 
