@@ -108,7 +108,11 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
      
      ![](../images/module13/M13-T2-S1.png)
     
-2. When everything is configured properly you can start the script by running the following command:
+2. Save the file as **consumer.js** in the location `C:\Users\demouser` 
+
+     ![](../images/module13/M13-T2-S2.png)
+
+3. When everything is configured properly you can start the script by running the following command:
 
    ```
    node consumer.js
@@ -292,7 +296,11 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
    producer.connect();
    ```
 
-2. To submit this message to the Kafka endpoint use the following command:
+2. Save the file as **producer.js** in the location `C:\Users\demouser`  
+
+    ![](../images/module13/M13-T3-S2.png)
+
+3. To submit this message to the Kafka endpoint use the following command:
 
    ```
    node producer.js
