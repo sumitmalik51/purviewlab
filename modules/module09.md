@@ -1,15 +1,15 @@
 # Module 09 - Integrate with Azure Synapse Analytics
 
-## Introduction
+## :loudspeaker: Introduction
 
 Registering an Azure Purview account to a Synapse workspace allows you to discover Azure Purview assets, interact with them through Synapse specific capabilities, and push lineage information to Azure Purview.
 
-## Objectives
+## :dart: Objectives
 
 * Register an Azure Purview account to a Synapse workspace.
 * Query a dataset that exists in the Azure Purview catalog with Azure Synapse Analytics.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Azure Data Lake Storage Gen2 Account Access](#1-azure-data-lake-storage-gen2-account-access)
 2. [Connect to a Purview Account](#2-connect-to-a-purview-account)
@@ -17,7 +17,7 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
 ## 1. Azure Data Lake Storage Gen2 Account Access
 
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > One of the key benefits of integrating Azure Synapse Analytics with Azure Purview, is the ability to discover Azure Purview assets from within Synapse Studio (i.e. no need to swtich between user experiences), with added abilities using Synapse specific capabilities (e.g. SELECT TOP 100). 
 >
@@ -55,7 +55,7 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
 4. Once the connection has been established, you will receive a notification that **Registration succeeded**. Switch to the **Purview account** tab to confirm that the Purview account is connected. On this page, you will also see a list of integration capabilities that are now available (e.g. Azure Purview search, Synapse Pipeline lineage, etc).
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > When connecting a Synapse workspace to Purview, Synapse will attempt to add the necessary Purview role assignment (i.e. `Data Curator`) to the Synapse managed identity automatically. This operation will be successful if you belong to the **Collection admins** role on the Purview root collection and have access to the Azure Purview account. For more information, check out [Connect a Synapse workspace to an Azure Purview account](https://docs.microsoft.com/en-us/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview).
 
@@ -83,7 +83,7 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
     ![Run Query](../images/module09/09.15-synapse-run.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q09](http://aka.ms/purviewlab/q09)
 
@@ -102,6 +102,6 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
     A ) True    
     B ) False  
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to register an Azure Purview account to an Azure Synapse Analytics Workspace, view the details of an asset that exists outside of the Synapse workspace, and how you can quickly query an external source.
