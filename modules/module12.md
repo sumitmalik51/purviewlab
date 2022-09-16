@@ -18,7 +18,7 @@ In this lab you'll learn how to make use a managed private endpoints. You'll lea
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Resource group creation](#1-resource-group-creation)
 2. [Storage account creation](#2-storage-account-creation)
