@@ -46,8 +46,8 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
 1. For reading events from Microsoft Purview you can use the sample code below. Open a notepad copy and paste the follwing script. The connection string in the configuration section at the top. All changes are published to the ATLAS_ENTITIES topic, so also pay attention to this.
 
-   >**Note**: For **metadata.broker.list** replace it by from Kafka endpoint. As shown below
-   
+   >**Note**: For **metadata.broker.list** replace it by your **Atlas Kafka endpoint**. As shown
+          `Ex:- atlas-004133bc-3c87-4862-bf9d-b0ea6ae351f5.servicebus.windows.net` and for **sasl.password** copy and paste the entire **Atlas Kafka endpoint**.
 
    ```javascript
    var Transform = require('stream').Transform;
