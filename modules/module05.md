@@ -132,7 +132,8 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 1. Download a copy of **[twitter_handles.parquet](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.parquet)** to your labvm by opening the link in a new tab, right-click within the body of the content, and click **Save as**. 
 
 2. Navigate back to the Storage Explorer on your labvm, select your Azure Data Lake Storage Gen2 Account named **pvlab{randomId}adls**, expand **Blob Containers**, and **Open** the **raw** container. 
-  > **Note**: If a raw container does not exist, create one.
+  
+    > **Note**: If a raw container does not exist, create one.
 
     ![Open Container](../images/module05/blob.png)
 
@@ -155,9 +156,10 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 ## 5. Scan an Azure Data Lake Storage Gen2 Account
 
 1. Navigate back to the browser tab in which **Purview Studio** is open, then to this path **Data map**(1) > **Sources**(2) and click **New Scan**(3) within the **Azure Data Lake Storage Gen2** tile. 
-  > **Note**: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
+  
+    > **Note**: If you have not registered your Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
-  ![New Scan](../images/module05/M5-T5-S1.png)
+    ![New Scan](../images/module05/M5-T5-S1.png)
 
 2. Click **Test connection** to ensure the credentials have access and click **Continue**.
 
@@ -192,9 +194,10 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
     ![Source Details](../images/module05/M5-T5-S9.png)
 
 10. Periodically click **Refresh** to update the scan status until **Complete**. 
-   > **Note**: This will take approximately 5 to 10 minutes.
+   
+    > **Note**: This will take approximately 5 to 10 minutes.
 
-   ![Scan Progress](../images/module05/pvcl7.2.png)
+    ![Scan Progress](../images/module05/pvcl7.2.png)
 
 ## 6. Search by Classification
 
