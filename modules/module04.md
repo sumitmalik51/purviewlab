@@ -137,7 +137,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     
 ## 3. Bulk Import Terms
 
-1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, click **Save as** .
+1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your labvm by opening the link in a new tab, right-click within the body of the content, click **Save as** .
 
     ![Import terms](../images/module04/04.29-sample-saveas.png)
     
