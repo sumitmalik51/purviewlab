@@ -63,7 +63,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Regular Expression Classification Rule](../images/module05/05.05-classificationrules-regex.png)
 
-3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your local machine by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
+3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your labvm by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
 
 4. Now select **All Files** under **Save as type** and click on **Save**.
 
