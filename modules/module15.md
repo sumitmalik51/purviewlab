@@ -207,7 +207,7 @@ SELECT * FROM dbo.DestinationTest
 
     ![New Scan](../images/module15/M15-T6-img1.png)
 
-> :bulb: **Did you know?**
+>:bulb: **Did you know?**
 >
 > In order for Microsoft Purview to detect the lineage, it observes the actual execution of the stored procedure. Therefore, the lineage will not be detected until there is an execution of the MoveDataTest stored procedure.
 
@@ -302,7 +302,7 @@ Read more about Azure SQL Database lineage extraction in the [Azure blog located
 
 <div align="right"><a href="#module-15---azure-sql-database-lineage-extraction">↥ back to top</a></div>
 
-## :tada: Summary
+ ## :tada: Summary
 
 In this module, you learned how to configure Microsoft Purview to extract lineage information from stored procedures.
 
