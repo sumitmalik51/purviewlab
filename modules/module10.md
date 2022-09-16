@@ -615,7 +615,7 @@ Note: While Azure Purview is using Apache Atlas, there are certain areas such as
 
 To invoke the REST API, we must first register an application (i.e. service principal) that will act as the identity that the Azure Purview platform reognizes and is configured to trust.    
 
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > An Azure **service principal** is an identity created for use with applications, hosted services, and automated tools to access Azure resources.
 
@@ -657,7 +657,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 3. **Copy** the client secret value for later use.
 
-     > **Did you know?**
+     > :bulb: **Did you know?**
      >
      > A **client secret** is a secret string that the application uses to prove its identity when requesting a token, this can also can be referred to as an application password.
 
@@ -688,7 +688,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
  
     > **Info**: You can create a new **HTTP request** by clicking on **New** then selecting the **HTTP request**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > The OAuth2 service endpoint is used to gain access to protected resources such as Azure Purview. The HTTP request enables us to acquire an `access_token`, this will subsequently be used to query the Azure Purview API.
     
@@ -745,7 +745,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 1.  If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > While Azure Purview provides a number of system built type definitions for a variety of object types, Customers can use the API to create their own custom type definitions.
 
