@@ -20,7 +20,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 ## 1. Create a Classification
 
-1. Open Purview Studio, navigate to **Data map** > **Classifications** (under Annotation management) and click **New**.
+1. Open Purview Studio, navigate to **Data map**(1) > **Classifications**(2) (under Annotation management) and click **New**(3).
 
     ![New Classification](../images/module05/M5-T1-S1.png)
 
@@ -57,7 +57,7 @@ Azure Purview provides a large set of default classifications that represent typ
     | State | `Enabled` |
     | Type | `Regular Expression` |
 
-    > **Did you know?**
+    >**Did you know?**
     >
     > There are two types of classification rules. **Regular Expression** performs pattern matching against the actual data and/or column name. Where as **Dictionary** based classification rules allows us to supply a list of all possible values via a CSV or TSV file.
 
@@ -211,7 +211,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
     ![Asset Schema](../images/module05/M5-T6-S4.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q05](http://aka.ms/purviewlab/q05)
 
