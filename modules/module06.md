@@ -1,6 +1,6 @@
 # Module 06 - Lineage
 
-## Introduction
+## :loudspeaker: Introduction
 
 One of the platform features of Azure Purview is the ability to show the lineage between datasets created by data processes. Systems like Data Factory, Data Share, and Power BI capture the lineage of data as it moves. Custom lineage reporting is also supported via Atlas hooks and REST API.
 
@@ -12,12 +12,12 @@ Lineage in Purview includes datasets and processes.
 
 This module steps through what is required for connecting an Azure Data Factory account with an Azure Purview account to track data lineage.
 
-## Objectives
+## :dart: Objectives
 
 * Connect an Azure Data Factory account with an Azure Purview account.
 * Trigger a Data Factory pipeline to run so that the lineage metadata can be pushed into Purview.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Create an Azure Data Factory Connection in Azure Purview](#1-create-an-azure-data-factory-connection-in-azure-purview)
 2. [Copy Data using Azure Data Factory](#2-copy-data-using-azure-data-factory)
@@ -144,8 +144,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
     ![](../images/module06/M6-T3-S6.png)
 
-## Knowledge Check
-
+## :mortar_board: Knowledge Check
 [http://aka.ms/purviewlab/q06](http://aka.ms/purviewlab/q06)
 
 1. An Azure Purview account can connect to multiple Azure Data Factories?
@@ -163,6 +162,6 @@ This module steps through what is required for connecting an Azure Data Factory 
     A ) Squared edges  
     B ) Rounded edges  
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to integrate Azure Purview with Azure Data Factory and how relationships between assets and ETL activities can be automatically created at run time, allowing us to visually represent data lineage and trace upstream and downstream dependencies.
