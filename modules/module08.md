@@ -1,15 +1,15 @@
 # Module 08 - Monitor
 
-## Introduction
+## :loudspeaker: Introduction
 
 Azure Purview administrators can use Azure Monitor to track the operational state of an Azure Purview account instance. Metrics are collected to provide data points for you to track potential problems, troubleshoot, and improve the reliability of the Purview platform.
 
-## Objectives
+## :dart: Objectives
 
 * View Azure Purview metrics.
 * Send Azure Purview diagnostic logs to Azure Storage.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Provide a User Access to Azure Purview Metrics](#1-provide-a-user-access-to-azure-purview-metrics)
 2. [Visualize Azure Purview Metrics](#2-visualize-azure-purview-metrics)
@@ -31,7 +31,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 3. Click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list, and then click **Select**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Monitoring Reader** role can view all monitoring data but cannot modify any resource or edit any settings related to monitoring resources. This role is appropriate for users in an organization such as Azure Purview administrators.
 
@@ -75,7 +75,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 1. Navigate to your **Azure Purview** account instance, click **Diagnostic settings** and select **Add diagnostic setting**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Diagnostic settings** can be used to send platform logs and metrics to one or more destinations (Log Analytics Workspace, Storage Account, an Event Hub).
 
@@ -83,7 +83,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?***
     >
     > **ScanStatus** tracks the scan life cycle. A scan operation follows progress through a sequence of states, from Queued, Running and finally a terminal state of Succeeded | Failed | Canceled. An event is logged for each state transition.
 
@@ -117,7 +117,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Event JSON](../images/module08/08.21-event-json.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q08](http://aka.ms/purviewlab/q08)
 
@@ -139,6 +139,5 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     B ) scanTotalRunTimeInSeconds  
     C ) scanTotalDuration
 
-## Summary
-
+## :tada: Summary
 This module provided an overview of how to visualize Azure Purview metrics within the Azure Portal and how to capture raw telemetry to an Azure Storage account.
