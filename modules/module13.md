@@ -108,7 +108,7 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
      
      ![](../images/module13/M13-T2-S1.png)
     
-2. Save the file as **consumer.js** in the location `C:\Users\demouser` 
+2. The file should be saved as **producer.js**, and you should select **All Files** under Save as type, in the location `C:\Users\demouser` and click on **Save**. 
 
      ![](../images/module13/M13-T2-S2.png)
 
@@ -127,6 +127,9 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 ## 3. Publish events
 
 1. The same endpoint we could also use to submit events. Important here is that we should change the topic name to ATLAS_HOOK. In the example below you can use a JSON message to create a SQL table including two columns:
+
+ >**Note**: For **metadata.broker.list** replace it by your **Atlas Kafka endpoint**. As shown
+          `Ex:- atlas-004133bc-3c87-4862-bf9d-b0ea6ae351f5.servicebus.windows.net` and for **sasl.password** copy and paste the entire **Atlas Kafka endpoint**.
 
    ```javascript
    var Kafka = require('node-rdkafka');
@@ -296,7 +299,9 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
    producer.connect();
    ```
 
-2. Save the file as **producer.js** in the location `C:\Users\demouser`  
+   ![](../images/module13/M13-T2-S1.png)
+
+2. The file should be saved as **producer.js**, and you should select **All Files** under Save as type, in the location `C:\Users\demouser` and click on **Save**.  
 
     ![](../images/module13/M13-T3-S2.png)
 
