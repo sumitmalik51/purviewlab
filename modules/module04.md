@@ -169,7 +169,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 1. From the **Glossary** screen, we want to select ALL terms (top check box) and then de-select terms that do not belong to Workplace Analytics (i.e. Contoso Parent, Contoso Child). **All Workplace Analytics terms** should be selected. Click **Export terms**. Note: You can not export terms from different term templates.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > When using Purview Studio to **Export terms**, all terms selected for the export must use the same **Term template**. Selecting terms from different term templates will result in the **Export terms** button being greyed out.
 
@@ -213,7 +213,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Synonyms** are other terms with the same or similar definitions. Where as **Related terms** are other terms that are related but have different definitions.
 
@@ -225,7 +225,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Glossary terms can be related to two different types of contacts. **Experts** are typically business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
 
