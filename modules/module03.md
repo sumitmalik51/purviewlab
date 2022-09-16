@@ -1,17 +1,17 @@
 # Module 03 - Search & Browse
 
-## Introduction
+## :loudspeaker: Introduction
 
 Once sources have been registered and scanned, the underlying data catalog will begin to populate with assets that represent real-world objects (e.g. a table in an Azure SQL Database, a Power BI report, etc.) The surfacing of these assets via Microsoft Purview's search experience helps empower data consumers to find data assets that matters to them.
 
-## Objectives
+## :dart: Objectives
 
 * Search the catalog by keyword.
 * Browse the catalog by source.
 * Update an existing asset.
 * Perform a bulk edit operation.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Search Catalog](#1-search-catalog)
 2. [Update an Asset](#2-update-an-asset)
@@ -29,7 +29,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
     ![Filter by Classification](../images/module03/prv21.png)
 
 
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > While **Purview Studio** is provided as the default user experience, customers and partners can interface with the underlying platform using the [Microsoft Purview REST API](https://docs.microsoft.com/en-us/rest/api/purview/). The openness of the platform enables the possibility of integrating Microsoft Purview with custom user interfaces as well as the ability to perform read/write operations programmatically. 
 
@@ -53,7 +53,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 4. Navigate to the **Schema** tab and update the **Asset description** for each column using the sample text below.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Classifications** and **Glossary Terms** can be assigned at the asset level (e.g. a Table within a Database) as well as at the schema level (e.g. a Column within a Table Schema).
 
@@ -86,7 +86,7 @@ Once sources have been registered and scanned, the underlying data catalog will 
 
 5. Navigate to the **Contacts** tab and set the user named **odl_user <inject key="DeploymentID" enableCopy="false" />** to be an **Expert** and an **Owner**. Click **Save**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Assets can be related to two different types of contacts. **Experts** are often business process or subject matter experts. Where as **Owners** are often senior executives or business area owners that define governance or business processes over certain data areas.
     >
@@ -143,7 +143,7 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
 
     ![Deselect](../images/module03/03.16-bulk-deselect.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q03](http://aka.ms/purviewlab/q03)
 
@@ -174,6 +174,6 @@ Microsoft Purview allows us to perform certain operations (add/replace/remove) a
     B ) Owner  
     C ) Reader  
     
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to search, browse, and update assets.
