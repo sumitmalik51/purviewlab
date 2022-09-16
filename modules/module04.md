@@ -199,7 +199,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Assigned Terms](../images/module04/M4-T5-S4.png)
 
-5. Click **Refresh** to view the **Catalog assets** the term is assigned to.
+5. Click **Refresh** to view the **Catalog assets** that the term is assigned to .
 
     ![Catalog assets](../images/module04/M4-T5-S5.png)
     
