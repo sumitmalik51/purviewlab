@@ -1,15 +1,15 @@
 # Module 05 - Classifications
 
-## Introduction
+## :loudspeaker: Introduction
 
 Azure Purview provides a large set of default classifications that represent typical data types that might exist in your data estate (e.g. email address, credit card number, passport number, etc). You also have the ability to create custom classifications if any of the default classifications don't meet your needs.
 
-## Objectives
+## :dart: Objectives
 
 * Create a custom classification.
 * Trigger a scan that will apply the custom classification to an asset.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Create a Classification](#1-create-a-classification)
 2. [Create a Classification Rule (Regular Expression)](#2-create-a-custom-classification-rule-regular-expression)
