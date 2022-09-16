@@ -81,7 +81,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
     ![Pattern Detection](../images/module05/05.06-regex-file.png)
 
-7. Modify the Data Pattern by replacing the plus symbol (`+`) with with `{5,15}`.
+7. Modify the **Data Pattern** by replacing the plus symbol (`+`) with with `{5,15}`.
 
     * The plus symbol (`+`) indicates one or more characters matching the preceding item. This may lead to false positives as it would allow for an unlimited number of alphanumeric characters. Twitter handles must be a minimum of 5 and a maximum of 15 characters.
     * With `{5,15}`, this will ensure matches only occur where there is a at least 5 and at most 15 occurrences of the preceding item.
