@@ -8,7 +8,7 @@
 * At this point of the workshop, only a limited number of data visualisations may be populated.  
 * To populate all reports with data, Azure Purview requires an environment with a variety of sources and assets to be scanned that is beyond the scope of this workshop.         * The screenshots and information below, has been provided so that you can conceptualise the type of insights that can be gleaned from a fully populated environment.           
 
-## Introduction
+## :loudspeaker: Introduction
 
 Insights provides customers, a single pane of glass view into their catalog and further aims to provide specific insights to the data source administrators, business users, data stewards, data officer, and security administrators. Azure Purview currently has the following reports available:
 
@@ -18,11 +18,11 @@ Insights provides customers, a single pane of glass view into their catalog and 
 * Classification
 * Sensitivity Labels
 
-## Objectives
+## :dart: Objectives
 
 * Understand the different types of insights that can be gleaned from the out of the box reporting.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Asset Insights](#1-asset-insights)
 2. [Scan Insights](#2-scan-insights)
@@ -60,7 +60,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Assets Graph 03](../images/module07/07.05-assets-graph03.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Using the quick filters on the **Asset count by source type** graph and drilling into the details by clicking **View details**, is a quick and easy way of identifying which sources contain certain types of data.
 
@@ -93,7 +93,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Glossary Graph 03](../images/module07/07.13-glossary-graph03.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Terms are considered **incomplete** if they are missing a definition, expert, or steward. If a term is missing more than one of these things, it is shown as **Missing multiple items**.
 
@@ -136,7 +136,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
 1. Open Purview Studio, navigate to **Data estate insights** > **Sensitivity Labels**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Sensitivity labels** state how sensitive data is in your organization. For example, data contained within a particular asset might be `highly confidential`. **Classifications** on the other hand indicate the type of data values (e.g. Driver's License Number, Email Address, SWIFT Code, etc) 
     >
@@ -171,7 +171,7 @@ Insights provides customers, a single pane of glass view into their catalog and 
 
     ![Sensitivity Labels Graph 04](../images/module07/07.25-labels-graph04.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q07](http://aka.ms/purviewlab/q07)
 
@@ -192,6 +192,6 @@ Insights provides customers, a single pane of glass view into their catalog and 
     B ) Category  
     C ) Sensitivity Label
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to glean insights on Assets, Scans, Glossary Terms, Classifications and Sensitivity Labels across your data estate.
