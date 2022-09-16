@@ -105,7 +105,9 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
       consumer.disconnect();
    }, 300000);
    ```
-  
+     
+     ![](../images/module13/M13-T2-S1.png)
+    
 2. When everything is configured properly you can start the script by running the following command:
 
    ```
