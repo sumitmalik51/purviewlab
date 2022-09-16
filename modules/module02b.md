@@ -1,14 +1,14 @@
 # Module 02B - Register & Scan (Azure SQL DB)
 
-## Introduction
+## :loudspeaker: Introduction
 
 To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
 
-## Objectives
+## :dart: Objectives
 
 * Register and scan an Azure SQL Database using SQL authentication credentials stored in Azure Key Vault.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
 
 ## 1. Key Vault Access Policy #1 (Grant Yourself Access)
     
-> **Did you know?**
+> :bulb: **Did you know?**
 >
 > **Azure Key Vault** is a cloud service that provides a secure store for secrets. Azure Key Vault can be used to securely store keys, passwords, certificates, and other secrets. For more information, check out [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview).
 
@@ -219,7 +219,7 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
 
     ![](../images/module02/M2BT7S1.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q02](http://aka.ms/purviewlab/q02)
 
@@ -241,6 +241,6 @@ To make the secret accessible to Microsoft Purview, we must first establish a co
     B ) Glossary Terms (e.g. column `Sales Tax` is tagged with the `Sales Tax` glossary term)  
     C ) Classifications (e.g. column `ccnum` is tagged with the `Credit Card Number` classification)
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to create a collection, register a source, and trigger a scan.
