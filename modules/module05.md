@@ -231,6 +231,7 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
     A ) True  
     B ) False  
 
-## Summary
+
+## :tada: Summary
 
 This module provided an overview of how to create a custom classification, and how to have the classification automatically applied as part of a scan using a custom scan rule set.
