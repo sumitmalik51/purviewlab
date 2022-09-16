@@ -1,15 +1,15 @@
 # Module 01 - Create an Microsoft Purview Account
 
-## Introduction
+## :loudspeaker: Introduction
 
 To create and use the Microsoft Purview platform, you will need to provision an Microsoft Purview account.
 
-## Objectives
+## :dart: Objectives
 
 * Create an Microsoft Purview account using the Azure portal.
 * Provide additional users access to Microsoft Purview's data plane.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 | #  | Section | Role |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 
     ![Purview Account Basics](../images/module01/purv2.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Capacity Units** determine the size of the platform and is a **provisioned** (always on) set of resources that is needed to keep the Microsoft Purview platform up and running. 1 Capacity Unit is able to support approximately 25 data map operations per second and includes up to 2GB of metadata storage about data assets.
     >
@@ -86,7 +86,7 @@ To create and use the Microsoft Purview platform, you will need to provision an 
 
     ![Add or Remove Data Curators](../images/module01/user01.png)
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Microsoft Purview has a set of predefined data plane roles that can be used to control who can access what.
     >
@@ -99,7 +99,8 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     | Data Curator || `Read/Write` |  | Access to catalog (read & write). |
     | Data Source Admin |  || `Read/Write` | Manage data sources and data scans. |
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
+
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
 
@@ -127,6 +128,6 @@ To create and use the Microsoft Purview platform, you will need to provision an 
     B ) Purview Data Curator  
     C ) Purview Data Source Administrator
 
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to provision an Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
