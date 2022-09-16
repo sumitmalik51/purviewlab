@@ -36,7 +36,7 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
    ![](../images/module13/kafka01.png)
 
-3. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint. In labvm open **Command prompt** run the following command  
+3. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint. In labvm open **Command prompt** run the following command.  
 
    ```
    npm install node-rdkafka
@@ -112,17 +112,17 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
      ![](../images/module13/M13-T2-S2.png)
 
-3. When everything is configured properly you can start the script by running the following command:
+3. When everything is configured properly you can start the script in **Command prompt** by running the following command:
 
    ```
    node consumer.js
    ```
 
-3. For creating notifications go back to your Microsoft the Microsoft Purview Governance Portal. Make some changes to your environment, for example, by scanning an existing source. If everything goes well, you should see the following output on the screen:
+4. For creating notifications go back to your Microsoft the Microsoft Purview Governance Portal. Make some changes to your environment, for example, by scanning an existing source. If everything goes well, you should see the following output on the screen:
 
    ![](../images/module13/kafka02.png)
 
-4. In the output above, you see an Array with classifications and operation type using CLASSIFICATION_ADD. This, for example, you could use to trigger a workflow or send out an email requiring somebody to investigate the newly scanned data. Or you see new data coming in via the ENTITY_UPDATE operation type, allowing you to trigger process or pipeline.
+5. In the output above, you see an Array with classifications and operation type using CLASSIFICATION_ADD. This, for example, you could use to trigger a workflow or send out an email requiring somebody to investigate the newly scanned data. Or you see new data coming in via the ENTITY_UPDATE operation type, allowing you to trigger process or pipeline.
 
 ## 3. Publish events
 
@@ -300,19 +300,23 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
     ![](../images/module13/M13-T3-S2.png)
 
-3. To submit this message to the Kafka endpoint use the following command:
+3. To submit this message to the Kafka endpoint. Run the following command in **Command prompt**:
 
    ```
    node producer.js
    ```
 
-3. If everything goes well you see the following output:
+4. If everything goes well you see the following output:
 
    ![](../images/module13/kafka03.png)
 
-4. And finally you should see your newly created object in Microsoft Purview itself:
+5. Go back to the **Microsoft Purview**, select **Data Catalog** from the left menu, click on **Browser** and under Browse assets balde select your **Purview account**.
 
-   ![](../images/module13/kafka04.png)
+    ![](../images/module13/M13-T3-S4.png)
+
+6. And finally you should see your newly created **SalesOrderTable**.
+
+   ![](../images/module13/M13-T3-S6.png)
 
 As demonstrated in this tutorial you can programmatically monitor for metadata changes in real-time. Via this approach you can enrich your user experience by also integrating with other services.
 
