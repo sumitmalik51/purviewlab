@@ -1,6 +1,6 @@
 # Module 10 - REST API
 
-## Introduction
+## :loudspeaker: Introduction
 
 While Purview Studio is the default method of interfacing with Azure Purview, the underlying platform can be accessed via a set of API's. This opens up the possibility of a variety of scenarios including:  
   * Working with Azure Purview assets programmatically (e.g. bulk create/read/update/delete).
@@ -11,13 +11,13 @@ While Purview Studio is the default method of interfacing with Azure Purview, th
 
 The primary focus of this module is the **catalog** which is based on the open-source [Apache Atlas](https://atlas.apache.org/) project. Read below for more details on Apache Atlas and how it relates to Azure Purview.
 
-## Objectives
+## :dart: Objectives
 
 * Understand the high-level Apache Atlas concepts.
 * Generate an access token.
 * Read data from the Azure Purview platform.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Apache Atlas](#1-apache-atlas)
 2. [Register an Application](#2-register-an-application)
