@@ -33,7 +33,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 2. Select your subscription and Azure Data Factory account instance named `pvlab-{randomId}-adf` from the drop-down menu and click **OK**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > Azure Purview can connect to **multiple** Azure Data Factories but each Azure Data Factory account can only connect to **one** Azure Purview account.
 
@@ -45,7 +45,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 4. To confirm that Azure Data Factory has been provided the necessary access, navigate to **Data map** > **Collections** > `YOUR_ROOT_COLLECTION` > **Role assignments**, within **Data curators** you should be able to see the Azure Data Factory managed identity.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > When a user creates an Azure Data Factory connection, behind the scenes the Data Factory managed identity is added to the `Data Curator` role. This provides Azure Data Factory the necessary access to push lineage to Azure Purview during a pipeline execution. See [supported Azure Data Factory activities](https://docs.microsoft.com/en-us/azure/purview/how-to-link-azure-data-factory#supported-azure-data-factory-activities) for more information.
 
