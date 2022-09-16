@@ -1,10 +1,10 @@
 # Module 04 - Glossary
 
-## Introduction
+## :loudspeaker: Introduction
 
 A glossary is an important tool for maintaining and organizing your catalog. You build your glossary by defining new terms or importing a term list and then applying those terms to your assets.
 
-## Objectives
+## :dart: Objectives
 
 * Create a Term in the Glossary using the System Default Term Template.
 * Create a Term in the Glossary using a Custom Term Template.
@@ -13,7 +13,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 * Assign a Term to an Asset in the Data Catalog.
 * Update an existing Term with Related Terms and Contacts.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Create a Term (System Default Term Template)](#1-create-a-term-system-default-term-template)
 2. [Create a Term (Custom Term Template)](#2-create-a-term-custom-term-template)
@@ -231,7 +231,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Term Contacts](../images/module04/04.28-term-contacts.1.png)
 
-## Knowledge Check
+## :mortar_board: Knowledge Check
 
 [http://aka.ms/purviewlab/q04](http://aka.ms/purviewlab/q04)
 
@@ -251,6 +251,6 @@ A glossary is an important tool for maintaining and organizing your catalog. You
     A ) True  
     B ) False  
     
-## Summary
+## :tada: Summary
 
 This module provided an overview of how to create, export, and import terms into the Microsoft Purview glossary.
