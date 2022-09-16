@@ -57,7 +57,7 @@ Azure Purview provides a large set of default classifications that represent typ
     | State | `Enabled` |
     | Type | `Regular Expression` |
 
-    >**Did you know?**
+    > :bulb: **Did you know?**
     >
     > There are two types of classification rules. **Regular Expression** performs pattern matching against the actual data and/or column name. Where as **Dictionary** based classification rules allows us to supply a list of all possible values via a CSV or TSV file.
 
@@ -75,7 +75,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 6. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Thresholds** help minimise the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
 
@@ -94,7 +94,7 @@ Azure Purview provides a large set of default classifications that represent typ
 
 1. Navigate to **Data map** > **Scan rule sets** (under Source management) and click **New**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > **Scan Rule Sets** determine which **File Types** and **Classification Rules** are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
 
