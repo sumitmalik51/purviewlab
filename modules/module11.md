@@ -17,7 +17,7 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 - Connect to on premise data source using a self-hosted integration runtime.
 
-## Table of Contents
+## :bookmark_tabs: Table of Contents
 
 1. [Virtual network creation](#1-virtual-network-creation)
 2. [Storage account creation](#2-storage-account-creation)
