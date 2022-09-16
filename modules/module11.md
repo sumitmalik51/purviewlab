@@ -57,7 +57,7 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
 ## 2. Storage account creation
 
-1.  On the Azure Portal home page select create new resource. , select the resource group you just created, provide a unique name, and hit next.
+1.  On the Azure Portal home page select create new resource. Select the resource group you just created, provide a unique name, and hit next.
  
  > **Note**: We will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
    
@@ -77,9 +77,13 @@ In this lab you learn how to setup a more complex scenario of using a SHIR and p
 
    ![ALT](../images/module11/M11-T2-img5.png)
 
-6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review** and **Review+Create** to create the storage account.
+6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review**.
 
    ![ALT](../images/module11/M11-T2-img6.png)
+
+7. Click **Create** to create the storage account.
+    
+    ![ALT](../images/module12/EX12-task2-p7.png)
 
 <div align="right"><a href="#module-11---securely-scan-sources-using-self-hosted-integration-runtimes">↥ back to top</a></div>
 
