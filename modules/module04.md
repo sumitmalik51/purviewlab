@@ -34,7 +34,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
 3. Select the **System default** term template and click **Continue**.
 
-    > **Did you know?**
+    > :bulb: **Did you know?**
     >
     > A **Term Template** determines the attributes for a term. The **System default** term template has basic fields only (e.g. Name, Definition, Status, etc). **Custom** term templates on the other hand, can be used to capture additional custom attributes. For more information, check out [How to manage term templates for business glossary](https://docs.microsoft.com/en-us/azure/purview/how-to-manage-term-templates).
 
