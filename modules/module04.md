@@ -177,7 +177,7 @@ A glossary is an important tool for maintaining and organizing your catalog. You
 
     ![Export Terms](../images/module04/M4-T4-S1.png)
 
-2. If the export was successful, you should find a **CSV** file has been copied to your labvm under **Downloads**.
+2. If the export was successful, you should find a **CSV** file has been copied to your labvm inside **Downloads** folder.
 
     ![Downloads](../images/module04/04.18-export-downloads.png)
 
