@@ -30,19 +30,24 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
 ## 1. Setup environment
 
-1. For reading and publishing messages to Purview we will use the Event Hubs endpoint, which is compatible with the Apache Kafka. First we need to get the namespace associated with your Purview Account. You can lookup the endpoint configuration from the Properties pane in the Azure Portal. This connection string includes both the workspace name and access key.
+1. Go back to Azure portal, navigate to **Microsoft Purview account** and select **pvlab-{DID}-pv**.
+ 
+2. In Microsoft Purview account, select **Properties** under settings and copy **Atlas Kafka endpoint primary connection string**.
 
    ![](../images/module13/kafka01.png)
 
-2. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint:
+3. Next we need to create a new project. You can simply do this by installing the required package for NodeJS, allowing to communicate with the Kafka Endpoint. In labvm open **Command prompt** run the following command  
 
    ```
    npm install node-rdkafka
    ```
-
+   
 ## 2. Read events
 
-1. For reading events from Microsoft Purview you can use the sample code below. Important is to copy and paste the connection string in the configuration section at the top. All changes are published to the ATLAS_ENTITIES topic, so also pay attention to this.
+1. For reading events from Microsoft Purview you can use the sample code below. Open a notepad copy and paste the follwing script. The connection string in the configuration section at the top. All changes are published to the ATLAS_ENTITIES topic, so also pay attention to this.
+
+   >**Note**: For **metadata.broker.list** replace it by from Kafka endpoint. As shown below
+   
 
    ```javascript
    var Transform = require('stream').Transform;
@@ -100,7 +105,7 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
       consumer.disconnect();
    }, 300000);
    ```
-
+  
 2. When everything is configured properly you can start the script by running the following command:
 
    ```
