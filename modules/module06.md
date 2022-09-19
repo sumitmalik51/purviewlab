@@ -2,15 +2,26 @@
 
 ## :loudspeaker: Introduction
 
-One of the platform features of Azure Purview is the ability to show the lineage between datasets created by data processes. Systems like Data Factory, Data Share, and Power BI capture the lineage of data as it moves. Custom lineage reporting is also supported via Atlas hooks and REST API.
+One of the features of Microsoft Purview is the ability to show the lineage between datasets created by data processes. Data lineage shows how data moves over time and enables you to see how data is used and what changes to data have been made. This visibility helps you to understand, trace back and correct data at the source of origin. Lineage, thus also results into better data quality.
 
-Lineage in Purview includes datasets and processes.
+Lineage is typically captured from tools that extract, transform and load data. These ETL tools are, for example, Data Factory, Data Share, and Power BI. They capture the lineage of data as it moves. By scanning these ETL tools you can capture and visualize the lineage in Microsoft Purview.
 
-* **Dataset**: A dataset (structured or unstructured) provided as an input to a process. For example, a SQL Table, Azure blob, and files (such as .csv and .xml), are all considered datasets. In the lineage section of Purview, datasets are represented by **rectangular boxes**.
+Microsoft Purview also supports the ability to upload custom lineage. Custom lineage is lineage that you created yourself, for example by uploading metadata using the Microsoft Purview's Atlas REST APIs. Lineage in Purview includes relationships between datasets and processes.
 
-* **Process**: An activity or transformation performed on a dataset is called a process. For example, ADF Copy activity, Data Share snapshot and so on. In the lineage section of Purview, processes are represented by **round-edged boxes**.
+> :bulb: **Did you know?**
+>
+> * **Dataset**: A dataset (structured or unstructured) provided as an input to a process. For example, a SQL Table, Azure blob, and files (such as .csv and .xml), are all considered datasets. In the lineage section of Purview, datasets are represented by **rectangular boxes**.
+>
+> * **Process**: An activity or transformation performed on a dataset is called a process. For example, ADF Copy activity, Data Share snapshot and so on. In the lineage section of Purview, processes are represented by **round-edged boxes**.
 
-This module steps through what is required for connecting an Azure Data Factory account with an Azure Purview account to track data lineage.
+## :thinking: Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
+* An Azure Data Lake Storage Gen2 Account (see [module 00](../modules/module00.md)).
+* An Azure Data Factory Account (see [module 00](../modules/module00.md)).
+* A Microsoft Purview account (see [module 01](../modules/module01.md)).
+
+This module steps through what is required for connecting an Azure Data Factory account with a Microsoft Purview account to track data lineage.
 
 ## :dart: Objectives
 
@@ -25,13 +36,13 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 ## 1. Create an Azure Data Factory Connection in Azure Purview
 
-1. Open Purview Studio, navigate to **Management** > **Data Factory** (under Lineage connections) and click **New**.
+1. Open the **Microsoft Purview Governance Portal**, navigate to **Management** > **Data Factory** (under Lineage connections) and click **New**.
 
-    > To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
+    > :warning: To view/add/remove Data Factory connections, you need to be assigned the **Collection admin** role on the root collection.
 
     ![](../images/module06/M6-T1-S1.png)
 
-2. Select your subscription and Azure Data Factory account instance named `pvlab-{randomId}-adf` from the drop-down menu and click **OK**.
+2. Select your Azure Data Factory account instance from the drop-down menu (e.g. `pvlab-{randomId}-adf`) and click **OK**.
 
     > :bulb: **Did you know?**
     >
@@ -41,7 +52,7 @@ This module steps through what is required for connecting an Azure Data Factory 
 
 3. Once finished, you should see the Data Factory in a **connected** state.
 
-    ![](../images/module06/pcdf2.png)
+    ![](../images/module06/M6-T1-S3.png)
 
 4. To confirm that Azure Data Factory has been provided the necessary access, navigate to **Data map** > **Collections** > `YOUR_ROOT_COLLECTION` > **Role assignments**, within **Data curators** you should be able to see the Azure Data Factory managed identity.
 
