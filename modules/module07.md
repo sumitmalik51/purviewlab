@@ -1,6 +1,6 @@
 # Module 07 - Insights
 
-[< Previous Module](../modules/module06.md) - **[Home](../README.md)** - [Next Module >](../modules/module08.md)
+
 
 ```diff
 !                               << PLEASE READ BEFORE PROCEEDING >>                                
@@ -273,4 +273,4 @@ View key metrics about the sensitivity labels applied to sources, files, and tab
 
 This module provided an overview of how to glean insights on Data stewardship, Assets, Glossary, Classifications and Sensitivity Labels across your data estate.
 
-[Continue >](../modules/module08.md)
+
