@@ -27,13 +27,13 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 * The person who created the Purview account automatically gets permissions to view metrics.
 * Other individuals can be provided access by adding them to the **Monitoring Reader** role.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your **Azure Purview** account (e.g. `pvlab-{randomId}-pv`), select **Access Control** and click **Add role assignment**.
+1. Sign in to the [Azure portal](https://portal.azure.com), navigate to your **Azure Purview** account (e.g. `pvlab-{DID}-pv`), select **Access Control** and click **Add role assignment**.
 
-    ![Azure Purview Access Control](../images/module08/08.01-purview-access.png)
+    ![Azure Purview Access Control](../images/module08/M8-T1-S1.png)
 
 2. Filter the list of roles by searching for `Monitoring Reader`, select the **Monitoring Reader** role and then click **Next**.
 
-    ![Add Role Assignment](../images/module08/08.02-access-add.png)
+    ![Add Role Assignment](../images/module08/M8-T1-S2.png)
 
 3. Click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory and select that user from the list, and then click **Select**.
 
@@ -41,11 +41,11 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     >
     > **Monitoring Reader** role can view all monitoring data but cannot modify any resource or edit any settings related to monitoring resources. This role is appropriate for users in an organization such as Azure Purview administrators.
 
-    ![Assign Role](../images/module08/roleassignment.png)
+    ![Assign Role](../images/module08/M8-T1-S3.png)
 
 4. Click **Review + assign** to progress to the final screen, then click **Review + assign** once more to add the role assignment.
 
-    ![Verify Access](../images/module08/08.04-access-verify.png)
+    ![Verify Access](../images/module08/M8-T1-S4.png)
 
 ## 2. Visualize Azure Purview Metrics
 
@@ -95,7 +95,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
     ![Save Diagnostic Setting](../images/module08/M8-T3-S2.png)
 
-3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio** > **Data map** > **Sources** and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
+3. To test the capture of raw events, trigger a full scan by navigating to **Azure Purview Studio**(1) > **Data map**(2) > **Sources**(3) and click **View details** on the existing **Azure Data Lake Storage Gen2** tile.
 
     ![Source Details](../images/module08/M8-T3-S3.png)
 
