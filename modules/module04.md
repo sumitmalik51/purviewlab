@@ -191,23 +191,23 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. Perform a wildcard search by typing asterisk (**\***) into the search bar and hitting the Enter key to submit the query. Click on an asset title `QueriesByState` to view the details.
 
-    ![Wildcard Search](../images/module04/M4-T5-S1.png)
+    ![Wildcard Search](../images/module04/M4-Update4.png)
 
 2. Click **Edit**.
 
-    ![Edit Asset](../images/module04/M4-T5-S2.png)
+    ![Edit Asset](../images/module04/M4-Update5.png)
 
 3. Open the **Glossary terms** drop-down menu and select a glossary term named `Contoso Child`. Click **Save**.
 
-    ![Assign Term](../images/module04/M4-T5-S3.png)
+    ![Assign Term](../images/module04/M4-Update6.png)
 
 4. Click on the **Contoso Child** hyperlinked term name to view the glossary term details.
 
-    ![Assigned Terms](../images/module04/M4-T5-S4.png)
+    ![Assigned Terms](../images/module04/M4-Update7.png)
 
 5. Click **Refresh** to view the **Catalog assets** that the term is assigned to .
 
-    ![Catalog assets](../images/module04/M4-T5-S5.png)
+    ![Catalog assets](../images/module04/M4-Update8.png)
     
 ## 6. Update an Existing Term
 
