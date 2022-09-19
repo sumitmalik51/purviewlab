@@ -148,7 +148,7 @@ In this lab you learn how to create terms using a system and custom term templat
     
 ## 3. Bulk Import Terms
 
-1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your labvm by opening the link in a new tab, right-click within the body of the content, click **Save as** .
+1. Download a copy of **[import-terms-sample.csv](https://github.com/tayganr/purviewlab/raw/main/assets/import-terms-sample.csv)** to your **labvm** by opening the link in a new tab, right-click within the body of the content, click **Save as** .
 
     ![Import terms](../images/module04/04.29-sample-saveas.png)
     
@@ -180,15 +180,10 @@ In this lab you learn how to create terms using a system and custom term templat
 
 1. From the **Glossary** screen, we want to select ALL terms (top check box) and then de-select terms that do not belong to Workplace Analytics (i.e. Contoso Parent, Contoso Child). **All Workplace Analytics terms** should be selected. Click **Export terms**. 
 
- > **Note** : You can not export terms from different term templates.
+   
+   ![Export Terms](../images/module04/M4-T4-S1.png)
 
-    > :bulb: **Did you know?**
-    >
-    > When using Purview Studio to **Export terms**, all terms selected for the export must use the same **Term template**. Selecting terms from different term templates will result in the **Export terms** button being greyed out.
-
-    ![Export Terms](../images/module04/M4-T4-S1.png)
-
-2. If the export was successful, you should find a **CSV** file has been copied to your labvm inside **Downloads** folder.
+2. If the export was successful, you should find a **CSV** file has been copied to your **labvm** in the **Downloads** folder.
 
     ![Downloads](../images/module04/04.18-export-downloads.png)
 
