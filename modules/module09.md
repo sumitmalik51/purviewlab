@@ -33,11 +33,11 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 1. Navigate to the **Azure Data Lake Storage Gen2 account** (e.g. `pvlab{randomId}adls`), select **Access Control (IAM)**, and then click **Add role assignment**.
 
-    ![Storage Access Control](../images/module09/09.01-storage-access.png)
+    ![Storage Access Control](../images/module09/09.01-storage-accessa.png)
 
 2. Filter the list of roles available by searching for `Storage Blob Data Reader`, select the **Storage Blob Data Reader** role from the list, and click **Next**.
 
-    ![Storage RBAC Assignment](../images/module09/09.02-storage-rbac.png)
+    ![Storage RBAC Assignment](../images/module09/09.02-storage-rbaca.png)
 
 3. To add your account click **Select members**, search for the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />** in your Azure Active Directory , select the account from the list, and click **Select**.
 
@@ -45,13 +45,13 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 4. Click **Review + assign** to progress to the final confirmation screen and then click **Review + assign** once more.
 
-    ![Storage RBAC Assignment](../images/module09/09.17-rbac-review.png)
+    ![Storage RBAC Assignment](../images/module09/09.17-rbac-reviewa.png)
 
 ## 2. Connect to a Purview Account
 
 1. Within the Azure portal, navigate to the **purviewlab-rg** and open the Synapse workspace named **pvlab-{randomId}-synapse** and click **Open Synapse Studio**.
 
-    ![Open Synapse Studio](../images/module09/09.08-synapse-studio.png)
+    ![Open Synapse Studio](../images/module09/09.08-synapse-studioa.png)
 
 2. Navigate to **Manage** > **Microsoft Purview** and click **Connect to a Purview account**.
 
@@ -59,7 +59,7 @@ Registering a Microsoft Purview account to a Synapse workspace allows you to dis
 
 3. Select your **Purview account** from the drop-down menu and click **Apply**.
 
-    ![Select a Purview Account](../images/module09/09.10-synapse-purview.png)
+    ![Select a Purview Account](../images/module09/09.10-synapse-purviewa.png)
 
 4. Once the connection has been established, you will receive a notification that **Registration succeeded**. Switch to the **Purview account** tab to confirm that the Purview account is connected. On this page, you will also see a list of integration capabilities that are now available (e.g. Azure Purview search, Synapse Pipeline lineage, etc).
 
