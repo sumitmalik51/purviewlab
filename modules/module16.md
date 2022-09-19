@@ -73,16 +73,20 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
 3. Populate the Basics screen and click **Review**.
 
-    > **Note**
-    >
-    > Supported storage account configurations:
-    > | Configuration | Support |
-    > | --- | -- |
-    > | Regions | Canada Central, Canada East, UK South, UK West, Australia East, Japan East, Korea South, and South Africa North |
-    > | Performance | Standard |
-    > | Standard | LRS, GRS, RA-GRS |
-
+            
+    **Storage account configurations:**
+     
+     | Configuration | Support |
+     | --- | -- |
+     |Storage Account Name| datasharing**DID**
+     | Regions | South Africa North |
+     | Performance | Standard |
+     | Standard | LRS|
+    > **Note**: Supported Regions: Canada Central, Canada East, UK South, UK West, Australia East, Japan East, Korea South, and South Africa North.
+   
     ![ALT](/images/module16/16.06.png)
+    
+    > **Note**: You can find the **DID** value from the **Environment Details** page.
 
 4. Click **Create**.
 
@@ -98,39 +102,35 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
 
 Before we can create a share, we must populate our storage account with some folders and files.
 
-1. From the Azure portal, navigate to your resource group, and open your **storage account**.
-
-    ![ALT](/images/module16/16.09.png)
-
-2. On the side menu, click **Storage browser**.
+1. On the side menu, click **Storage browser**.
 
     ![ALT](/images/module16/16.10.png)
 
-3. Open **Blob containers**.
+2. Open **Blob containers**.
 
     ![ALT](/images/module16/16.11.png)
 
-4. Click **Add container**.
+3. Click **Add container**.
 
     ![ALT](/images/module16/16.12.png)
 
-5. Set the container name (e.g. `send`) and click **Create**.
+4. Set the container name `send` and click **Create**.
 
     ![ALT](/images/module16/16.13.png)
 
-6. Open the `send` container and click **Add Directory**.
+5. Open the `send` container and click **Add Directory**.
 
     ![ALT](/images/module16/16.17.png)
 
-7. Set the virtual directory name (e.g. `data`).
+6. Set the virtual directory name `data`.
 
     ![ALT](/images/module16/16.18.png)
 
-8. Click **Upload**.
+7. Click **Upload**.
 
     ![ALT](/images/module16/16.19.png)
 
-9. Browse your local machine to upload sample data and click **Upload**.
+8. Browse your local machine to upload sample data and click **Upload**.
 
     > **Note**:
     >
@@ -138,7 +138,7 @@ Before we can create a share, we must populate our storage account with some fol
 
     ![ALT](/images/module16/16.20.png)
 
-10. Once the upload is complete, click the close icon.
+9. Once the upload is complete, click the close icon.
 
     ![ALT](/images/module16/16.21.png)
 
@@ -220,7 +220,7 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
     ![ALT](/images/module16/16.33.png)
 
-2. Provide a share name (e.g. `sentShare01`), select the Share type **In-place share**, and click **Continue**.
+2. Provide a share name  `sentShare01`, select the Share type **In-place share**, and click **Continue**.
 
     ![ALT](/images/module16/16.34.png)
 
@@ -248,13 +248,12 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
 ## 7. Accept a Received Share
 
-TBC
 
-1. Navigate to **Data share** > **Received shares** > **Pending**, and click to open the received share (e.g. `sentShare01`).
+1. Navigate to **Data share** > **Received shares** > **Pending**, and click to open the received share `sentShare01`.
 
     ![ALT](/images/module16/16.40.png)
 
-2. Update the received share name (e.g. `receivedShare01`) and click **Accept and configure**.
+2. Update the received share name `receivedShare01` and click **Accept and configure**.
 
     ![ALT](/images/module16/16.41.png)
 
