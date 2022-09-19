@@ -51,7 +51,7 @@ Microsoft Purview provides a large set of default classifications that represent
     The username that appears at the end of your unique Twitter URL.
     ```
 
-    ![Create Classification](../images/module05/05.02-classifications-create.png)
+    ![Create Classification](../images/module05/M5-Update1.png)
 
 3. Navigate to the **Custom** tab to confirm the custom classification has been created.
 
@@ -77,9 +77,11 @@ Microsoft Purview provides a large set of default classifications that represent
     >
     > There are two types of classification rules. **Regular Expression** performs pattern matching against the actual data and/or column name. Where as **Dictionary** based classification rules allows us to supply a list of all possible values via a CSV or TSV file.
 
-    ![Regular Expression Classification Rule](../images/module05/05.05-classificationrules-regex.png)
+    ![Regular Expression Classification Rule](../images/module05/M5-Update2.png)
 
 3. Download a copy of **[twitter_handles.csv](https://github.com/tayganr/purviewlab/raw/main/assets/twitter_handles.csv)** to your labvm by opening the link in a new tab, right-click within the body of the content, and click **Save as**.
+
+    ![Regular Expression Classification Rule](../images/module05/M5-Update3.png)
 
 4. Now select **All Files** under **Save as type** and click on **Save**.
 
@@ -87,7 +89,7 @@ Microsoft Purview provides a large set of default classifications that represent
 
 5. Click the **Browse** icon and open the local copy of **twitter_handles.csv**.
 
-   > **Note :** Incase if you get an error while uploading the file stating ```the format is not supported```, delete the downloaded copy of `twitter handles.csv` file and perform the step-3 again. Before saving the file clear the file name and re-enter the name **twitter_handles.csv** then save the file.
+    ![Regular Expression Classification Rule](../images/module05/M5-Update4.png)
 
 6. Select the data pattern associated to the **Handle** column and click **Add to patterns**.
 
@@ -95,16 +97,18 @@ Microsoft Purview provides a large set of default classifications that represent
     >
     > **Thresholds** help minimise the possibility of false-positive classifications. **Minimum match threshold** is the minimum percentage of data value matches in a column that needs to be found by the scanner for the classification to be applied.
 
-    ![Pattern Detection](../images/module05/05.06-regex-file.png)
+    ![Pattern Detection](../images/module05/M5-Update5.png)
 
 7. Modify the **Data Pattern** by replacing the plus symbol (`+`) with with `{5,15}`.
 
     * The plus symbol (`+`) indicates one or more characters matching the preceding item. This may lead to false positives as it would allow for an unlimited number of alphanumeric characters. Twitter handles must be a minimum of 5 and a maximum of 15 characters.
     * With `{5,15}`, this will ensure matches only occur where there is a at least 5 and at most 15 occurrences of the preceding item.
+       
+       ![Pattern Detection](../images/module05/M5-Update6.png)
 
 8. While we can also specify a **Column Pattern**, in this example we will rely solely on the Data Pattern. Clear the **Column Pattern** input and click **Create**.
 
-    ![Create Classification Rule](../images/module05/05.07-regex-create.png)
+    ![Create Classification Rule](../images/module05/M5-Update7.png)
 
 ## 3. Create a Scan Rule Set
 
