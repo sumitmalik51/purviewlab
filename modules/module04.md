@@ -237,7 +237,7 @@ In this lab you learn how to create terms using a system and custom term templat
     >
     > Glossary terms can be related to two different types of contacts. **Experts** are typically business process or subject matter experts. Where as **Stewards** define the standards for a data object or business term. They drive quality standards, nomenclature, rules.
 
-    ![Term Contacts](../images/module04/04.28-term-contacts.1.png)
+    ![Term Contacts](../images/module04/M4-Update10.png)
 
 ## :mortar_board: Knowledge Check
 
