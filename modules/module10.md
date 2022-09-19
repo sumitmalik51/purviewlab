@@ -22,9 +22,15 @@ The primary focus of this module is the **catalog** which is based on the open-s
 1. [Apache Atlas](#1-apache-atlas)
 2. [Register an Application](#2-register-an-application)
 3. [Generate a Client Secret](#3-generate-a-client-secret)
-4. [Provide Service Principal Access to Azure Purview](#4-provide-service-principal-access-to-azure-purview)
+4. [Provide Service Principal Access to Microsoft Purview](#4-provide-service-principal-access-to-microsoft-purview)
 5. [Get an Access Token](#5-get-an-access-token)
-6. [Read data from Azure Purview](#6-read-data-from-azure-purview)
+6. [Read data from Microsoft Purview](#6-read-data-from-microsoft-purview)
+7. [Read glossary in Microsoft Purview](#7-read-glossary-in-microsoft-purview)
+8. [Create glossary terms](#8-create-glossary-terms)
+9. [Add/edit simple attribute for a glossary term](#9-addedit-simple-attribute-for-a-glossary-term)
+10. [Add/edit complex attribute for a glossary term](#10-addedit-complex-attribute-for-a-glossary-term)
+11. [Delete glossary term](#11-delete-glossary-term)
+12. [Register custom entity types and lineage](#12-register-custom-entity-types-and-lineage)
 
 ## 1. Apache Atlas (Read Only)
 
@@ -661,11 +667,11 @@ To invoke the REST API, we must first register an application (i.e. service prin
      >
      > A **client secret** is a secret string that the application uses to prove its identity when requesting a token, this can also can be referred to as an application password.
 
-   ![](../images/module10/Mod7-purview5.png)
+   ![](../images/module10/M10-T2-S3.png)
 
 ## 4. Provide Service Principal Access to Azure Purview
 
-1. Navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION** > **Role Assignments**, and then click **Add data curators**.
+1. Navigate to **Purview Studio**,  **Data map**(1) > **Collections**(2) > **pvlab-DID-pv**(3) > **Role Assignments**(4), and then click **Add data curators**(5).
 
     ![](../images/module10/M10-T4-S1.png)
 
@@ -686,8 +692,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
  
 1. Now, click on **Skip and go to the app** to skip the account creation and create a new **HTTP request** as per the details below.
  
-    > **Info**: You can create a new **HTTP request** by clicking on **New** then selecting the **HTTP request**.
-
+    
     > :bulb: **Did you know?**
     >
     > The OAuth2 service endpoint is used to gain access to protected resources such as Azure Purview. The HTTP request enables us to acquire an `access_token`, this will subsequently be used to query the Azure Purview API.
@@ -715,35 +720,34 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
 ## 6. Read data from Azure Purview
 
-1. Within the Azure portal, open the Azure Purview account, navigate to **Properties** and find the **Atlas endpoint**. **Copy** this value for later use.
+ 1. Within the Azure portal, open the Azure Purview account, navigate to **Properties** and find the **Atlas endpoint**. **Copy** this value for later use.
 
     ![Purview Properties](../images/module10/10.11-purview-properties.png)
 
-1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below. 
+ 2. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below. 
  
-     > **Info**: You can create a new **HTTP request** by clicking on **New** then selecting the **HTTP request**.
-
     * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
     * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/types/typedefs`
+    
+  > **Note**: Calling this particular endpoint will result in the bulk retrieval of all **type definitions**.
 
-    Note: Calling this particular endpoint will result in the bulk retrieval of all **type definitions**.
+ 
+  | Property | Value |
+  | --- | --- |
+  | HTTP Method | `GET` |
+  | URL | `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/types/typedefs` |
 
-    | Property | Value |
-    | --- | --- |
-    | HTTP Method | `GET` |
-    | URL | `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/types/typedefs` |
+   Navigate to **Headers**, provide the following key value pair. Once HTTP request is ready, click **Send**.
 
-    Navigate to **Headers**, provide the following key value pair. Once HTTP request is ready, click **Send**.
+  | Header Key | Header Value |
+  | --- | --- |
+  | Authorization | `Bearer YOUR_ACCESS_TOKEN` |
 
-    | Header Key | Header Value |
-    | --- | --- |
-    | Authorization | `Bearer YOUR_ACCESS_TOKEN` |
+  > **Note**: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
 
-    Note: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
+  ![](../images/module10/10.10-postman-get.png)
 
-    ![](../images/module10/10.10-postman-get.png)
-
-1.  If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
+3.  If successful, Postman should return a JSON document in the body of the response. Click on the **magnifying glass** and search for the following phrase `"name": "azure_sql_table"` to jump down to the entity definition for an Azure SQL Table.
 
     > :bulb: **Did you know?**
     >
@@ -827,7 +831,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
  <div align="right"><a href="#module-10---rest-api">↥ back to top</a></div>
 
- Note: If you don’t specify the status when you create a glossary term, by default it appears in **“Draft”** mode.
+ > **Note**: If you don’t specify the status when you create a glossary term, by default it appears in **“Draft”** mode.
 
 ## 9. Add/edit simple attribute for a glossary term
 
@@ -835,7 +839,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
    * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}?includeTermHierarchy=True`, Replace **{termGuid}** with the GUID you copied in the previous exercise.(e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog/api/atlas/v2/glossary/term/XXXXX?includeTermHierarchy=True`) 
-   Note: Calling this particular endpoint will result in **updating a glossary term**.
+   
+ > **Note**: Calling this particular endpoint will result in **updating a glossary term**.
 
    | Property | Value |
    | --- | --- |
@@ -848,7 +853,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
    | --- | --- |
    | Authorization | `Bearer YOUR_ACCESS_TOKEN` |
 
-   Note: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
+   > **Note**: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
 
     ![ALT](../images/module10/10.22-edit-term-auth.png)
 
@@ -943,10 +948,12 @@ To invoke the REST API, we must first register an application (i.e. service prin
 1. Using [Postman](https://www.postman.com/product/rest-client/) once more, create a new **HTTP request** as per the details below.
 
     * Paste the copied endpoint into the URL (e.g. `https://YOUR_PURVIEW_ACCOUNT.purview.azure.com/catalog`)
-    * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}`
+    * Add the following at the end of the URL to complete the endpoint: `/api/atlas/v2/glossary/term/{termGuid}`, Replace {termGuid} with the GUID you copied in the previous exercise
 
-    Note: Calling this particular endpoint will result in **deleting a glossary term**.
-
+     
+   > **Note**: Calling this particular endpoint will result in **deleting a glossary term**.
+ 
+ 
     | Property | Value |
     | --- | --- |
     | HTTP Method | `DELETE` |
@@ -958,7 +965,7 @@ To invoke the REST API, we must first register an application (i.e. service prin
     | --- | --- |
     | Authorization | `Bearer YOUR_ACCESS_TOKEN` |
 
-    Note: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
+    > **Note**: You generated an `access_token` in the previous request. Copy and paste this value. Ensure to include the "Bearer " prefix.
 
     ![ALT](../images/module10/10.30-delete-term.png)
 
@@ -1059,7 +1066,8 @@ To invoke the REST API, we must first register an application (i.e. service prin
    }
    ```
 
-   * Submit and validate your output. **Important:** copy the GUID from the newly created entity. You'll need it in the next section when creating custom lineage.
+   * Submit and validate your output. 
+ > **Important:** copy the GUID from the newly created entity. You'll need it in the next section when creating custom lineage.
 
    ![ALT](../images/module10/M10-T12-S3-e1.png)
 
@@ -1130,11 +1138,11 @@ To invoke the REST API, we must first register an application (i.e. service prin
 
    ![ALT](../images/module10/rest08.png)
 
-   * Navigate to Azure Purview portal select **Data Catalog>Browse Assets>By Source Type>Custom Source>Orders Table**
+   * Navigate to Azure Purview portal select **Data Catalog>Browse Assets>By Source Type>Custom Source>Orders Table**.
 
  ![ALT](../images/module10/rest09.png)
       
-5. Under **Orders Table** select **Lineage** to view the output
+5. Under **Orders Table** select **Lineage** to view the output.
    
  ![ALT](../images/module10/rest10.png)
 
