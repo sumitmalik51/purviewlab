@@ -21,7 +21,8 @@ When planning your Microsoft Purview deployment, you first need to provision a M
 ## 1. Create an Microsoft Purview Account
 
 1. In the Azure portal, expand the portal's left navigation and select **+ Create a resource**, search for **Microsoft Purview** and select it.
-   
+    ![prv1](../images/module01/prv35.png)
+
     ![prv1](../images/module01/prv2.png)
 
 2. On the **Microsoft Purview** blade, select **Create**.
@@ -40,7 +41,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     | Location | `Choose the same region as the Resource Group` |
     | Managed Resource Group Name | `managed-rg-pvlab` |
 
-    ![Purview Account Basics](../images/module01/purv2.png)
+    ![Purview Account Basics](../images/module01/prv36.png)
 
     > :bulb: **Did you know?**
     >
@@ -101,7 +102,7 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     | Data Curator || `Read/Write` |  | Access to catalog (read & write). |
     | Data Source Admin |  || `Read/Write` | Manage data sources and data scans. |
 
-## :mortar_board: Knowledge Check
+## Knowledge Check
 
 
 [http://aka.ms/purviewlab/q01](http://aka.ms/purviewlab/q01)
@@ -130,6 +131,6 @@ When planning your Microsoft Purview deployment, you first need to provision a M
     B ) Purview Data Curator  
     C ) Purview Data Source Administrator
 
-## :tada: Summary
+## Summary
 
 This module provided an overview of how to provision an Microsoft Purview account using the Azure Portal and how to grant the appropriate level of access to Microsoft Purview's data plane.
