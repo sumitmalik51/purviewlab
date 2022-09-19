@@ -132,7 +132,7 @@ Before we can create a share, we must populate our storage account with some fol
 
 9. Browse your local machine to upload sample data and click **Upload**.
 
-    > Note
+    > **Note**:
     >
     > In this example, we are using the [Hippocorpus dataset](https://msropendata.com/datasets/0a83fb6f-a759-4a17-aaa2-fbac84577318) from Microsoft Research Open Data. If you would like to use this data, [download a copy of the zip file](https://github.com/tayganr/purviewlab/raw/main/assets/hippocorpus-u20220112.zip) and extract the contents to your local machine.
 
