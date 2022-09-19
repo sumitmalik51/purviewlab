@@ -85,7 +85,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     >
     > **Diagnostic settings** can be used to send platform logs and metrics to one or more destinations (Log Analytics Workspace, Storage Account, an Event Hub).
 
-    ![Add Diagnostic Setting](../images/module08/08.14-diagnostic-add.png)
+    ![Add Diagnostic Setting](../images/module08/M8-T3-Update.png)
 
 2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
