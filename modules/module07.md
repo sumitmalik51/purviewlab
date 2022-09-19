@@ -2,13 +2,12 @@
 
 
 
-<p align=center> >**Note**: **PLEASE READ BEFORE PROCEEDING!!** 
- > * Data Estate Insights can take several hours to surface post the completion of a scan.          
-  >* At this point of the workshop, only a limited number of data visualisations may be populated.  
-  >* To populate all reports with data, Microsoft Purview requires an environment with a variety of 
- sources and assets to be scanned that is beyond the scope of this workshop.                      
-  >* The screenshots and information below, has been provided so that you can conceptualise the type
- of insights that can be gleaned from a fully populated environment.                              
+>  <p align=center style=bold> <b>PLEASE READ BEFORE PROCEEDING!!</b> </p>
+>  
+> * Data Estate Insights can take several hours to surface post the completion of a scan.          
+> * At this point of the workshop, only a limited number of data visualisations may be populated.  
+> * To populate all reports with data, Microsoft Purview requires an environment with a variety of sources and assets to be scanned that is beyond the scope of this workshop.                      
+> * The screenshots and information below, has been provided so that you can conceptualise the typeof insights that can be gleaned from a fully populated environment.                              
  
 
 ## :loudspeaker: Introduction
