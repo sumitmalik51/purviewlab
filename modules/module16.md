@@ -78,15 +78,18 @@ Microsoft Purview Data Sharing supports sharing of files and folders in-place fr
      
      | Configuration | Support |
      | --- | -- |
-     |Storage Account Name| datasharing**DID**
+     |Storage Account Name| datasharing`{DeploymentID}`
      | Regions | South Africa North |
      | Performance | Standard |
      | Standard | LRS|
+     
     > **Note**: Supported Regions: Canada Central, Canada East, UK South, UK West, Australia East, Japan East, Korea South, and South Africa North.
+
+    > **Note**: You can find the **Deployment ID** value from the **Environment Details** page.
    
     ![ALT](/images/module16/16.06.png)
     
-    > **Note**: You can find the **DID** value from the **Environment Details** page.
+    
 
 4. Click **Create**.
 
@@ -156,37 +159,33 @@ Before we can create a share, both the data provider and data consumer must have
 > | Data Provider | :white_check_mark: | | :white_check_mark: | |
 > | Data Consumer | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
-1. From the Azure portal, navigate to your resource group, and open your **storage account**.
-
-    ![ALT](/images/module16/16.09.png)
-
-2. Open **Access Control (IAM)**.
+1. Open **Access Control (IAM)**.
 
     ![ALT](/images/module16/16.22.png)
 
-3. Click **Add role assignment**.
+2. Click **Add role assignment**.
 
     ![ALT](/images/module16/16.23.png)
 
-4. Filter the list of roles by searching for `Storage Blob Data Owner`, select the **Storage Blob Data Owner** role, and click **Next**.
+3. Filter the list of roles by searching for `Storage Blob Data Owner`, select the **Storage Blob Data Owner** role, and click **Next**.
 
     ![ALT](/images/module16/16.24.png)
 
-5. Click **Select members**.
+4. Click **Select members**.
 
     ![ALT](/images/module16/16.25.png)
 
-6. Filter the results by searching for your account, select your account, and click **Select**.
+5. Filter the results by searching for your account, select your account, and click **Select**.
 
-    ![ALT](/images/module16/16.26.png)
+    ![ALT](/images/module16/M16-T4-S6.png)
+
+6. Click **Review + assign**.
+
+    ![ALT](/images/module16/M16-T4-S7.png)
 
 7. Click **Review + assign**.
 
-    ![ALT](/images/module16/16.27.png)
-
-8. Click **Review + assign**.
-
-    ![ALT](/images/module16/16.28.png)
+    ![ALT](/images/module16/M16-T4-S8.png)
 
 <div align="right"><a href="#module-16---data-sharing">↥ back to top</a></div>
 
@@ -194,7 +193,7 @@ Before we can create a share, both the data provider and data consumer must have
 
 Before we can create create or receive a share, the storage account needs to be registered with a collection.
 
-1. From the Azure portal, navigate to your Microsoft Purview account, and open the **Microsoft Purview Governance Portal**.
+1. From the Azure portal, navigate to your **Microsoft Purview account**, and open the **Microsoft Purview Governance Portal**.
 
     ![ALT](/images/module16/16.29.png)
 
@@ -251,11 +250,11 @@ Data sharing within Microsoft Purview allows data providers to share data with d
 
 1. Navigate to **Data share** > **Received shares** > **Pending**, and click to open the received share `sentShare01`.
 
-    ![ALT](/images/module16/16.40.png)
+    ![ALT](/images/module16/M16-T7-S1.png)
 
 2. Update the received share name `receivedShare01` and click **Accept and configure**.
 
-    ![ALT](/images/module16/16.41.png)
+    ![ALT](/images/module16/M16-T7-S2.png)
 
 3. Click **Map**.
 
