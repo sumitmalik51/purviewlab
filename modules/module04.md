@@ -231,7 +231,7 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Related Terms](../images/module04/M4-T6-S4.png)
 
-5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User <inject key="DeploymentID" enableCopy="false" />**. Click **Save**.
+5. Navigate to the **Contacts** tab and assign an **Expert** and a **Steward** to the user named **ODL_User [DID]**. Click **Save**.
 
     > :bulb: **Did you know?**
     >
