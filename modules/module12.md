@@ -34,31 +34,31 @@ In this lab you'll learn how to make use a managed private endpoints. You'll lea
  
      > **Note**: We will setup a storage account for demonstration. This is the resource that will be scanned during this demo.
    
-      ![ALT](../images/module11/M11-T2-img1.png)
+      ![ALT](../images/module12/M12-T2-img1.png)
 
 2. Search Storage Account and select **Create**.
 
-      ![ALT](../images/module11/M11-T2-img2.png)
+      ![ALT](../images/module12/M12-T2-img2.png)
       
 3. On the **Create Storage Account** tab, select your subcription, and from the dropdown for **Resource Group** select **purviewlab-rg**. 
    
-      ![ALT](../images/module11/M11-T2-img3.png)
+      ![ALT](../images/module12/M12-T2-img3.png)
   
 4. Provide a unique name for your storage account and click **Next: Advanced>**.
   
-      ![ALT](../images/module11/M11-T2-img4.png)
+      ![ALT](../images/module12/M12-T2-img4.png)
    
 5. In the **Advanced** section of **Create Storage Account** ensure that **hierarchical namespaces** are selected. Click next to jump over to the **Networking tab**.
 
-      ![ALT](../images/module11/M11-T2-img5.png)   
+      ![ALT](../images/module12/M12-T2-img5.png)   
 
 6. In the **Networking** tab, select **Disable public access and use private access** as the **Network Access**. Don’t create any private endpoints at this stage. This comes later. Then hit **Review** and **Review+Create** to create the storage account.
 
-    ![ALT](../images/module11/M11-T2-img6.png)
+    ![ALT](../images/module12/M12-T2-img6.png)
 
 7. Click **Create** to create the storage account.
     
-    ![ALT](../images/module12/EX12-task2-p7.png)
+    ![ALT](../images/module12/M12-T2-img7.png)
 
 ## 2. Authentication for a scan
 
