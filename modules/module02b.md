@@ -67,7 +67,7 @@ Before we can add secrets (such as passwords) to Azure Key Vault, we need to set
 In this next step, we are creating a second access policy which will provide Microsoft Purview the necessary access to retrieve secrets from the Key Vault.
 
 
-1. Click **create**.
+1.  Under keyvault named **pvlab-kv{randomid}** under Access policies Click **create**.
 
     ![prv3](../images/module02/prv3.png)
 
