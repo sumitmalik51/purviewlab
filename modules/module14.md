@@ -48,11 +48,11 @@ To make a data resource available for policy management, the Data Use Management
    
    > **Note**: You can the get the ODL user ID from the **Environment details** page.
    
-   ![Grant Contributor privilege](../images/module14/M14-T1-img3.png) 
+   ![Grant Contributor privilege](../images/module14/M14-T1-img3a.png) 
 
 4. On the Review+assign page click **Review+assign** to add the role.
      
-     ![Grant Contributor privilege](../images/module14/M14-T1-img4.png) 
+     ![Grant Contributor privilege](../images/module14/M14-T1-img4a.png) 
 
 5. Navigate to the Azure purview tab on your browser. In Purview grant the same user **Policy authors** role at the root collection level. Navigate to **Data map** >**Collections**>**Role assignments**. On the **Policy authors** click on **Add policy author**.
 
@@ -95,11 +95,9 @@ To make a data resource available for policy management, the Data Use Management
 
     ![Data Resource](../images/module14/M14-T2-img2.png)
 
-6. Select the **Continue** button and transverse the hierarchy to select and underlying data-object (for example: pvlab4050feadls>raw>Twitter) and select **twitter_handles.parquet**. Select **Recursive** to apply the policy from that point in the hierarchy down to any child data-objects. Then select the **Add** button. This will take you back to the policy editor.
+6. Select the **Continue** button and transverse the hierarchy to select and underlying data-object (for example: folder, file, etc.). Select **Recursive** to apply the policy from that point in the hierarchy down to any child data-objects. Then select the **Add** button. This will take you back to the policy editor.
     
-    > **Note**: For **twitter_handles.parquet** check module-9
-    
-    ![Data Resource1](../images/module14/M14-T2-img1.png)
+    ![Data Resource1](../images/module14/14.10-data-resource2.png)
 
 7. Select the **Subjects** button and enter **`odl_user_DID@cloudevents.ai`** identity as a principal, group, or MSI. Then select the **OK** button. This will take you back to the policy editor.
 
