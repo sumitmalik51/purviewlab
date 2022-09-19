@@ -2,7 +2,19 @@
 
 ## :loudspeaker: Introduction
 
-Azure Purview provides a large set of default classifications that represent typical data types that might exist in your data estate (e.g. email address, credit card number, passport number, etc). You also have the ability to create custom classifications if any of the default classifications don't meet your needs.
+In Microsoft Purview, classifications are similar to subject tags, and are used to mark and identify data of a specific type that's found within your data estate during scanning. Classifications help you to better manage your data. You can use them for prioritizing your data efforts or improve data security and regulatory compliance. Classifications also improve user productivity and decision-making, and allow you to reduce costs by classifying and finding unused data.
+
+Microsoft Purview provides a large set of default classifications that represent typical data types that might exist in your data estate (e.g. email address, credit card number, passport number, etc). In this module you learn how to create a custom classification, which can be an alternative to default classifications when they don't meet your needs.
+
+## :thinking: Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
+* An Azure Data Lake Storage Gen2 Account (see [module 00](../modules/module00.md)).
+* A Microsoft Purview account (see [module 01](../modules/module01.md)).
+
+## :hammer: Tools
+
+* [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
 
 ## :dart: Objectives
 
@@ -11,12 +23,16 @@ Azure Purview provides a large set of default classifications that represent typ
 
 ## :bookmark_tabs: Table of Contents
 
-1. [Create a Classification](#1-create-a-classification)
-2. [Create a Classification Rule (Regular Expression)](#2-create-a-custom-classification-rule-regular-expression)
-3. [Create a Scan Rule Set](#3-create-a-scan-rule-set)
-4. [Upload Data to an Azure Data Lake Storage Gen2 Account](#4-upload-data-to-an-azure-data-lake-storage-gen2-account)
-5. [Scan an Azure Data Lake Storage Gen2 Account](#5-scan-an-azure-data-lake-storage-gen2-account)
-6. [Search by Classification](#6-search-by-classification)
+| #  | Section | Role |
+| --- | --- | --- |
+| 1 | [Create a Classification](#1-create-a-classification) | Data Curator |
+| 2 | [Create a Classification Rule (Regular Expression)](#2-create-a-custom-classification-rule-regular-expression) | Data Curator |
+| 3 | [Create a Scan Rule Set](#3-create-a-scan-rule-set) | Data Source Admin |
+| 4 | [Upload Data to an Azure Data Lake Storage Gen2 Account](#4-upload-data-to-an-azure-data-lake-storage-gen2-account) | Azure Administrator |
+| 5 | [Scan an Azure Data Lake Storage Gen2 Account](#5-scan-an-azure-data-lake-storage-gen2-account) | Data Source Admin |
+| 6 | [Search by Classification](#6-search-by-classification) | Data Reader |
+
+<div align="right"><a href="#module-05---classifications">↥ back to top</a></div>
 
 ## 1. Create a Classification
 
