@@ -2,7 +2,9 @@
 
 ## :loudspeaker: Introduction
 
-To populate Microsoft Purview with assets for data discovery and understanding, we must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data. In this module, we will walk through how to register and scan data sources.
+To populate Microsoft Purview with assets for data discovery and understanding, you must register sources that exist across our data estate so that we can leverage the out of the box scanning capabilities. Scanning enables Microsoft Purview to extract technical metadata such as the fully qualified name, schema, data types, and apply classifications by parsing a sample of the underlying data.
+
+In this module, you'll walk through how to register and scan data sources. You'll create a new collection for your first data source, upload data and configure scanning. By the end of this module you'll have technical metadata, such as schema information, stored in Purview. You can use this to start linking to business terms, allowing your team members to easier find data
 
 ## :dart: Objectives
 
@@ -51,7 +53,7 @@ To populate Microsoft Purview with assets for data discovery and understanding, 
     
 5. select **Purview account (1)** from the **Managed Identity** drop-down menu, select the managed identity **pvlab-<inject key="Deployment ID" enableCopy="false" />-pv(2)**, click **Select (3)**. Finally, click **Review + assign**.
    
-    ![Access Control Members](../images/module02/purvex2tsk1stp5.png)
+    ![Access Control Members](../images/module02/prv37.png)
 
 6. Click **Review + assign** once more to perform the role assignment.
 
