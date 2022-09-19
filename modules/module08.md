@@ -51,19 +51,21 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
 
 1. Navigate to your **Azure Purview** account instance and click **Metrics**.
 
-    ![Azure Purview Metrics](../images/module08/08.05-purview-metrics.png)
+    ![Azure Purview Metrics](../images/module08/M8-T2-Update1.png)
 
 2. Click to open the **Metric** drop-down menu and select one of the metrics (e.g. `Scan time taken`).
 
     **Available Metrics**
     | Metric ID  | Metric Name | Metric Description |
     | --- | --- | --- |
+    | DataMapCapacityUnits | `Data Map Capacity Units` | Indicates the number of capacity units consumed. |
+    | DataMapStorageSize | `Data Map Storage Size` | Indicates the data map storage size. |
     | ScanCancelled | `Scan Cancelled` | Indicates the number of scans cancelled. |
     | ScanCompleted | `Scan Completed` | Indicates the number of scans completed successfully. |
     | ScanFailed | `Scan Failed` | Indicates the number of scans failed. |
     | ScanTimeTaken | `Scan Time Taken` | Indicates the total scan time in seconds. |
 
-    ![Select Metric](../images/module08/08.06-metrics-select.png)
+    ![Select Metric](../images/module08/M8-T2-Update2.png)
 
 3. Click on the chart type to change the graph to a **Bar chart**.
 
@@ -85,7 +87,7 @@ Metrics can be accessed from the Azure Portal for an Azure Purview account insta
     >
     > **Diagnostic settings** can be used to send platform logs and metrics to one or more destinations (Log Analytics Workspace, Storage Account, an Event Hub).
 
-    ![Add Diagnostic Setting](../images/module08/M8-T3-Update.png)
+    ![Add Diagnostic Setting](../images/module08/M8-T3-Update1.png)
 
 2. Provide the diagnostic setting a name as `Audit` (1), select **ScanStatus** (2), select **Archive to a storage account** (3), select the existing storage account `pvlab{randomId}adls` and click **Save**.
 
