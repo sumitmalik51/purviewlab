@@ -215,9 +215,9 @@ In this lab you learn how to create terms using a system and custom term templat
 
     ![Term Details](../images/module04/M4-T6-S1.png)
 
-2. Select edit and navigate to the **Related** tab.
+2. Navigate to the **Related** tab and click **Edit**.
 
-    ![Related](../images/module04/M4-T6-S2.png)
+    ![Related](../images/module04/M4-Update9.png)
 
 3. Use the drop-down menu to assign two glossary terms as **Synonyms** i.e **Workspace Analytics> Attended** and **Workspace Analytics> Attendee**.
 
