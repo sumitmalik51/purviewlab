@@ -68,7 +68,7 @@ To make a data resource available for policy management, the Data Use Management
 
 8. Enable Data Use Management. After a source is registered, edit the source. Set the **Data Use Management** toggle to **Enabled** as shown below and **Apply**.
 
-    ![Enable DUM](../images/module14/M14-T1-img8.png)
+    ![Enable DUM](../images/module14/M14-T1-img8a.png)
 
     > :bulb: **Did you know?**
     >
