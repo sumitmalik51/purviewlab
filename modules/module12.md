@@ -138,11 +138,11 @@ With the newly released features Microsoft Purview now provides three options fo
 
 1. Now you can move to **Data map**(1)>**Sources**(2) and select **Register**(3) in the **Register source** pane , search and select **Azure Data Lake Storage Gen2**(4) and **Continue**(5) select your storage account from the list.
    
-      ![ALT](../images/module11/M11-T6-img2.png)
+      ![ALT](../images/module12/M12-T6-p1.png)
 
 2. Next, register your source. Select your **Storage account** previously created, you will see the public endpoint listed here, but this configuration will be overwritten once we start scanning. Hit **Register** and finish.
 
-      ![](../images/module12/Ex12-Task6-p2.png)
+      ![](../images/module12/Ex12-Task6-p2a.png)
 
 3. Next you need to start scanning your source. Click **New scan**
 
