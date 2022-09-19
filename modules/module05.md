@@ -131,11 +131,11 @@ Microsoft Purview provides a large set of default classifications that represent
     Custom scan rule set to detect parquet files and classify twitter handles.
     ```
 
-    ![Scan Rule Set Name](../images/module05/05.09-scanruleset-create.png)
+    ![Scan Rule Set Name](../images/module05/M5-Update8.png)
 
 3. Clear all file type selections with the exception of **PARQUET** and click **Continue**.
 
-    ![Scan Rule Set File Type](../images/module05/05.10-scanruleset-filetype.png)
+    ![Scan Rule Set File Type](../images/module05/M5-Update9.png)
 
 4. Clear all selected **System rules** and select the custom classification rule **twitter_handle** and click **Continue**.
 
@@ -146,6 +146,12 @@ Microsoft Purview provides a large set of default classifications that represent
     ![create](../images/module05/ignore.png)
 
 ## 4. Upload Data to an Azure Data Lake Storage Gen2 Account
+
+Before proceeding with the following steps, you will need to:
+
+* Download and install [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+* Open Azure Storage Explorer.
+* Sign in to Azure via **View > Account Management > Add an account...**.
 
 Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [module 02](../modules/module02.md).
 
@@ -187,27 +193,27 @@ Note: If you have not created an Azure Data Lake Storage Gen2 Account, see [modu
 
 3. By default, Azure Purview will have the parent Azure Data Lake Storage Gen2 account selected and therefore include all paths in scope. To reduce the scope, deselect the parent and select the **Twitter** folder only. Click **Continue**.
 
-    ![Scope Scan](../images/module05/05.19-scan-scope.png)
+    ![Scope Scan](../images/module05/M5-Update10.png)
 
 4. To validate the scope of the custom scan rule set, click **View detail**.
 
-    ![Scan Rule Set Details](../images/module05/05.20-scanruleset-viewdetail.png)
+    ![Scan Rule Set Details](../images/module05/M5-Update11.png)
 
 5. Confirm that the custom scan rule set includes the **PARQUET** file type and the custom classification rule **twitter_handle**. Click **OK**.
 
-    ![Verify Scan Rule Set](../images/module05/05.21-scanruleset-verify.png)
+    ![Verify Scan Rule Set](../images/module05/M5-Update12.png)
 
 6. Select the custom scan rule set **twitter_scan_rule_set** and click **Continue**.
 
-    ![Select Scan Rule Set](../images/module05/05.22-scanruleset-select.png)
+    ![Select Scan Rule Set](../images/module05/M5-Update13.png)
 
 7. Set the scan trigger to **Once** and click **Continue**.
 
-    ![Scan Cadence](../images/module05/05.23-scan-trigger.png)
+    ![Scan Cadence](../images/module05/M5-Update14.png)
 
 8. Click **Save and Run**.
 
-    ![Run Scan](../images/module05/05.24-scan-saverun.png)
+    ![Run Scan](../images/module05/M5-Update15.png)
 
 9. To view the progress of the scan, navigate to **Data map**(1)>**Sources**(2) and click **View details**(3) on the Azure Data Lake Storage Gen2 tile.
 
