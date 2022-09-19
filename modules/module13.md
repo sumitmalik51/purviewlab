@@ -118,9 +118,13 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
    node consumer.js
    ```
 
-4. For creating notifications go back to your Microsoft the Microsoft Purview Governance Portal. Make some changes to your environment, for example, by scanning an existing source. If everything goes well, you should see the following output on the screen:
-
-   ![](../images/module13/kafka02.png)
+4. For creating notifications go back to your Microsoft Purview Governance Portal. Make some changes to your environment, for example, by scanning an existing source. 
+   
+   ![](../images/module13/M13-T2-S4a.png)
+   
+   * If everything goes well, you should see the following output on the screen:
+   
+     ![](../images/module13/M13-T2-S4.png)
 
 5. In the output above, you see an Array with classifications and operation type using CLASSIFICATION_ADD. This, for example, you could use to trigger a workflow or send out an email requiring somebody to investigate the newly scanned data. Or you see new data coming in via the ENTITY_UPDATE operation type, allowing you to trigger process or pipeline.
 
