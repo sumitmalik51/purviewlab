@@ -2,7 +2,15 @@
 
 ## :loudspeaker: Introduction
 
-Registering an Azure Purview account to a Synapse workspace allows you to discover Azure Purview assets, interact with them through Synapse specific capabilities, and push lineage information to Azure Purview.
+Azure Synapse Analytics, formerly known as Azure SQL Data Warehouse, is a big data analytics solution with enterprise data warehousing features. It provides different types of compute environments for different workloads. It is often used to process large volumes of data and can be used to design a data lake, data warehouse or big data analytics platform.
+
+Registering a Microsoft Purview account to a Synapse workspace allows you to discover Microsoft Purview assets, interact with them through Synapse specific capabilities, and push lineage information to Microsoft Purview. This enables you to see what data is ingested, processed and consumed by what analytical processes.
+
+## :thinking: Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/free/) with an active subscription.
+* A Microsoft Purview account (see [module 01](../modules/module01.md)).
+* A Microsoft Purview catalog with some assets (see [module 02](../modules/module02.md)).
 
 ## :dart: Objectives
 
@@ -61,13 +69,13 @@ Registering an Azure Purview account to a Synapse workspace allows you to discov
 
     ![Purview Account Registered](../images/module09/09.11-synapse-success-1.1.png)
 
-5. To validate that Synapse was able to succesfully add the Synapse managed identity to the Data Curator role, navigate to **Purview Studio** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION**, switch to the **Role assignments** tab and expand **Data curators**. You should be able to see the Synapse Service Principal listed as one of the Data curators. This will provide Synapse read/write access to the catalog.
+5. To validate that Synapse was able to successfully add the Synapse managed identity to the Data Curator role, navigate to the **Microsoft Purview Governance Portal** > **Data map** > **Collections** > **YOUR_ROOT_COLLECTION**, switch to the **Role assignments** tab and expand **Data curators**. You should be able to see the Synapse Service Principal listed as one of the Data curators. This will provide Synapse read/write access to the catalog.
 
     ![](../images/module09/09.18-synapsemi-curator.1.1.png)
 
 ## 3. Search a Purview Account
 
-1. Within the Synapse workspace, navigate to the **Data** screen and perform a **keyword search** by entering the keyword `parquet` in the search bar of Synapse workspace. Notice that the search bar now defaults to searching the entire Purview catalog as opposed to the Synapse workspace only.
+1. Within the Synapse workspace, navigate to the **Data** screen and perform a **keyword search** (e.g. `parquet`). Notice that the search bar now defaults to searching the entire Purview catalog as opposed to the Synapse workspace only.
 
     ![Search Purview Account](../images/module09/09.12-synapse-search.png)
 
