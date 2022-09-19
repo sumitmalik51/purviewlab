@@ -120,6 +120,8 @@ In this lab you'll learn how read and publish events using Azure Event Hubs and 
 
 4. For creating notifications go back to your Microsoft Purview Governance Portal. Make some changes to your environment, for example, by scanning an existing source. 
    
+   > **Note**: For scanning the existing source refer [module 12](../modules/module02.md) task-5.
+   
    ![](../images/module13/M13-T2-S4a.png)
    
    * If everything goes well, you should see the following output on the screen:
